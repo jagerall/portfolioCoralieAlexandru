@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Swiss721 Lt BT Expanded', sans-serif;
+    line-height: 1.5;
+    color: #101010;
+    background-color: #FBFBFB;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 0.5rem;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td,
+th {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: inherit;
+    font-weight: normal;
+}
+
+p {
+    font-family: inherit;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
