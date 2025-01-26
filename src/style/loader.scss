@@ -4,10 +4,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: disappear .1s linear 1.5s forwards;
+    animation: disappear .1s linear 1.3s forwards;
 
     &-spinner {
-
         &-image {
             height: 110%;
             width: 110%;
@@ -26,7 +25,9 @@
 
 
 .page-content {
+    margin: 2rem;
     animation: appear .1s linear  forwards;
+
     @keyframes appear {
         0% {
             opacity: 0;

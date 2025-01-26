@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Swiss721 Lt BT Extended';
+    src: url('../../public/assets/Swiss721BT-LightExtended.otf') format('opentype');
+}
+
 *,
 *::before,
 *::after {
@@ -7,7 +12,7 @@
 }
 
 body {
-    font-family: 'Swiss721 Lt BT Expanded', sans-serif;
+    font-family: 'Swiss721 Lt BT Extended', sans-serif;
     line-height: 1.5;
     color: #101010;
     background-color: #FBFBFB;
