@@ -13,10 +13,11 @@ const PageContent = ({ category }) => {
             { id: 'maria', label: 'Maria', image: '/assets/maria.png' },
             { id: 'terraium', label: 'Terrarium', image: '/assets/terrarium.png' },
             { id: 'capc', label: 'CAPC', image: '/assets/capc.png' },
+            { id: 'smash', label: 'Smash', image: '/assets/smash.png' },
         ],
         da: [
-            { id: 'art1', label: 'Art1', image: '/assets/test.png' },
-            { id: 'art2', label: 'Art2', image: '/assets/test.png' },
+            { id: 'mainslibres', label: 'Les Mains Libres', image: '/assets/mainslibres.png' },
+            { id: 'reserve', label: 'La réserve - Musba', image: '/assets/reserve.png' },
         ],
         photo: [
             { id: 'photo1', label: 'Photo1', image: '/assets/test.png' },

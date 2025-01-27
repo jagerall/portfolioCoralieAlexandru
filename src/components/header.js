@@ -42,8 +42,8 @@ function Header() {
                 <div
                     className="tooltip"
                     style={{
-                        top: tooltip.y + 10,
-                        left: tooltip.x + 10,
+                        top: tooltip.y - 10,
+                        left: tooltip.x - 10,
                     }}
                 >
                   personne très cool
