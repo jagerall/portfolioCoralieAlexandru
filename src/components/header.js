@@ -51,7 +51,6 @@ function Header() {
             )}
             <nav className="header-nav">
                 <HeaderLink to="/uiux" label="UI/UX"/>
-                <HeaderLink to="/da" label="DA"/>
                 <HeaderLink to="/photo" label="Photographie"/>
                 <HeaderLink to="/illu" label="Illustration"/>
                 <HeaderLink to="/about" label="À propos"/>

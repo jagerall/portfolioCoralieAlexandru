@@ -8,28 +8,29 @@ const PageContent = ({ category }) => {
 
     const categoryData = {
         uiux: [
-            { id: 'pasnumerise',    label: 'Nous n\'avons pas numérisé', image: '/assets/pasnumerise.png' },
-            { id: 'flop', label: 'FlopEdt', image: '/assets/flop.png' },
-            { id: 'maria', label: 'Maria', image: '/assets/maria.png' },
-            { id: 'terraium', label: 'Terrarium', image: '/assets/terrarium.png' },
-            { id: 'capc', label: 'CAPC', image: '/assets/capc.png' },
-            { id: 'smash', label: 'Smash', image: '/assets/smash.png' },
-        ],
-        da: [
-            { id: 'mainslibres', label: 'Les Mains Libres', image: '/assets/mainslibres.png' },
-            { id: 'reserve', label: 'La réserve - Musba', image: '/assets/reserve.png' },
+            { id: 'pasnumerise',    label: 'Nous n\'avons pas numérisé', image: '/assets/ui-pasnumerise.png' },
+            { id: 'flop', label: 'FlopEdt', image: '/assets/ui-flop.png' },
+            { id: 'maria', label: 'Maria', image: '/assets/ui-maria.png' },
+            { id: 'terraium', label: 'Terrarium', image: '/assets/ui-terrarium.png' },
+            { id: 'capc', label: 'CAPC', image: '/assets/ui-capc.png' },
+            { id: 'smash', label: 'Smash', image: '/assets/ui-smash.png' },
+            { id: 'reserve', label: 'La réserve - Musba', image: '/assets/ui-reserve.png' },
         ],
         photo: [
-            { id: 'photo1', label: 'Photo1', image: '/assets/test.png' },
-            { id: 'photo2', label: 'Photo2', image: '/assets/test.png' },
+            { id: 'argentique', label: 'Argentique', image: '/assets/photo-argentique.png' },
+            { id: 'auto', label: 'Autoportrait', image: '/assets/photo-auto.png' },
+            { id: 'animaux', label: 'Animaux', image: '/assets/photo-animaux.png' },
+            { id: 'bordeaux', label: 'Bordeaux', image: '/assets/photo-bordeaux.png' },
+            { id: 'macro', label: 'Macro', image: '/assets/photo-macro.png' },
         ],
         illu: [
-            { id: 'photo1', label: 'Photo1', image: '/assets/test.png' },
-            { id: 'photo2', label: 'Photo2', image: '/assets/test.png' },
-        ],
-        moi: [
-            { id: 'photo1', label: 'Photo1', image: '/assets/test.png' },
-            { id: 'photo2', label: 'Photo2', image: '/assets/test.png' },
+            { id: 'allo', label: 'Allô à l\'huile', image: '/assets/illu-allo.png' },
+            { id: 'logommi', label: 'Logo MMI', image: '/assets/illu-logommi.png' },
+            { id: 'miel', label: 'Miel de 4SH', image: '/assets/illu-miel.png' },
+            { id: 'art', label: 'Art', image: '/assets/illu-art.png' },
+            { id: 'Amis', label: 'Amis', image: '/assets/illu-ami.png' },
+            { id: 'Pieuvre', label: 'Pieuvre', image: '/assets/illu-pieuvre.png' },
+            { id: 'cocktails', label: 'Cocktails', image: '/assets/illu-cocktails.png' },
         ],
     };
 
