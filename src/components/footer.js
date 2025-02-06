@@ -1,6 +1,7 @@
 import React from 'react';
 import FooterLink from './footerLink';
 import '../style/footer.scss';
+import Link from "./link";
 
 const Footer = () => {
     return (
@@ -11,9 +12,9 @@ const Footer = () => {
                     <div className="separator"></div>
                     <span>Tous droits réservés.</span>
                     <div className="separator"></div>
-                    <FooterLink to="/mentions-legales" label="Mentions légales" />
+                    <Link to="/mentions-legales" label="Mentions légales" />
                     <div className="separator"></div>
-                    <FooterLink to="/CV" label="CV" />
+                    <Link to="/CV" label="CV" />
                 </div>
                 <div className="footer-links-list">
                     <FooterLink

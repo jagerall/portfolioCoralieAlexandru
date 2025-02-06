@@ -29,6 +29,7 @@ function App() {
                     <Route path="/uiux" element={<PageContent category="uiux"/>}/>
                     <Route path="/photo" element={<PageContent category="photo"/>}/>
                     <Route path="/illu" element={<PageContent category="illu"/>}/>
+                    <Route path="/autres" element={<PageContent category="autres"/>}/>
                     <Route path="/projet/:id" element={<ProjectPage/>}/>
                     <Route
                         path="/mentions-legales"

@@ -1,0 +1,14 @@
+.button {
+    padding: .5rem 1rem ;
+    background-color: #FFFFFF;
+    border: 1px solid #101010;
+    font-family: inherit;
+    font-size: 1rem;
+
+    &:hover, &:focus {
+        border: 1px solid #FFFFFF;
+        background-color: #101010;
+        color: #FFFFFF;
+        transition: .2s ease-in-out;
+    }
+}

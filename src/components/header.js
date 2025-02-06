@@ -41,18 +41,15 @@ function Header() {
             {tooltip && (
                 <div
                     className="tooltip"
-                    style={{
-                        top: tooltip.y - 10,
-                        left: tooltip.x - 10,
-                    }}
-                >
-                  personne très cool
+                    style={{top: tooltip.y - 10, left: tooltip.x - 10,}}>
+                    personne très cool
                 </div>
             )}
             <nav className="header-nav">
                 <HeaderLink to="/uiux" label="UI/UX"/>
                 <HeaderLink to="/photo" label="Photographie"/>
                 <HeaderLink to="/illu" label="Illustration"/>
+                <HeaderLink to="/autres" label="Autres"/>
                 <HeaderLink to="/about" label="À propos"/>
             </nav>
         </header>

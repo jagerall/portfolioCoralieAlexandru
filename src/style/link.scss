@@ -1,0 +1,29 @@
+.link {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        font-weight: bold;
+        height: 2px;
+        border-radius: 1rem;
+        background-color: black;
+        bottom: 0;
+        left: 0;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform .3s ease-in-out;
+    }
+
+    &:hover::before {
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+
+    &-text {
+        font-weight: bold;
+    }
+}
+
+

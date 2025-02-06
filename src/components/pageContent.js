@@ -11,7 +11,6 @@ const PageContent = ({ category }) => {
             { id: 'pasnumerise',    label: 'Nous n\'avons pas numérisé', image: '/assets/ui-pasnumerise.png' },
             { id: 'flop', label: 'FlopEdt', image: '/assets/ui-flop.png' },
             { id: 'maria', label: 'Maria', image: '/assets/ui-maria.png' },
-            { id: 'terraium', label: 'Terrarium', image: '/assets/ui-terrarium.png' },
             { id: 'capc', label: 'CAPC', image: '/assets/ui-capc.png' },
             { id: 'smash', label: 'Smash', image: '/assets/ui-smash.png' },
             { id: 'reserve', label: 'La réserve - Musba', image: '/assets/ui-reserve.png' },
