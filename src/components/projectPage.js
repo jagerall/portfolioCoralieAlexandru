@@ -38,7 +38,6 @@ const ProjectPage = () => {
 
     // Etat pour contrôler l'ouverture du modal
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
     useEffect(() => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -46,7 +45,6 @@ const ProjectPage = () => {
 
     // Fonction pour ouvrir le modal
     const openModal = (index) => {
-        setCurrentImageIndex(index);
         setIsModalOpen(true);
     };
 
