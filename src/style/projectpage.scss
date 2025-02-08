@@ -19,7 +19,11 @@
         gap: 2rem;
 
         p {
-            text-align: center;
+            text-align: left;
+
+            @media screen and (max-width: 900px) {
+                font-size: 14px;
+            }
         }
     }
 
@@ -32,10 +36,8 @@
 
         img {
             width: 100%;
-            height: auto;
-            aspect-ratio: 1 / 1;
+            height: 100%;
             object-fit: cover;
-            border-radius: .5rem;
         }
 
         @media screen and (min-width: 1200px) {

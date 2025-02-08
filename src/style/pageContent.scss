@@ -6,4 +6,9 @@
     justify-content: center;
     gap: 40px;
     row-gap: 40px;
+
+    @media screen and (max-width: 768px) {
+        gap: 1rem;
+        row-gap: 1rem;
+    }
 }

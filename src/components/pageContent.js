@@ -8,12 +8,12 @@ const PageContent = ({ category }) => {
 
     const categoryData = {
         uiux: [
-            { id: 'pasnumerise',    label: 'Nous n\'avons pas numérisé', image: '/assets/ui-pasnumerise.png' },
-            { id: 'flop', label: 'FlopEdt', image: '/assets/ui-flop.png' },
-            { id: 'maria', label: 'Maria', image: '/assets/ui-maria.png' },
+            { id: 'pasnumerise',    label: 'Nous n\'avons pas numérisé', image: '/assets/ui-pasnumerise.svg' },
+            { id: 'flop', label: 'FlopEdt', image: '/assets/ui-flop.svg' },
+            { id: 'maria', label: 'Maria', image: '/assets/ui-maria.svg' },
             { id: 'capc', label: 'CAPC', image: '/assets/ui-capc.png' },
-            { id: 'smash', label: 'Smash', image: '/assets/ui-smash.png' },
-            { id: 'reserve', label: 'La réserve - Musba', image: '/assets/ui-reserve.png' },
+            { id: 'smash', label: 'Smash', image: '/assets/ui-smash.svg' },
+            { id: 'reserve', label: 'La réserve - Musba', image: '/assets/ui-reserve.svg' },
         ],
         photo: [
             { id: 'argentique', label: 'Argentique', image: '/assets/photo-argentique.png' },

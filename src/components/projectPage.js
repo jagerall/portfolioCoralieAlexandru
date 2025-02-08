@@ -12,9 +12,16 @@ const projectDetails = {
             'Pour répondre à ces besoins, nous avons réalisé un benchmark des différentes technologies, notamment pour la partie back.\n' +
             'Nous avons hésité entre Ruby on Rails, Symfony et Laravel.\n' +
             'Finalement, nous avons retenu Laravel et mySql pour le back-end ainsi que blade, vite et ess pour le front end. Nous avons choisi ces solutions plutôt que d\'autres pour leur rapidité de mise en production, leur compatibilité et la qualité des ressources associées.\n',
-        images: ['/assets/smash-logo.png', '/assets/smash-1.png'],
-        linkFigma: 'https://www.figma.com/design/hneZzm9KTmHoLdvwnD4j16/REMAKE-SMASH?node-id=98-1323&t=UGbvju0oGMl5cIRD-4',
+        images: ['/assets/ui-smash.svg', '/assets/smash-1.png', '/assets/smash-2.png', '/assets/smash-3.png'],
+        linkFigma: 'https://www.figma.com/design/iuAP57wyrjMOlp2AdZuRLy/SMASH?m=auto&t=6La0QN4LOZ35hia1-6',
         linkWebsite: 'https://flip-app.osc-fr1.scalingo.io/'
+    },
+
+    flop: {
+        title: 'Flop\'EDT',
+        description: 'Audit ergonomique & refonte du système de gestion de planning',
+        images: ['/assets/flop-1.png', '/assets/flop-2.png', '/assets/flop-3.png'],
+        linkFigma: 'https://www.figma.com/design/9fY2i3PUefoq9BwAPgPAYa/Refonte-Flop!Edt',
     },
 
     argentique: {
