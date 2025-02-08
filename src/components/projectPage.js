@@ -3,15 +3,14 @@ import {useParams} from 'react-router-dom';
 import '../style/projectpage.scss';
 import Button from "./button";
 import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const projectDetails = {
     smash: {
         title: 'Smash',
-        description: 'Smash est un média destiné aux 18-25 ans. Il propose de lutter contre la désinformation. Tous les jours, l\'utilisateur a accès à 3 citations de personnes publiques sur des sujets d\'actualité et doit déterminer si c\'est une info (basé sur des faits) ou une intox (basé sur une opinion ou une interprétation des faits). Il peut ensuite s\'informer de façon plurielle sur cette actualité et en débattre dans un espace commentaire.\n' +
-            'Notre application avait plusieurs besoins : des comptes utilisateurs, un système de sondage, d\'amis et de commentaires ainsi que la création et gestion d\'articles.\n' +
-            'Pour répondre à ces besoins, nous avons réalisé un benchmark des différentes technologies, notamment pour la partie back.\n' +
-            'Nous avons hésité entre Ruby on Rails, Symfony et Laravel.\n' +
-            'Finalement, nous avons retenu Laravel et mySql pour le back-end ainsi que blade, vite et ess pour le front end. Nous avons choisi ces solutions plutôt que d\'autres pour leur rapidité de mise en production, leur compatibilité et la qualité des ressources associées.\n',
+        description: 'Smash est un média destiné aux 18-25 ans. Il propose de lutter contre la désinformation. \n' +
+            ' Tous les jours, l\'utilisateur a accès à 3 citations de personnes publiques sur des sujets d\'actualité et doit déterminer si c\'est une info (basé sur des faits) ou une intox (basé sur une opinion ou une interprétation des faits). Il peut ensuite s\'informer de façon plurielle sur cette actualité et en débattre dans un espace commentaire.\n' +
+            'Notre application avait plusieurs besoins : des comptes utilisateurs, un système de sondage, d\'amis et de commentaires ainsi que la création et gestion d\'articles.',
         images: ['/assets/ui-smash.svg', '/assets/smash-1.png', '/assets/smash-2.png', '/assets/smash-3.png'],
         linkFigma: 'https://www.figma.com/design/iuAP57wyrjMOlp2AdZuRLy/SMASH?m=auto&t=6La0QN4LOZ35hia1-6',
         linkWebsite: 'https://flip-app.osc-fr1.scalingo.io/'
@@ -34,6 +33,10 @@ const ProjectPage = () => {
     const { id } = useParams();
     const navigate = useNavigate();
     const project = projectDetails[id] || {};
+
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, []);
 
     return (
         <main className="project-page">

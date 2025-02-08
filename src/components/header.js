@@ -1,31 +1,50 @@
-import React, {useState} from 'react';
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import HeaderLink from '../components/headerlink';
 import '../style/header.scss';
+import Button from "./button";
 
 function Header() {
     const [isHovered, setIsHovered] = useState(false);
     const [tooltip, setTooltip] = useState(null);
+    const [menuOpen, setMenuOpen] = useState(false);
+    const location = useLocation();
 
+    // Ferme le menu lorsqu'on change de page
+    useEffect(() => {
+        setMenuOpen(false);
+    }, [location.pathname]);
+
+    // Gère le tooltip en desktop (suivi de la souris)
     const handleMouseMove = (e) => {
-        const {clientX, clientY} = e;
-        setTooltip({x: clientX, y: clientY});
-    };
-
-    const handleMouseEnter = () => {
-        setIsHovered(true);
+        setTooltip({ x: e.clientX, y: e.clientY });
     };
 
     const handleMouseLeave = () => {
+        setTooltip(null); // Cache le tooltip quand la souris quitte l’image
         setIsHovered(false);
-        setTooltip(null);
+    };
+
+    // Gère l'affichage temporaire du tooltip en mobile
+    const handleImageClick = () => {
+        setTooltip({ x: "50%", y: "30%" });
+        setTimeout(() => {
+            setTooltip(null);
+        }, 2000);
+    };
+
+    const handleMenuToggle = () => {
+        setMenuOpen((prev) => !prev);
     };
 
     return (
         <header className="header">
             <div className="image-container"
-                 onMouseEnter={handleMouseEnter}
+                 onMouseEnter={() => setIsHovered(true)}
                  onMouseLeave={handleMouseLeave}
-                 onMouseMove={handleMouseMove}>
+                 onMouseMove={handleMouseMove}
+                 onClick={handleImageClick}
+            >
                 <img
                     className={`header-image ${isHovered ? 'fade-out' : 'fade-in'}`}
                     src='../assets/header-illu.png'
@@ -39,19 +58,34 @@ function Header() {
             </div>
 
             {tooltip && (
-                <div
-                    className="tooltip"
-                    style={{top: tooltip.y - 10, left: tooltip.x - 10,}}>
+                <div className="tooltip" style={{ top: tooltip.y, left: tooltip.x }}>
                     personne très cool
                 </div>
             )}
-            <nav className="header-nav">
-                <HeaderLink to="/uiux" label="UI/UX"/>
-                <HeaderLink to="/photo" label="Photographie"/>
-                <HeaderLink to="/illu" label="Illustration"/>
-                <HeaderLink to="/autres" label="Autres"/>
-                <HeaderLink to="/about" label="À propos"/>
+
+            {/* Bouton Menu Mobile */}
+            <Button className="menu-button mobile-only" onClick={handleMenuToggle} label={menuOpen ? "Menu" : "Menu"} />
+
+            {/* Navigation Desktop */}
+            <nav className="desktop-nav">
+                <HeaderLink to="/uiux" label="UI/UX" />
+                <HeaderLink to="/photo" label="Photographie" />
+                <HeaderLink to="/illu" label="Illustration" />
+                <HeaderLink to="/autres" label="Autres" />
+                <HeaderLink to="/about" label="À propos" />
             </nav>
+
+            {/* Menu Mobile */}
+            <div className={`mobile-menu ${menuOpen ? 'open' : 'closed'}`}>
+                <Button className="close-menu" onClick={handleMenuToggle} label={"✕"} />
+                <nav className="menu-nav">
+                    <HeaderLink to="/uiux" label="UI/UX" />
+                    <HeaderLink to="/photo" label="Photographie" />
+                    <HeaderLink to="/illu" label="Illustration" />
+                    <HeaderLink to="/autres" label="Autres" />
+                    <HeaderLink to="/about" label="À propos" />
+                </nav>
+            </div>
         </header>
     );
 }
