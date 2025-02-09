@@ -7,6 +7,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "cra-template": "1.2.0",
+    "framer-motion": "^12.4.1",
     "lucide-react": "^0.475.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -42,7 +43,7 @@
     ]
   },
   "devDependencies": {
-    "sass": "^1.83.4",
-    "@babel/plugin-proposal-private-property-in-object": "^7.11.0"
+    "@babel/plugin-proposal-private-property-in-object": "^7.11.0",
+    "sass": "^1.83.4"
   }
 }

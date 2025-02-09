@@ -5,7 +5,7 @@ import Button from "./button";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import '../style/projectpage.scss';
-import {EffectCards, Pagination, Navigation, Mousewheel,Keyboard} from 'swiper/modules';
+import {EffectCards, Pagination, Navigation, Mousewheel, Keyboard, Scrollbar} from 'swiper/modules';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
@@ -69,9 +69,12 @@ const ProjectPage = () => {
 
             <div className="project-images">
                 <Swiper
-                    effect={'cards'}
-                    grabCursor={true}
-                    modules={[EffectCards]}
+                    slidesPerView={3}
+                    spaceBetween={10}
+                    pagination={{
+                        clickable: true,
+                    }}
+                    modules={[Pagination]}
                     className="mySwiper"
                 >
                     {project.images && project.images.map((image, index) => (
@@ -86,7 +89,7 @@ const ProjectPage = () => {
                 </Swiper>
             </div>
 
-            {/* Modal Fullscreen */}
+            {/* Modal Fullscreen
             {isModalOpen && (
                 <div className="modal-overlay" onClick={closeModal}>
                     <div className="modal-content" onClick={(e) => e.stopPropagation()}>
@@ -114,7 +117,7 @@ const ProjectPage = () => {
 
                 </div>
             )}
-
+*/}
             <Button onClick={() => navigate(-1)} label={"Retour aux projets"}></Button>
         </main>
     );
