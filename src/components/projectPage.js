@@ -1,13 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, {useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import Button from "./button";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import '../style/projectpage.scss';
-import {EffectCards, Pagination, Navigation, Mousewheel, Keyboard, Scrollbar} from 'swiper/modules';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faXmark } from '@fortawesome/free-solid-svg-icons';
+import {Pagination} from 'swiper/modules';
 
 const projectDetails = {
     smash: {
@@ -36,22 +34,12 @@ const ProjectPage = () => {
     const navigate = useNavigate();
     const project = projectDetails[id] || {};
 
-    // Etat pour contrôler l'ouverture du modal
-    const [isModalOpen, setIsModalOpen] = useState(false);
 
     useEffect(() => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }, []);
 
-    // Fonction pour ouvrir le modal
-    const openModal = (index) => {
-        setIsModalOpen(true);
-    };
 
-    // Fonction pour fermer le modal
-    const closeModal = () => {
-        setIsModalOpen(false);
-    };
 
     return (
         <main className="project-page">
@@ -82,42 +70,12 @@ const ProjectPage = () => {
                             <img
                                 src={image}
                                 alt={`${project.title} ${index + 1}`}
-                                onClick={() => openModal(index)}
                             />
                         </SwiperSlide>
                     ))}
                 </Swiper>
             </div>
 
-            {/* Modal Fullscreen
-            {isModalOpen && (
-                <div className="modal-overlay" onClick={closeModal}>
-                    <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-                        <button className="close-modal" onClick={closeModal}>
-                            <FontAwesomeIcon icon={faXmark} />
-                        </button>
-
-                        <Swiper
-                            cssMode={true}
-                            navigation={true}
-                            pagination={true}
-                            mousewheel={true}
-                            keyboard={true}
-                            modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-                            className="fullscreen-swiper"
-                        >
-                            {project.images.map((image, index) => (
-                                <SwiperSlide key={index}>
-                                    <img src={image} alt={`${project.title} Fullscreen ${index + 1}`} />
-                                </SwiperSlide>
-                            ))}
-                        </Swiper>
-
-                    </div>
-
-                </div>
-            )}
-*/}
             <Button onClick={() => navigate(-1)} label={"Retour aux projets"}></Button>
         </main>
     );
