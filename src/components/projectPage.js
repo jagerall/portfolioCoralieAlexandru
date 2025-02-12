@@ -20,7 +20,7 @@ const projectDetails = {
         title: 'Flop\'EDT',
         description: 'Au cours d\'un projet de deux semaines sur l\'UX/UI design, j\'ai collaboré avec mon groupe pour repenser le gestionnaire d\'emploi du tempsFlop!Edt. La première semaine était dédiée à la recherche utilisateur pour comprendre les besoins et les frustrations des utilisateurs, tandis que la deuxième était consacrée à la conception et à l\'itération des solutions. Nous avons identifié les lacunes du système existant et élaboré des wireframes détaillés, puis des maquettes interactives. Ce projet m\'a permis de maîtriser le processus d\'UX/UI design et de développer mes compétences sur Figma.',
         images: ['/assets/flop-1.png', '/assets/flop-2.png', '/assets/flop-3.png'],
-        linkFigma: 'https://www.figma.com/design/9fY2i3PUefoq9BwAPgPAYa/Refonte-Flop!Edt',
+        linkFigma: 'https://www.figma.com/design/9fY2i3PUefoq9BwAPgPAYa/Refonte-Flop!Edt?node-id=446-73601&t=vd7N5q6ntJLqgEuS-1',
     },
     maria: {
         title: 'Bacchanight Musba - Maria',
@@ -28,13 +28,13 @@ const projectDetails = {
             'Attention, il faut consulter le site en format mobile.',
         images: ['/assets/maria-1.png', '/assets/maria-2.png', '/assets/maria-3.png'],
         linkWebsite: 'https://maria-bacchanight.netlify.app/',
-        linkFigma: 'https://www.figma.com/design/q7RaOlf5bsd21uZDjzUThW/Bacchanight-Maria?node-id=33-2&t=Z45xrEGRw3GVUuAw-1',
+        linkFigma: 'https://www.figma.com/design/q7RaOlf5bsd21uZDjzUThW/Bacchanight-Maria?node-id=111-502&t=q0U3LML0noDKXMuX-1',
         linkGithub: 'https://github.com/MatthieuMarchand/Maria',
     },
     capc: {
         title: 'Refonte CAPC',
         description: 'Modernisation du site du musée pour améliorer l’accessibilité, avec un design responsive et une navigation optimisée.',
-        images: ['/assets/maria-1.png', '/assets/maria-2.png', '/assets/maria-3.png'],
+        images: ['/assets/capc-1.png', '/assets/capc-2.png'],
         linkWebsite: 'https://capc-2022.netlify.app/',
     },
     smash: {
@@ -97,7 +97,7 @@ const ProjectPage = () => {
 
             <div className="project-images">
                 <Swiper
-                    slidesPerView={3}
+                    slidesPerView={2}
                     spaceBetween={10}
                     pagination={{
                         clickable: true,
