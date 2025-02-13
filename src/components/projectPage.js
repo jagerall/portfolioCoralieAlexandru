@@ -1,8 +1,8 @@
-import React, {useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
+import React, {useEffect} from 'react';
+import {useParams} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 import Button from "./button";
-import { Swiper, SwiperSlide } from 'swiper/react';
+import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
 import '../style/projectpage.scss';
 import {Pagination} from 'swiper/modules';
@@ -26,7 +26,7 @@ const projectDetails = {
         title: 'Bacchanight Musba - Maria',
         description: 'Ce projet, est en partenariat avec le MusBa pour la Bacchanight 2024. Nous avons créé une histoire interactive avec les tableaux du musée. Notre groupe étions sur la période du siècle d’or hollandais. Nous avons effectué des recherches approfondies sur ce mouvement, pour réaliser une histoire fictive cohérente. Pendant ce projet, j’ai réalisé des visuels et des illustrations.' +
             'Attention, il faut consulter le site en format mobile.',
-        images: ['/assets/maria-1.png', '/assets/maria-2.png', '/assets/maria-3.png'],
+        images: ['/assets/maria-1.png', '/assets/maria-3.png', '/assets/maria-2.png', '/assets/maria-4.png', '/assets/maria-5.png', '/assets/maria-6.png'],
         linkWebsite: 'https://maria-bacchanight.netlify.app/',
         linkFigma: 'https://www.figma.com/design/q7RaOlf5bsd21uZDjzUThW/Bacchanight-Maria?node-id=111-502&t=q0U3LML0noDKXMuX-1',
         linkGithub: 'https://github.com/MatthieuMarchand/Maria',
@@ -61,43 +61,50 @@ const projectDetails = {
         description: 'Voici quelques photos prises à l\'Olympus M1 sur la Côte d\'Azur.',
         images: ['/assets/argentique-5.jpg', '/assets/argentique-2.jpg', '/assets/argentique-3.jpg', '/assets/argentique-4.jpg', '/assets/argentique-1.jpg', '/assets/argentique-6.jpg'],
     },
+    auto: {
+        title: 'Autoportraits',
+        images: ['/assets/auto-1.png', '/assets/auto-2.png', '/assets/auto-3.png', '/assets/auto-4.png', '/assets/auto-5.png', '/assets/auto-6.png'],
+    },
+    faune: {
+        title: 'Faune et flore',
+        images: ['/assets/fauneflore-1.png', '/assets/fauneflore-2.png', '/assets/fauneflore-3.png', '/assets/fauneflore-4.png', '/assets/fauneflore-5.png', '/assets/fauneflore-6.png', '/assets/fauneflore-7.png'],
+    },
 };
 
 const ProjectPage = () => {
-    const { id } = useParams();
+    const {id} = useParams();
     const navigate = useNavigate();
     const project = projectDetails[id] || {};
 
 
     useEffect(() => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        window.scrollTo({top: 0, behavior: 'smooth'});
     }, []);
-
 
 
     return (
         <main className="project-page">
             <div className="project-description">
-
-                    <h1>{project.title}</h1>
-
-                <p>{project.description}</p>
+                <h1>{project.title}</h1>
+                {project.description && (
+                    <p>{project.description}</p>
+                )}
                 <div className="project-links">
                     {project.linkFigma && (
-                        <Button to={project.linkFigma} external={true} label="Voir le Figma" />
+                        <Button to={project.linkFigma} external={true} label="Voir le Figma"/>
                     )}
                     {project.linkWebsite && (
-                        <Button to={project.linkWebsite} external={true} label="Voir le site" />
+                        <Button to={project.linkWebsite} external={true} label="Voir le site"/>
                     )}
                     {project.linkGithub && (
-                        <Button to={project.linkGithub} external={true} label="Voir le Github" />
+                        <Button to={project.linkGithub} external={true} label="Voir le Github"/>
                     )}
                 </div>
             </div>
 
             <div className="project-images">
                 <Swiper
-                    slidesPerView={2}
+                    slidesPerView={1}
                     spaceBetween={10}
                     pagination={{
                         clickable: true,

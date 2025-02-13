@@ -18,7 +18,7 @@ const PageContent = ({ category }) => {
         photo: [
             { id: 'argentique', label: 'Argentique', image: '/assets/photo-argentique.png' },
             { id: 'auto', label: 'Autoportrait', image: '/assets/photo-auto.png' },
-            { id: 'animaux', label: 'Animaux', image: '/assets/photo-animaux.png' },
+            { id: 'faune', label: 'Faune', image: '/assets/photo-animaux.png' },
             { id: 'bordeaux', label: 'Bordeaux', image: '/assets/photo-bordeaux.png' },
             { id: 'macro', label: 'Macro', image: '/assets/photo-macro.png' },
         ],

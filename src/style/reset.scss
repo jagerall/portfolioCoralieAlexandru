@@ -16,6 +16,7 @@ body {
     line-height: 1.5;
     color: #101010;
     background-color: #FFFFFF;
+    overflow-x: hidden;
 }
 
 a {
@@ -77,4 +78,10 @@ p {
 
 .margin-top {
     margin-top: 1rem;
+}
+
+.hide-for-tablet-down {
+    @media screen and (max-width: 710px) {
+       display: none;
+    }
 }

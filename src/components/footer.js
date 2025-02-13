@@ -9,14 +9,12 @@ const Footer = () => {
             <div className="footer-links">
                 <div className="footer-links-list">
                     <span>&copy; 2025 Coralie Alexandru</span>
-                    <div className="separator"></div>
-                    <span>Tous droits réservés.</span>
-                    <div className="separator"></div>
+                    <div className="separator hide-for-tablet-down"></div>
                     <Link to="/mentions-legales" label="Mentions légales" />
-                    <div className="separator"></div>
+                    <div className="separator hide-for-tablet-down"></div>
                     <Link to="/CV" label="CV" />
                 </div>
-                <div className="footer-links-list">
+                <div className="footer-links-icons">
                     <FooterLink
                         to="https://www.linkedin.com/in/coralie-alexandru-0a57391b9/"
                         icon={"/assets/icon-linkedin.svg"}
