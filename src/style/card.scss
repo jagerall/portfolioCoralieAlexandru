@@ -8,7 +8,7 @@
     cursor: pointer;
     background-color: #FBFBFB;
     position: relative;
-    overflow: hidden; // Pour cacher les éléments qui dépassent
+    overflow: hidden;
 
     &:hover, &:focus {
         transition: .2s ease-in-out;

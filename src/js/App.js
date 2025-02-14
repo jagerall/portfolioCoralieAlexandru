@@ -6,6 +6,7 @@ import PageContent from '../components/pageContent';
 import ProjectPage from '../components/projectPage';
 import StaticPage from "../components/staticPage";
 import Loader from '../components/Loader';
+import ScrollToTop from '../components/scrollToTop';
 
 function App() {
     const [loading, setLoading] = useState(true);
@@ -22,6 +23,7 @@ function App() {
 
     return (
         <Router>
+            <ScrollToTop />
             <div className="page-content">
                 <Header/>
                 <Routes>
@@ -29,7 +31,7 @@ function App() {
                     <Route path="/uiux" element={<PageContent category="uiux"/>}/>
                     <Route path="/photo" element={<PageContent category="photo"/>}/>
                     <Route path="/illu" element={<PageContent category="illu"/>}/>
-                    <Route path="/autre" element={<PageContent category="autre"/>}/>
+                   {/* <Route path="/autre" element={<PageContent category="autre"/>}/>*/}
                     <Route path="/:category/:id" element={<ProjectPage/>}/>
                     <Route
                         path="/mentions-legales"

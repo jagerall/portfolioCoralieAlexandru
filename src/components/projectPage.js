@@ -10,7 +10,7 @@ import {faXmark} from '@fortawesome/free-solid-svg-icons';
 const projectDetails = {
     pasnumerise: {
         category: "UI/UX",
-        title: 'Nous n\'avons pas numérisé',
+        title: 'Nous n\'avons pas numérisé - Retour d\'expérience',
         description: 'Site présentant notre remise en question de la création d\'une application web',
         images: ['/assets/pasnumerise-1.webp', '/assets/pasnumerise-2.webp', '/assets/pasnumerise-3.webp'],
         linkWebsite: 'https://nousnavonspasnumerise.mmibordeaux.com/',
@@ -19,14 +19,14 @@ const projectDetails = {
     },
     flop: {
         category: "UI/UX",
-        title: 'Flop\'EDT',
+        title: 'Flop\'EDT - Audit UX & UI',
         description: 'Au cours d\'un projet de deux semaines sur l\'UI/UX design, j\'ai collaboré avec mon groupe pour repenser le gestionnaire d\'emploi du tempsFlop!Edt. La première semaine était dédiée à la recherche utilisateur pour comprendre les besoins et les frustrations des utilisateurs, tandis que la deuxième était consacrée à la conception et à l\'itération des solutions. Nous avons identifié les lacunes du système existant et élaboré des wireframes détaillés, puis des maquettes interactives. Ce projet m\'a permis de maîtriser le processus d\'UX/UI design et de développer mes compétences sur Figma.',
         images: ['/assets/flop-1.webp', '/assets/flop-2.webp', '/assets/flop-3.webp'],
         linkFigma: 'https://www.figma.com/design/9fY2i3PUefoq9BwAPgPAYa/Refonte-Flop!Edt?node-id=446-73601&t=vd7N5q6ntJLqgEuS-1',
     },
     maria: {
         category: "UI/UX",
-        title: 'Bacchanight Musba - Maria',
+        title: 'Maria - Narration interactive',
         description: 'Ce projet, est en partenariat avec le MusBa pour la Bacchanight 2024. Nous avons créé une histoire interactive avec les tableaux du musée. Notre groupe étions sur la période du siècle d’or hollandais. Nous avons effectué des recherches approfondies sur ce mouvement, pour réaliser une histoire fictive cohérente. Pendant ce projet, j’ai réalisé des visuels et des illustrations.' +
             'Attention, il faut consulter le site en format mobile.',
         images: ['/assets/maria-1.webp', '/assets/maria-3.webp', '/assets/maria-2.webp', '/assets/maria-4.webp', '/assets/maria-5.webp', '/assets/maria-6.webp'],
@@ -36,14 +36,14 @@ const projectDetails = {
     },
     capc: {
         category: "UI/UX",
-        title: 'Refonte CAPC',
+        title: 'CAPC - Refonte de site',
         description: 'Modernisation du site du musée pour améliorer l’accessibilité, avec un design responsive et une navigation optimisée.',
         images: ['/assets/capc-1.webp', '/assets/capc-2.webp'],
         linkWebsite: 'https://capc-2022.netlify.app/',
     },
     smash: {
         category: "UI/UX",
-        title: 'Smash',
+        title: 'Smash - Application',
         description: 'Smash est un média destiné aux 18-25 ans. Il propose de lutter contre la désinformation. \n' +
             'Tous les jours, l\'utilisateur a accès à 3 citations de personnes publiques sur des sujets d\'actualité et doit déterminer si c\'est une info (basé sur des faits) ou une intox (basé sur une opinion ou une interprétation des faits). Il peut ensuite s\'informer de façon plurielle sur cette actualité et en débattre dans un espace commentaire.\n' +
             'Notre application avait plusieurs besoins : des comptes utilisateurs, un système de sondage, d\'amis et de commentaires ainsi que la création et gestion d\'articles.' +
@@ -54,17 +54,17 @@ const projectDetails = {
     },
     reserve: {
         category: "UI/UX",
-        title: 'Nuit Européenne du Musée - La Réserve',
-        description: 'Nuit au Musée est un jeu narratif à fins multiples, réalisé en partenariat avec le Musée des Beaux-Arts de Bordeaux (Musba). Le joueur incarne un assistant du conservateur chargé de préparer une exposition en sélectionnant et disposant des œuvres issues des réserves du musée. Chaque choix impacte l’ambiance et l’environnement du musée, offrant une expérience immersive et personnalisée. Pour ce projet, j’ai réalisé l’ensemble des assets et des décors, contribuant à l’atmosphère de notre expérience. Vous pourrez bientôt tester notre expérience directement au Musba.' +
+        title: 'La Réserve du Musba - Narration interactive',
+        description: 'La Réserve est un jeu narratif à fins multiples, réalisé en partenariat avec le Musée des Beaux-Arts de Bordeaux (Musba) pour la Nuit au Musée. Le joueur incarne un assistant du conservateur chargé de préparer une exposition en sélectionnant et disposant des œuvres issues des réserves du musée. Chaque choix impacte l’ambiance et l’environnement du musée, offrant une expérience immersive et personnalisée. Pour ce projet, j’ai réalisé l’ensemble des assets et des décors, contribuant à l’atmosphère de notre expérience. Vous pourrez bientôt tester notre expérience directement au Musba. ' +
             'Attention, il faut consulter le site avec le format de la tablette au MusBA : 3840x2160px.',
-        images: ['/assets/reserve-1.webp', '/assets/reserve-2.webp', '/assets/reserve-3.webp', '/assets/reserve-4.webp', '/assets/reserve-5.jpg'],
+        images: ['/assets/reserve-1.webp', '/assets/reserve-2.webp', '/assets/reserve-3.webp', '/assets/reserve-4.webp', '/assets/reserve-5.webp'],
         linkWebsite: 'https://nuit-du-musba-2025.netlify.app/experiences/1-hub/index.html',
         linkFigma: 'https://www.figma.com/design/jCO7N9V7wzwLwvyoesioDr/Nuit-au-Mus%C3%A9e---Reserve?node-id=418-81&t=HdFRjnOd55Z18s2k-1',
         linkGithub: 'https://github.com/nuit-musee-musba/experience-2025',
     },
     argentique: {
         category: "Photographie",
-        title: 'Photographie argentique',
+        title: 'Argentique - Èze',
         description: 'Voici quelques photos prises à l\'Olympus M1 sur la Côte d\'Azur.',
         images: ['/assets/argentique-5.webp',
             '/assets/argentique-2.webp',
@@ -75,7 +75,7 @@ const projectDetails = {
     },
     auto: {
         category: "Photographie",
-        title: 'Autoportraits',
+        title: 'Portraits - Coralie',
         images: ['/assets/auto-1.webp',
             '/assets/auto-2.webp',
             '/assets/auto-3.webp',
@@ -84,7 +84,7 @@ const projectDetails = {
     },
     faune: {
         category: "Photographie",
-        title: 'Faune et flore',
+        title: 'Faune et flore - Zoo de la Palmyre',
         images: ['/assets/fauneflore-1.webp',
             '/assets/fauneflore-2.webp',
             '/assets/fauneflore-3.webp',
@@ -95,7 +95,7 @@ const projectDetails = {
     },
     bordeaux: {
         category: "Photographie",
-        title: 'Bordeaux',
+        title: 'Urbain - Bordeaux',
         images: [
             '/assets/bordeaux-1.webp',
             '/assets/bordeaux-2.webp',
@@ -108,10 +108,9 @@ const projectDetails = {
             '/assets/bordeaux-9.webp'
         ],
     },
-
     macro: {
         category: "Photographie",
-        title: 'Macrophoto',
+        title: 'Macrophoto - Vendée',
         images: [
             '/assets/macro-1.webp',
             '/assets/macro-2.webp',
@@ -120,6 +119,62 @@ const projectDetails = {
             '/assets/macro-5.webp',
             '/assets/macro-6.webp',
             '/assets/macro-7.webp'
+        ],
+    },
+    allo: {
+        category: "Illustration",
+        title: 'Coques de téléphone - Design',
+        description: 'Pourquoi pas faire des design sur des jeux de mots ? L\'une d\'entre elle est ma coque de téléphone...',
+        images: [
+            '/assets/illu-allo.webp',
+        ],
+    },
+    logommi: {
+        category: "Illustration",
+        title: 'BDE MMI - Logo',
+        description: '',
+        images: [
+            '/assets/illu-logommi.webp',
+        ],
+    },
+    miel: {
+        category: "Illustration",
+        title: 'Miel de 4SH - Étiquette',
+        description: '',
+        images: [
+            '/assets/illu-miel.webp',
+        ],
+    },
+    art: {
+        category: "Illustration",
+        title: 'Art - Essais tableaux',
+        description: '',
+        images: [
+            '/assets/illu-art.webp',
+        ],
+    },
+    amis: {
+        category: "Illustration",
+        title: 'Amis - Dessin numérique',
+        description: '',
+        images: [
+            '/assets/illu-ami.webp',
+        ],
+    },
+    cephalopode: {
+        category: "Illustration",
+        title: 'Céphalopodes - Dessin numérique',
+        description: '',
+        images: [
+            '/assets/illu-pieuvre.webp',
+        ],
+    },
+    cocktails: {
+        category: "Illustration",
+        title: 'Cocktails - Dessin numérique',
+        description: '',
+        images: [
+            '/assets/illu-cocktails.webp',
         ],
     },
 };

@@ -22,6 +22,7 @@
 
         p {
             text-align: left;
+            max-width: 800px;
 
             @media screen and (max-width: 900px) {
                 font-size: 14px;
@@ -56,7 +57,9 @@
         a {
             text-align: center;
             width: 9rem;
-            font-size: 14px;
+            @media screen and (max-width: 900px) {
+                font-size: 14px;
+            }
         }
 
         @media screen and (max-width: 900px) {
