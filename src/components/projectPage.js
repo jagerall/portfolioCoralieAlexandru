@@ -195,7 +195,6 @@ const ProjectPage = () => {
                     slidesPerView="auto"
                     spaceBetween={10}
                     pagination={{clickable: true}}
-                    centeredSlides={true}
                     preloadImages={true}
                     lazy={false}
                     freeMode={true}

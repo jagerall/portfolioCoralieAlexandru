@@ -25,7 +25,7 @@ const PageContent = ({ category }) => {
         ],
         photo: [
             { id: 'argentique', label: 'Argentique', image: '/assets/photo-argentique.webp', category: 'photo', type: 'Èze' },
-            { id: 'auto', label: 'Autoportrait', image: '/assets/photo-auto.webp', category: 'photo', type: 'Coralie' },
+            { id: 'auto', label: 'Portrait', image: '/assets/photo-auto.webp', category: 'photo', type: 'Coralie' },
             { id: 'faune', label: 'Faune', image: '/assets/photo-animaux.webp', category: 'photo', type: 'Zoo de la Palmyre' },
             { id: 'bordeaux', label: 'Bordeaux', image: '/assets/photo-bordeaux.webp', category: 'photo', type: 'Bordeaux' },
             { id: 'macro', label: 'Macro', image: '/assets/photo-macro.webp', category: 'photo', type: 'Vendée' },
