@@ -7,9 +7,10 @@
     padding: 3rem;
     cursor: pointer;
     background-color: #FBFBFB;
+    position: relative;
+    overflow: hidden; // Pour cacher les éléments qui dépassent
 
     &:hover, &:focus {
-        box-shadow: 0 0 12px 2px rgba(#101010, 0.10);
         transition: .2s ease-in-out;
     }
 
@@ -19,3 +20,36 @@
         padding: 1.5rem;
     }
 }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.90);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    backdrop-filter: blur(4px);
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.project-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+.separator {
+    display: block;
+}
+

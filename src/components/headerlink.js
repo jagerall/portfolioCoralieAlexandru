@@ -4,7 +4,7 @@ import '../style/headerlink.scss';
 
 const HeaderLink = ({ to, label }) => {
     const location = useLocation();
-    const isActive = location.pathname === to;
+    const isActive = location.pathname.startsWith(to);
 
     return (
         <Link to={to} className={`header-link ${isActive ? 'active' : ''}`}>
