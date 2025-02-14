@@ -67,7 +67,7 @@ const PageContent = ({category}) => {
 
     useEffect(() => {
         document.title = `${categoryTitles[category] || "Coralie Alexandru "}`;
-    }, [category]);
+    }, [category, categoryTitles]);
 
     return (
         <main className="page-content">
