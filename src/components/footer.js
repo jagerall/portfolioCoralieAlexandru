@@ -12,7 +12,7 @@ const Footer = () => {
                     <div className="separator hide-for-tablet-down"></div>
                     <Link to="/mentions-legales" label="Mentions légales" />
                     <div className="separator hide-for-tablet-down"></div>
-                    <Link to="/CV" label="CV" />
+                    <Link to="../assets/CV.pdf" label="CV" />
                 </div>
                 <div className="footer-links-icons">
                     <FooterLink

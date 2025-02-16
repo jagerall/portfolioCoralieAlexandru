@@ -51,15 +51,6 @@ function App() {
                             />
                         }
                     />
-                    <Route
-                        path="/CV"
-                        element={
-                            <StaticPage
-                                title="CV"
-                                content={<div><p>CV</p></div>}
-                            />
-                        }
-                    />
                 </Routes>
                 <Footer/>
             </div>

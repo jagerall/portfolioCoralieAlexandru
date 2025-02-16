@@ -1,4 +1,3 @@
-// StaticPage.js
 import React from 'react';
 import '../style/staticPage.scss';
 
