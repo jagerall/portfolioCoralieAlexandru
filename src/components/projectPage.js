@@ -4,8 +4,6 @@ import Button from "./button";
 import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
 import '../style/projectpage.scss';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faXmark} from '@fortawesome/free-solid-svg-icons';
 
 const projectDetails = {
     pasnumerise: {
@@ -226,7 +224,7 @@ const ProjectPage = () => {
     }, []);
 
     return (
-        <main className="project-page">
+        <main className="project-page page-content">
             <div className="project-description">
                 <h1>{project.title}</h1>
                 {project.description && (
@@ -280,9 +278,9 @@ const ProjectPage = () => {
                 <div className="fullscreen-overlay" onClick={() => setSelectedImage(null)}>
                     <div className="fullscreen-content">
                         <img src={selectedImage} alt="Fullscreen preview"/>
-                        <button className="close-btn" onClick={() => setSelectedImage(null)}>
-                            <FontAwesomeIcon icon={faXmark}/>
-                        </button>
+                        <Button className="close-btn" label={'Fermer'} onClick={() => setSelectedImage(null)}>
+
+                        </Button>
                     </div>
                 </div>
             )}

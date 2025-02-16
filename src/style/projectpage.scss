@@ -4,8 +4,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 3rem 6rem;
-        gap: 2rem;
+        margin: 3rem 6rem 5rem 6rem;
+        overflow: visible;
+        gap: 3rem;
 
         @media screen and (max-width: 900px) {
             justify-content: left;
@@ -18,7 +19,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 2rem;
 
         p {
             text-align: left;
@@ -110,12 +110,8 @@
 
 .close-btn {
     position: fixed;
-    top: 24px;
+    bottom: 24px;
     right: 48px;
-    background: none;
-    border: none;
-    font-size: 2rem;
-    color: #101010;
     cursor: pointer;
 }
 

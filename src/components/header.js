@@ -102,7 +102,7 @@ function Header() {
                 <HeaderLink to="/photo" label="Photographie" isActive={activeCategory === "photo"}/>
                 <HeaderLink to="/illu" label="Illustration" isActive={activeCategory === "illu"}/>
                 {/*  <HeaderLink to="/autre" label="Autre" isActive={activeCategory === "autre"} />*/}
-                <HeaderLink to="/about" label="À propos" isActive={activeCategory === "about"}/>
+                {/*  TODO remettre */}{/*  <HeaderLink to="/about" label="À propos" isActive={activeCategory === "about"}/>*/}
             </nav>
 
             {/* Menu Mobile */}
@@ -113,7 +113,7 @@ function Header() {
                     <HeaderLink to="/photo" label="Photographie" isActive={activeCategory === "photo"}/>
                     <HeaderLink to="/illu" label="Illustration" isActive={activeCategory === "illu"}/>
                     {/*  <HeaderLink to="/autre" label="Autre" isActive={activeCategory === "autre"} />*/}
-                    <HeaderLink to="/about" label="À propos" isActive={activeCategory === "about"}/>
+                    {/*  TODO remettre */}{/*   <HeaderLink to="/about" label="À propos" isActive={activeCategory === "about"}/>*/}
                 </nav>
             </div>
         </header>

@@ -1,13 +1,15 @@
 import React from 'react';
 import '../style/staticPage.scss';
 
-const StaticPage = ({ title, content }) => {
+const StaticPage = ({ sections }) => {
     return (
         <main className="static-page">
-            <h1>{title}</h1>
-            <div className="static-content">
-                {content}
-            </div>
+            {sections.map((section, index) => (
+                <div key={index} className="static-section">
+                    <h1 className="static-section-title">{section.title}</h1>
+                    <div className="static-section-content">{section.content}</div>
+                </div>
+            ))}
         </main>
     );
 };
