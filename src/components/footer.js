@@ -11,8 +11,6 @@ const Footer = () => {
                     <span>&copy; 2025 Coralie Alexandru</span>
                     <div className="separator hide-for-tablet-down"></div>
                     <Link to="/mentions-legales" label="Mentions légales" />
-                    <div className="separator hide-for-tablet-down"></div>
-                    <Link to="../assets/CV.pdf" label="CV" />
                 </div>
                 <div className="footer-links-icons">
                     <FooterLink
