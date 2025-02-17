@@ -184,6 +184,17 @@ const projectDetails = {
             '/assets/illu-cocktails.webp',
         ],
     },
+    nature: {
+        category: "Illustration",
+        title: 'Nature - Gouache',
+        images: [
+            '/assets/gouache-5.webp',
+            '/assets/gouache-2.webp',
+            '/assets/gouache-3.webp',
+            '/assets/gouache-4.webp',
+            '/assets/gouache-1.webp'
+        ],
+    },
 };
 
 const ProjectPage = () => {

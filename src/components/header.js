@@ -21,11 +21,14 @@ const category = {
     "/photographie/bordeaux": "photographie",
     "/photographie/macro": "photographie",
     "/illustration/allo": "illustration",
+    "/illustration/ami": "illustration",
     "/illustration/logommi": "illustration",
     "/illustration/autocollant": "illustration",
     "/illustration/miel": "illustration",
+    "/illustration/cephalopode": "illustration",
     "/illustration/art": "illustration",
     "/illustration/cocktails": "illustration",
+    "/illustration/nature": "illustration",
 };
 
 function Header() {
