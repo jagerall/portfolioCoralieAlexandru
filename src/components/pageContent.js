@@ -37,6 +37,7 @@ const PageContent = ({ category }) => {
             { id: 'art', label: 'Art', image: '/assets/illu-art.webp', category: 'illu', type: 'Essais tableaux' },
             { id: 'amis', label: 'Amis', image: '/assets/illu-ami.webp', category: 'illu', type: 'Dessin numérique' },
             { id: 'cephalopode', label: 'Céphalopodes', image: '/assets/illu-pieuvre.webp', category: 'illu', type: 'Dessin numérique' },
+            { id: 'autocollant', label: 'Autocollant', image: '/assets/autocollant.webp', category: 'illu', type: 'Dessin numérique' },
             { id: 'cocktails', label: 'Cocktails', image: '/assets/illu-cocktails.webp', category: 'illu', type: 'Dessin numérique' },
         ],
         /*autre: [

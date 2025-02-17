@@ -23,6 +23,7 @@ const category = {
     "/photo/macro": "photo",
     "/illu/allo": "illu",
     "/illu/logommi": "illu",
+    "/illu/autocollant": "illu",
     "/illu/miel": "illu",
     "/illu/art": "illu",
     "/illu/cocktails": "illu",

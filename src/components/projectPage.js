@@ -124,21 +124,29 @@ const projectDetails = {
         title: 'Coques de téléphone - Design',
         description: 'Pourquoi pas faire des design sur des jeux de mots ? L\'une d\'entre elle est ma coque de téléphone...',
         images: [
-            '/assets/illu-allo.webp',
+            '/assets/allo-1.webp',
+            '/assets/allo-2.webp'
         ],
     },
     logommi: {
         category: "Illustration",
         title: 'BDE MMI - Logo',
-        description: '',
+        description: 'Ce logo a été conçu à la suite du concours annuel du BDE MMI visant à créer une identité visuelle pour la formation de l\'année 2024-2025.',
         images: [
             '/assets/illu-logommi.webp',
+        ],
+    },
+    autocollant: {
+        category: "Illustration",
+        title: 'Autocollant - Dessin numérique',
+        images: [
+            '/assets/autocollant.webp',
         ],
     },
     miel: {
         category: "Illustration",
         title: 'Miel de 4SH - Étiquette',
-        description: '',
+        description: 'Cette étiquette a été créée suite à la demande de 4SH (entreprise d\'alternance) pour ses pots de miel.',
         images: [
             '/assets/illu-miel.webp',
         ],
@@ -146,9 +154,11 @@ const projectDetails = {
     art: {
         category: "Illustration",
         title: 'Art - Essais tableaux',
-        description: '',
+        description: 'Suite à une visite du Musée des Beaux-Art de Bordeaux, j\'ai redessiné les tableaux qui m\'ont plu. Dans l\'ordre :  Madeleine en extase - Copie (Anonyme, XVIIème siècle), Rolla (Herni Gervex, 1878), L\'été ou Cérès (Jean-François Millet, 1865).',
         images: [
-            '/assets/illu-art.webp',
+            '/assets/art-1.webp',
+            '/assets/art-2.webp',
+            '/assets/art-3.webp',
         ],
     },
     amis: {
@@ -156,7 +166,8 @@ const projectDetails = {
         title: 'Amis - Dessin numérique',
         description: '',
         images: [
-            '/assets/illu-ami.webp',
+            '/assets/ami-1.webp',
+            '/assets/ami-2.webp'
         ],
     },
     cephalopode: {
@@ -164,7 +175,8 @@ const projectDetails = {
         title: 'Céphalopodes - Dessin numérique',
         description: '',
         images: [
-            '/assets/illu-pieuvre.webp',
+            '/assets/c-1.webp',
+            '/assets/c-2.webp'
         ],
     },
     cocktails: {
