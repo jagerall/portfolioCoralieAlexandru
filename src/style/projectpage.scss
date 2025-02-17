@@ -4,13 +4,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 3rem 6rem 5rem 6rem;
+        margin: 3rem 6rem 8rem 6rem;
         overflow: visible;
         gap: 3rem;
 
         @media screen and (max-width: 900px) {
             justify-content: left;
-            margin: 2rem 1rem 5rem 1rem;
+            margin: 2rem 1rem 12rem 1rem;
         }
     }
 

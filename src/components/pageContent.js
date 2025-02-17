@@ -5,8 +5,8 @@ import '../style/pageContent.scss';
 
 const categoryTitles = {
     uiux: "UI/UX",
-    photo: "Photographie",
-    illu: "Illustrations",
+    photographie: "Photographie",
+    illustration: "Illustrations",
     autre: "Autres",
     about: "À propos",
 };
@@ -23,27 +23,23 @@ const PageContent = ({ category }) => {
             { id: 'smash', label: 'Smash', image: '/assets/ui-smash.svg', category: 'uiux', type: 'Application' },
             { id: 'reserve', label: 'La Réserve du Musba', image: '/assets/ui-reserve.svg', category: 'uiux', type: 'Narration interactive' },
         ],
-        photo: [
-            { id: 'argentique', label: 'Argentique', image: '/assets/photo-argentique.webp', category: 'photo', type: 'Èze' },
-            { id: 'auto', label: 'Portrait', image: '/assets/photo-auto.webp', category: 'photo', type: 'Coralie' },
-            { id: 'faune', label: 'Faune et flore', image: '/assets/photo-animaux.webp', category: 'photo', type: 'Zoo de la Palmyre' },
-            { id: 'bordeaux', label: 'Urbain', image: '/assets/photo-bordeaux.webp', category: 'photo', type: 'Bordeaux' },
-            { id: 'macro', label: 'Macro', image: '/assets/photo-macro.webp', category: 'photo', type: 'Vendée' },
+        photographie: [
+            { id: 'argentique', label: 'Argentique', image: '/assets/photo-argentique.webp', category: 'photographie', type: 'Èze' },
+            { id: 'auto', label: 'Portrait', image: '/assets/photo-auto.webp', category: 'photographie', type: 'Coralie' },
+            { id: 'faune', label: 'Faune et flore', image: '/assets/photo-animaux.webp', category: 'photographie', type: 'Zoo de la Palmyre' },
+            { id: 'bordeaux', label: 'Urbain', image: '/assets/photo-bordeaux.webp', category: 'photographie', type: 'Bordeaux' },
+            { id: 'macro', label: 'Macro', image: '/assets/photo-macro.webp', category: 'photographie', type: 'Vendée' },
         ],
-        illu: [
-            { id: 'allo', label: 'Coques de téléphone', image: '/assets/illu-allo.webp', category: 'illu', type: 'Design' },
-            { id: 'logommi', label: 'BDE MMI', image: '/assets/illu-logommi.webp', category: 'illu', type: 'Logo' },
-            { id: 'miel', label: 'Miel de 4SH', image: '/assets/illu-miel.webp', category: 'illu', type: 'Étiquette ' },
-            { id: 'art', label: 'Art', image: '/assets/illu-art.webp', category: 'illu', type: 'Essais tableaux' },
-            { id: 'amis', label: 'Amis', image: '/assets/illu-ami.webp', category: 'illu', type: 'Dessin numérique' },
-            { id: 'cephalopode', label: 'Céphalopodes', image: '/assets/illu-pieuvre.webp', category: 'illu', type: 'Dessin numérique' },
-            { id: 'autocollant', label: 'Autocollant', image: '/assets/autocollant.webp', category: 'illu', type: 'Dessin numérique' },
-            { id: 'cocktails', label: 'Cocktails', image: '/assets/illu-cocktails.webp', category: 'illu', type: 'Dessin numérique' },
+        illustration: [
+            { id: 'allo', label: 'Coques de téléphone', image: '/assets/illu-allo.webp', category: 'illustration', type: 'Design' },
+            { id: 'logommi', label: 'BDE MMI', image: '/assets/illu-logommi.webp', category: 'illustration', type: 'Logo' },
+            { id: 'miel', label: 'Miel de 4SH', image: '/assets/illu-miel.webp', category: 'illustration', type: 'Étiquette ' },
+            { id: 'art', label: 'Art', image: '/assets/illu-art.webp', category: 'illustration', type: 'Essais tableaux' },
+            { id: 'amis', label: 'Amis', image: '/assets/illu-ami.webp', category: 'illustration', type: 'Dessin numérique' },
+            { id: 'cephalopode', label: 'Céphalopodes', image: '/assets/illu-pieuvre.webp', category: 'illustration', type: 'Dessin numérique' },
+            { id: 'autocollant', label: 'Autocollant', image: '/assets/autocollant.webp', category: 'illustration', type: 'Dessin numérique' },
+            { id: 'cocktails', label: 'Cocktails', image: '/assets/illu-cocktails.webp', category: 'illustration', type: 'Dessin numérique' },
         ],
-        /*autre: [
-            { id: 'mainslibres', label: 'Les Mains Libres', image: '/assets/mainslibres.webp', category: 'autre', type: 'Direction Artistique' },
-            { id: 'motion', label: 'Distortions cognitives', image: '/assets/motion.webp', category: 'autre', type: 'Motion Design' },
-        ],*/
     };
 
     const projects = categoryData[category] || [];

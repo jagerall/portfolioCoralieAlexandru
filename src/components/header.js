@@ -6,9 +6,8 @@ import Button from "./button";
 
 const category = {
     "/uiux": "uiux",
-    "/photo": "photo",
-    "/illu": "illu",
-    "/autre": "autre",
+    "/photographie": "photographie",
+    "/illustration": "illustration",
     "/about": "about",
     "/uiux/pasnumerise": "uiux",
     "/uiux/flop": "uiux",
@@ -16,19 +15,17 @@ const category = {
     "/uiux/capc": "uiux",
     "/uiux/smash": "uiux",
     "/uiux/reserve": "uiux",
-    "/photo/argentique": "photo",
-    "/photo/auto": "photo",
-    "/photo/faune": "photo",
-    "/photo/bordeaux": "photo",
-    "/photo/macro": "photo",
-    "/illu/allo": "illu",
-    "/illu/logommi": "illu",
-    "/illu/autocollant": "illu",
-    "/illu/miel": "illu",
-    "/illu/art": "illu",
-    "/illu/cocktails": "illu",
-    "/autre/mainslibres": "autre",
-    "/autre/motion": "autre",
+    "/photographie/argentique": "photographie",
+    "/photographie/auto": "photographie",
+    "/photographie/faune": "photographie",
+    "/photographie/bordeaux": "photographie",
+    "/photographie/macro": "photographie",
+    "/illustration/allo": "illustration",
+    "/illustration/logommi": "illustration",
+    "/illustration/autocollant": "illustration",
+    "/illustration/miel": "illustration",
+    "/illustration/art": "illustration",
+    "/illustration/cocktails": "illustration",
 };
 
 function Header() {
@@ -100,10 +97,9 @@ function Header() {
             {/* Navigation Desktop */}
             <nav className="desktop-nav">
                 <HeaderLink to="/uiux" label="UI/UX" isActive={activeCategory === "uiux"}/>
-                <HeaderLink to="/photo" label="Photographie" isActive={activeCategory === "photo"}/>
-                <HeaderLink to="/illu" label="Illustration" isActive={activeCategory === "illu"}/>
-                {/*  <HeaderLink to="/autre" label="Autre" isActive={activeCategory === "autre"} />*/}
-                {/*  TODO remettre */}{/*  <HeaderLink to="/about" label="À propos" isActive={activeCategory === "about"}/>*/}
+                <HeaderLink to="/photographie" label="Photographie" isActive={activeCategory === "photographie"}/>
+                <HeaderLink to="/illustration" label="Illustration" isActive={activeCategory === "illustration"}/>
+                <HeaderLink to="/about" label="À propos" isActive={activeCategory === "about"}/>
             </nav>
 
             {/* Menu Mobile */}
@@ -111,10 +107,9 @@ function Header() {
                 <Button className="close-menu" onClick={handleMenuToggle} label={"✕"}/>
                 <nav className="menu-nav">
                     <HeaderLink to="/uiux" label="UI/UX" isActive={activeCategory === "uiux"}/>
-                    <HeaderLink to="/photo" label="Photographie" isActive={activeCategory === "photo"}/>
-                    <HeaderLink to="/illu" label="Illustration" isActive={activeCategory === "illu"}/>
-                    {/*  <HeaderLink to="/autre" label="Autre" isActive={activeCategory === "autre"} />*/}
-                    {/*  TODO remettre */}{/*   <HeaderLink to="/about" label="À propos" isActive={activeCategory === "about"}/>*/}
+                    <HeaderLink to="/photographie" label="Photographie" isActive={activeCategory === "photographie"}/>
+                    <HeaderLink to="/illustration" label="Illustration" isActive={activeCategory === "illustration"}/>
+                    <HeaderLink to="/about" label="À propos" isActive={activeCategory === "about"}/>
                 </nav>
             </div>
         </header>

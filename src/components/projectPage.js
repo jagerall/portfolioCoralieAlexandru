@@ -164,7 +164,6 @@ const projectDetails = {
     amis: {
         category: "Illustration",
         title: 'Amis - Dessin numérique',
-        description: '',
         images: [
             '/assets/ami-1.webp',
             '/assets/ami-2.webp'
@@ -173,7 +172,6 @@ const projectDetails = {
     cephalopode: {
         category: "Illustration",
         title: 'Céphalopodes - Dessin numérique',
-        description: '',
         images: [
             '/assets/c-1.webp',
             '/assets/c-2.webp'
@@ -182,7 +180,6 @@ const projectDetails = {
     cocktails: {
         category: "Illustration",
         title: 'Cocktails - Dessin numérique',
-        description: '',
         images: [
             '/assets/illu-cocktails.webp',
         ],
