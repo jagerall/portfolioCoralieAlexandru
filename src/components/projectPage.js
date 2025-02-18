@@ -149,6 +149,7 @@ const projectDetails = {
         description: 'Cette étiquette a été créée suite à la demande de 4SH (entreprise d\'alternance) pour ses pots de miel.',
         images: [
             '/assets/illu-miel.webp',
+            '/assets/miel-2.webp',
         ],
     },
     art: {

@@ -1,4 +1,7 @@
 .footer {
+    position: relative;
+    z-index: -1;
+
     &-links {
         width: 100%;
         display: flex;
