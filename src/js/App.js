@@ -68,14 +68,16 @@ function App() {
                                         sections={[
                                             {
                                                 title: "QUI ?", content: <p>Hello! Je suis Coralie Alexandru.
-                                                    <br></br><br></br> Étudiante en 3ème année de Métiers du Multimédia
+                                                    <br></br><br></br>Étudiante en 3ème année de Métiers du Multimédia
                                                     et de l’Internet et alternante UI Design & Intégratrice web chez
-                                                    4SH.
+                                                    4SH. J'utilise principalement Figma, la suite Adobe, Angular et
+                                                    React pour créer et développer.
                                                     <br></br><br></br>Passionnée de photo et de grimpe. J’aime explorer,
                                                     créer, imaginer. </p>
                                             },
                                             {title: "OÙ ?", content: <p>33800 - Bordeaux</p>},
-                                            {title: "COMMENT ?",
+                                            {
+                                                title: "COMMENT ?",
                                                 content: <p>Après un long chemin sur la voie de l’Histoire de l’Art &
                                                     l’Archéologie, ayant crapahuté sur quelques sites archéologiques, je
                                                     décide de m’orienter vers le web faute de débouchés et d’expression
