@@ -1,0 +1,10 @@
+[[redirects]]
+from = "https://coraliealexandru.netlify.app/*"
+to = "https://coraliealexandru.fr/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
