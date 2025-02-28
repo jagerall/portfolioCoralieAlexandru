@@ -4,6 +4,7 @@ import Button from "./button";
 import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
 import '../style/projectpage.scss';
+import { Helmet } from 'react-helmet';
 
 const projectDetails = {
     pasnumerise: {
@@ -246,6 +247,23 @@ const ProjectPage = () => {
 
     return (
         <main className="project-page page-content">
+            <Helmet>
+                <title>{project?.title || "Un projet créatif"}</title>
+                <meta name="description" content={project?.description || "Explorez ce projet que j'ai conçu pour répondre à des besoins spécifiques."} />
+                <meta name="keywords" content={project?.keywords || "design, créatif, UI/UX, photographie"} />
+
+                {/* Open Graph */}
+                <meta property="og:title" content={project?.title || "Un projet créatif"} />
+                <meta property="og:description" content={project?.description || "Explorez ce projet que j'ai conçu pour répondre à des besoins spécifiques."} />
+                <meta property="og:image" content={project?.image || "/assets/default-thumbnail.jpg"} />
+                <meta property="og:url" content={window.location.href} />
+
+                {/* Twitter Cards */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content={project?.title || "Un projet créatif"} />
+                <meta name="twitter:description" content={project?.description || "Découvrez un projet sur lequel j'ai travaillé."} />
+                <meta name="twitter:image" content={project?.image || "/assets/default-thumbnail.jpg"} />
+            </Helmet>
             <div className="project-description">
                 <h1>{project.title}</h1>
                 {project.description && (

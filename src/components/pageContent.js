@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Card from './card';
 import '../style/pageContent.scss';
+import { Helmet } from 'react-helmet';
 
 const categoryTitles = {
     uiux: "UI/UX",
@@ -50,7 +51,32 @@ const PageContent = ({ category }) => {
     }, [category]);
 
     return (
+
         <main className="page-content">
+            <Helmet>
+                {/* Titre dynamique de la page */}
+                <title>{categoryTitles[category] || "Coralie Alexandru"}</title>
+
+                {/* Description dynamique basée sur la catégorie */}
+                <meta name="description" content={`Découvrez mes projets en ${categoryTitles[category] || 'divers'} : ${categoryTitles[category] || 'portfolio créatif'}.`} />
+
+                {/* Meta Open Graph (pour Facebook, LinkedIn, etc.) */}
+                <meta property="og:title" content={categoryTitles[category] || "Coralie Alexandru"} />
+                <meta property="og:description" content={`Découvrez mes projets en ${categoryTitles[category] || 'divers'} : ${categoryTitles[category] || 'portfolio créatif'}.`} />
+                <meta property="og:type" content="website" />
+                <meta property="og:image" content="/assets/header-illu.wepb" />  {/* Image de partage sur les réseaux sociaux */}
+                <meta property="og:url" content={`https://coraliealexandru.fr/${category}`} />
+
+                {/* Meta Twitter Card (pour Twitter) */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content={categoryTitles[category] || "Coralie Alexandru"} />
+                <meta name="twitter:description" content={`Découvrez mes projets en ${categoryTitles[category] || 'divers'} : ${categoryTitles[category] || 'portfolio créatif'}.`} />
+                <meta name="twitter:image" content="/assets/header-illu.wepb" />  {/* Image de partage sur Twitter */}
+
+                {/* Meta Robots pour indiquer l'indexation par les moteurs de recherche */}
+                <meta name="robots" content="index, follow" />
+            </Helmet>
+
             <div className="cards-container">
                 {projects.map(project => (
                     <Card
