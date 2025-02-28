@@ -1,23 +1,55 @@
-const { SitemapStream, streamToPromise } = require('sitemap');
 const fs = require('fs');
+const path = require('path');
+const { SitemapStream, streamToPromise } = require('sitemap'); // Installer la dépendance 'sitemap'
 
-const links = [
-    { url: '/', changefreq: 'daily', priority: 1.0 },
-    { url: '/uiux', changefreq: 'weekly', priority: 0.8 },
-    { url: '/photographie', changefreq: 'weekly', priority: 0.8 },
-    { url: '/illustration', changefreq: 'weekly', priority: 0.8 },
-    { url: '/mentions-legales', changefreq: 'yearly', priority: 0.5 },
-    { url: '/about', changefreq: 'yearly', priority: 0.5 },
+const baseUrl = 'https://www.coraliealexandru.fr'; // Remplace par l'URL de ton site
+const outputFile = path.resolve(__dirname, 'public', 'sitemap.xml'); // Le fichier sitemap sera généré ici
+
+// Liste de toutes les routes de ton site (adaptée avec les informations fournies)
+const routes = [
+    '/',
+    '/uiux',
+    '/photographie',
+    '/illustration',
+    '/about',
+    '/uiux/pasnumerise',
+    '/uiux/flop',
+    '/uiux/maria',
+    '/uiux/capc',
+    '/uiux/smash',
+    '/uiux/reserve',
+    '/photographie/argentique',
+    '/photographie/auto',
+    '/photographie/faune',
+    '/photographie/bordeaux',
+    '/photographie/macro',
+    '/illustration/allo',
+    '/illustration/ami',
+    '/illustration/logommi',
+    '/illustration/autocollant',
+    '/illustration/miel',
+    '/illustration/cephalopode',
+    '/illustration/art',
+    '/illustration/cocktails',
+    '/illustration/nature'
 ];
 
-async function generateSitemap() {
-    const stream = new SitemapStream({ hostname: 'https://coraliealexandru.fr' });
+// Crée le flux pour générer le sitemap
+const sitemap = new SitemapStream({ hostname: baseUrl });
 
-    links.forEach(link => stream.write(link));
-    stream.end();
+// Ajouter chaque route au sitemap avec une fréquence et priorité par défaut
+routes.forEach(route => {
+    sitemap.write({ url: route, changefreq: 'weekly', priority: 0.8 });
+});
 
-    const sitemap = await streamToPromise(stream);
-    fs.writeFileSync('./public/sitemap.xml', sitemap.toString());
-}
-
-generateSitemap();
+// Fin du flux et création du fichier sitemap.xml
+sitemap.end();
+streamToPromise(sitemap)
+    .then(data => {
+        // Créer le fichier sitemap.xml dans le dossier public
+        fs.writeFileSync(outputFile, data);
+        console.log('Sitemap généré avec succès!');
+    })
+    .catch(err => {
+        console.error('Erreur lors de la génération du sitemap:', err);
+    });
