@@ -26,7 +26,7 @@ const projectDetails = {
     maria: {
         category: "UI/UX",
         title: 'Maria - Narration interactive',
-        description: 'Ce projet, est en partenariat avec le MusBa pour la Bacchanight 2024. Nous avons créé une histoire interactive avec les tableaux du musée. Notre groupe étions sur la période du siècle d’or hollandais. Nous avons effectué des recherches approfondies sur ce mouvement, pour réaliser une histoire fictive cohérente. Pendant ce projet, j’ai réalisé des visuels et des illustrations.' +
+        description: 'Ce projet, est en partenariat avec le MusBa pour la Bacchanight 2024. Nous avons créé une histoire interactive avec les tableaux du musée. Notre groupe étions sur la période du siècle d’or hollandais. Nous avons effectué des recherches approfondies sur ce mouvement, pour réaliser une histoire fictive cohérente. Pendant ce projet, j’ai réalisé des visuels et des illustrations. ' +
             'Attention, il faut consulter le site en format mobile.',
         images: ['/assets/maria-1.webp', '/assets/maria-3.webp', '/assets/maria-2.webp', '/assets/maria-4.webp', '/assets/maria-5.webp', '/assets/maria-6.webp'],
         linkWebsite: 'https://maria-bacchanight.netlify.app/',
