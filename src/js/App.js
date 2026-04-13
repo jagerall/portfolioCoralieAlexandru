@@ -4,13 +4,13 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 import PageContent from '../components/pageContent';
 import ProjectPage from '../components/projectPage';
-import Loader from '../components/Loader';
+/*import Loader from '../components/Loader';*/
 import ScrollToTop from '../components/scrollToTop';
 import StaticPage from "../components/staticPage";
 
 
 function App() {
-    const [loading, setLoading] = useState(true);
+   /* const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         setTimeout(() => {
@@ -21,7 +21,7 @@ function App() {
     if (loading) {
         return <Loader/>;
     }
-
+*/
     return (
         <Router>
             <ScrollToTop/>

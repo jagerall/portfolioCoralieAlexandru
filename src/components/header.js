@@ -8,7 +8,7 @@ const category = {
     "/uiux": "uiux",
     "/photographie": "photographie",
     "/illustration": "illustration",
-    "/about": "about",
+/*    "/about": "about",*/
     "/uiux/pasnumerise": "uiux",
     "/uiux/flop": "uiux",
     "/uiux/maria": "uiux",
@@ -33,7 +33,7 @@ const category = {
 
 function Header() {
     const [isHovered, setIsHovered] = useState(false);
-    const [tooltip, setTooltip] = useState(null);
+   /* const [tooltip, setTooltip] = useState(null);*/
     const [menuOpen, setMenuOpen] = useState(false);
     const location = useLocation();
 
@@ -42,7 +42,7 @@ function Header() {
         setMenuOpen(false);
     }, [location.pathname]);
 
-    // Gère le tooltip en desktop (suivi de la souris)
+    /*// Gère le tooltip en desktop (suivi de la souris)
     const handleMouseMove = (e) => {
         setTooltip({x: e.clientX, y: e.clientY});
     };
@@ -59,7 +59,7 @@ function Header() {
             setTooltip(null);
         }, 2000);
     };
-
+*/
     const activeCategory = category[
         Object.keys(category).find((path) => location.pathname.startsWith(path))
         ] || null;
@@ -72,9 +72,9 @@ function Header() {
         <header className="header">
             <div className="image-container"
                  onMouseEnter={() => setIsHovered(true)}
-                 onMouseLeave={handleMouseLeave}
+                /* onMouseLeave={handleMouseLeave}
                  onMouseMove={handleMouseMove}
-                 onClick={handleImageClick}
+                 onClick={handleImageClick}*/
             >
                 <img
                     className={`header-image ${isHovered ? 'fade-out' : 'fade-in'}`}
@@ -88,11 +88,11 @@ function Header() {
                 />
             </div>
 
-            {tooltip && (
+            {/*{tooltip && (
                 <div className="tooltip" style={{top: tooltip.y, left: tooltip.x}}>
                     personne très cool
                 </div>
-            )}
+            )}*/}
 
             {/* Bouton Menu Mobile */}
             <Button className="menu-button mobile-only" onClick={handleMenuToggle} label={menuOpen ? "Menu" : "Menu"}/>

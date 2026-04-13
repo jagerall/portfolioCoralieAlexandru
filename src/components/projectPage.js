@@ -123,7 +123,7 @@ const projectDetails = {
     allo: {
         category: "Illustration",
         title: 'Coques de téléphone - Design',
-        description: 'Pourquoi pas faire des design sur des jeux de mots ? L\'une d\'entre elle est ma coque de téléphone...',
+        description:'',
         images: [
             '/assets/allo-1.webp',
             '/assets/allo-2.webp'
@@ -137,13 +137,13 @@ const projectDetails = {
             '/assets/illu-logommi.webp',
         ],
     },
-    autocollant: {
+    /*autocollant: {
         category: "Illustration",
         title: 'Autocollant - Dessin numérique',
         images: [
             '/assets/autocollant.webp',
         ],
-    },
+    },*/
     miel: {
         category: "Illustration",
         title: 'Miel de 4SH - Étiquette',
@@ -264,6 +264,7 @@ const ProjectPage = () => {
                 <meta name="twitter:description" content={project?.description || "Découvrez un projet sur lequel j'ai travaillé."} />
                 <meta name="twitter:image" content={project?.image || "/assets/default-thumbnail.jpg"} />
             </Helmet>
+            <Button onClick={() => navigate(-1)} label="Retour aux projets"/>
             <div className="project-description">
                 <h1>{project.title}</h1>
                 {project.description && (
@@ -324,7 +325,6 @@ const ProjectPage = () => {
                 </div>
             )}
 
-            <Button onClick={() => navigate(-1)} label="Retour aux projets"/>
         </main>
     );
 };

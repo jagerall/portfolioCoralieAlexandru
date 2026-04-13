@@ -38,7 +38,7 @@ const PageContent = ({ category }) => {
             { id: 'art', label: 'Art', image: '/assets/illu-art.webp', category: 'illustration', type: 'Essais tableaux' },
             { id: 'amis', label: 'Amis', image: '/assets/illu-ami.webp', category: 'illustration', type: 'Dessin numérique' },
             { id: 'cephalopode', label: 'Céphalopodes', image: '/assets/illu-pieuvre.webp', category: 'illustration', type: 'Dessin numérique' },
-            { id: 'autocollant', label: 'Autocollant', image: '/assets/autocollant.webp', category: 'illustration', type: 'Dessin numérique' },
+           /* { id: 'autocollant', label: 'Autocollant', image: '/assets/autocollant.webp', category: 'illustration', type: 'Dessin numérique' },*/
             { id: 'cocktails', label: 'Cocktails', image: '/assets/illu-cocktails.webp', category: 'illustration', type: 'Dessin numérique' },
             { id: 'nature', label: 'Nature', image: '/assets/gouache-5.webp', category: 'illustration', type: 'Gouache' },
         ],

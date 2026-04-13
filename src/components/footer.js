@@ -8,7 +8,7 @@ const Footer = () => {
         <footer className="footer">
             <div className="footer-links">
                 <div className="footer-links-list">
-                    <span>&copy; 2025 Coralie Alexandru</span>
+                    <span>&copy; 2026 Coralie Alexandru</span>
 
                     <div className="separator hide-for-tablet-down"></div>
                     <Link to="/mentions-legales" label="Mentions légales"/>
