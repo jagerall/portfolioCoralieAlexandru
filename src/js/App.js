@@ -61,7 +61,7 @@ function App() {
                             />
                         }
                     />
-                    <Route
+                   {/* <Route
                         path="/about"
                         element={
                             <StaticPage className="page-content"
@@ -92,7 +92,7 @@ function App() {
                                         ]}
                             />
                         }
-                    />
+                    />*/}
                 </Routes>
                 <Footer/>
             </div>

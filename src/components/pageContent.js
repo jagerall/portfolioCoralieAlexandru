@@ -9,7 +9,7 @@ const categoryTitles = {
     photographie: "Photographie",
     illustration: "Illustrations",
     autre: "Autres",
-    about: "À propos",
+/*    about: "À propos",*/
 };
 
 const PageContent = ({ category }) => {

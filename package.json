@@ -6,6 +6,8 @@
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "baseline-browser-mapping": "^2.10.18",
+    "caniuse-lite": "^1.0.30001787",
     "cra-template": "1.2.0",
     "framer-motion": "^12.4.1",
     "lucide-react": "^0.475.0",
