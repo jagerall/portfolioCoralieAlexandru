@@ -33,7 +33,7 @@ const category = {
 
 function Header() {
     const [isHovered, setIsHovered] = useState(false);
-    const [tooltip, setTooltip] = useState(null);
+    const [setTooltip] = useState(null);
     const [menuOpen, setMenuOpen] = useState(false);
     const location = useLocation();
 
