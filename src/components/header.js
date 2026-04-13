@@ -102,7 +102,7 @@ function Header() {
                 <HeaderLink to="/uiux" label="UI/UX" isActive={activeCategory === "uiux"}/>
                 <HeaderLink to="/photographie" label="Photographie" isActive={activeCategory === "photographie"}/>
                 <HeaderLink to="/illustration" label="Illustration" isActive={activeCategory === "illustration"}/>
-                <HeaderLink to="/about" label="À propos" isActive={activeCategory === "about"}/>
+{/*                <HeaderLink to="/about" label="À propos" isActive={activeCategory === "about"}/>*/}
             </nav>
 
             {/* Menu Mobile */}
