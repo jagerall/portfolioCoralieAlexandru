@@ -5,11 +5,11 @@ import '../style/pageContent.scss';
 import { Helmet } from 'react-helmet';
 
 const categoryTitles = {
-    uiux: "UI/UX",
-    photographie: "Photographie",
-    illustration: "Illustrations",
-    autre: "Autres",
-/*    about: "À propos",*/
+    uiux: "Coralie Alexandru - UI/UX",
+    photographie: "Coralie Alexandru - Photographie",
+    illustration: "Coralie Alexandru - Illustrations",
+  /*  autre: "Coralie Alexandru - Autres",*/
+/*    about: "Coralie Alexandru - À propos",*/
 };
 
 const PageContent = ({ category }) => {
