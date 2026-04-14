@@ -212,7 +212,7 @@ const projectDetails = {
 
 const ProjectPage = () => {
     const figmaEmbeds = {
-        booking: "https://embed.figma.com/proto/mVKZJIssy5jUCxBWxXQ2gs/Boooking---Refonte?node-id=2069-66&p=f&viewport=322%2C-209%2C0.43&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2069%3A66&page-id=3%3A181&embed-host=share",
+        booking: "https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/mVKZJIssy5jUCxBWxXQ2gs/Boooking---Refonte?node-id=2069-66",
 
         livretCyber: "https://embed.figma.com/proto/MWFT7RRzr5dSMiwM64qdlW/Rendu---Design---cybers%C3%A9curit%C3%A9?node-id=419-13284&viewport=-3858%2C-179%2C0.07&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&embed-host=share"
     };
