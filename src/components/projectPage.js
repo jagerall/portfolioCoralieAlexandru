@@ -9,7 +9,7 @@ import { Helmet } from 'react-helmet';
 const projectDetails = {
     pasnumerise: {
         category: "UI/UX",
-        title: 'Nous n\'avons pas numérisé - Retour d\'expérience',
+        title: 'Coralie Alexandru - Nous n\'avons pas numérisé',
         description: 'Site présentant notre remise en question de la création d\'une application web',
         images: ['/assets/pasnumerise-1.webp', '/assets/pasnumerise-2.webp', '/assets/pasnumerise-3.webp'],
         linkWebsite: 'https://nousnavonspasnumerise.mmibordeaux.com/',
@@ -18,14 +18,14 @@ const projectDetails = {
     },
     flop: {
         category: "UI/UX",
-        title: 'Flop\'EDT - Audit UX & UI',
+        title: 'Coralie Alexandru - Flop\'EDT ',
         description: 'Au cours d\'un projet de deux semaines sur l\'UI/UX design, j\'ai collaboré avec mon groupe pour repenser le gestionnaire d\'emploi du tempsFlop!Edt. La première semaine était dédiée à la recherche utilisateur pour comprendre les besoins et les frustrations des utilisateurs, tandis que la deuxième était consacrée à la conception et à l\'itération des solutions. Nous avons identifié les lacunes du système existant et élaboré des wireframes détaillés, puis des maquettes interactives. Ce projet m\'a permis de maîtriser le processus d\'UX/UI design et de développer mes compétences sur Figma.',
         images: ['/assets/flop-1.webp', '/assets/flop-2.webp', '/assets/flop-3.webp'],
         linkFigma: 'https://www.figma.com/design/9fY2i3PUefoq9BwAPgPAYa/Refonte-Flop!Edt?node-id=446-73601&t=vd7N5q6ntJLqgEuS-1',
     },
     maria: {
         category: "UI/UX",
-        title: 'Maria - Narration interactive',
+        title: 'Coralie Alexandru - Maria ',
         description: 'Ce projet, est en partenariat avec le MusBa pour la Bacchanight 2024. Nous avons créé une histoire interactive avec les tableaux du musée. Notre groupe étions sur la période du siècle d’or hollandais. Nous avons effectué des recherches approfondies sur ce mouvement, pour réaliser une histoire fictive cohérente. Pendant ce projet, j’ai réalisé des visuels et des illustrations. ' +
             'Attention, il faut consulter le site en format mobile.',
         images: ['/assets/maria-1.webp', '/assets/maria-3.webp', '/assets/maria-2.webp', '/assets/maria-4.webp', '/assets/maria-5.webp', '/assets/maria-6.webp'],
@@ -35,14 +35,14 @@ const projectDetails = {
     },
     capc: {
         category: "UI/UX",
-        title: 'CAPC - Refonte de site',
+        title: 'Coralie Alexandru - CAPC',
         description: 'Modernisation du site du musée pour améliorer l’accessibilité, avec un design responsive et une navigation optimisée.',
         images: ['/assets/capc-1.webp', '/assets/capc-2.webp'],
         linkWebsite: 'https://capc-2022.netlify.app/',
     },
     smash: {
         category: "UI/UX",
-        title: 'Smash - Application',
+        title: 'Coralie Alexandru - Smash',
         description: 'Smash est un média destiné aux 18-25 ans. Il propose de lutter contre la désinformation. \n' +
             'Tous les jours, l\'utilisateur a accès à 3 citations de personnes publiques sur des sujets d\'actualité et doit déterminer si c\'est une info (basé sur des faits) ou une intox (basé sur une opinion ou une interprétation des faits). Il peut ensuite s\'informer de façon plurielle sur cette actualité et en débattre dans un espace commentaire.\n' +
             'Notre application avait plusieurs besoins : des comptes utilisateurs, un système de sondage, d\'amis et de commentaires ainsi que la création et gestion d\'articles.' +
@@ -53,7 +53,7 @@ const projectDetails = {
     },
     reserve: {
         category: "UI/UX",
-        title: 'La Réserve du Musba - Narration interactive',
+        title: 'Coralie Alexandru - La Réserve du Musba',
         description: 'La Réserve est un jeu narratif à fins multiples, réalisé en partenariat avec le Musée des Beaux-Arts de Bordeaux (Musba) pour la Nuit au Musée. Le joueur incarne un assistant du conservateur chargé de préparer une exposition en sélectionnant et disposant des œuvres issues des réserves du musée. Chaque choix impacte l’ambiance et l’environnement du musée, offrant une expérience immersive et personnalisée. Pour ce projet, j’ai réalisé l’ensemble des assets et des décors, contribuant à l’atmosphère de notre expérience. Vous pourrez bientôt tester notre expérience directement au Musba. ' +
             'Attention, il faut consulter le site avec le format de la tablette au MusBA : 3840x2160px.',
         images: ['/assets/reserve-1.webp', '/assets/reserve-2.webp', '/assets/reserve-3.webp', '/assets/reserve-4.webp', '/assets/reserve-5.webp'],
@@ -63,7 +63,7 @@ const projectDetails = {
     },
     argentique: {
         category: "Photographie",
-        title: 'Argentique - Èze',
+        title: 'Coralie Alexandru - Argentique',
         description: 'Voici quelques photos prises à l\'Olympus M1 sur la Côte d\'Azur.',
         images: ['/assets/argentique-5.webp',
             '/assets/argentique-2.webp',
@@ -74,7 +74,7 @@ const projectDetails = {
     },
     auto: {
         category: "Photographie",
-        title: 'Portraits - Coralie',
+        title: 'Coralie Alexandru - Portraits',
         images: ['/assets/auto-1.webp',
             '/assets/auto-2.webp',
             '/assets/auto-3.webp',
@@ -83,7 +83,7 @@ const projectDetails = {
     },
     faune: {
         category: "Photographie",
-        title: 'Faune et flore - Zoo de la Palmyre',
+        title: 'Coralie Alexandru - Faune et flore',
         images: ['/assets/fauneflore-1.webp',
             '/assets/fauneflore-2.webp',
             '/assets/fauneflore-3.webp',
@@ -94,7 +94,7 @@ const projectDetails = {
     },
     bordeaux: {
         category: "Photographie",
-        title: 'Urbain - Bordeaux',
+        title: 'Coralie Alexandru - Urbain',
         images: [
             '/assets/bordeaux-1.webp',
             '/assets/bordeaux-2.webp',
@@ -109,7 +109,7 @@ const projectDetails = {
     },
     macro: {
         category: "Photographie",
-        title: 'Macrophoto - Vendée',
+        title: 'Coralie Alexandru - Macrophoto ',
         images: [
             '/assets/macro-1.webp',
             '/assets/macro-2.webp',
@@ -122,7 +122,7 @@ const projectDetails = {
     },
     allo: {
         category: "Illustration",
-        title: 'Coques de téléphone - Design',
+        title: 'Coralie Alexandru -  Coques de téléphone',
         description:'',
         images: [
             '/assets/allo-1.webp',
@@ -131,7 +131,7 @@ const projectDetails = {
     },
     logommi: {
         category: "Illustration",
-        title: 'BDE MMI - Logo',
+        title: 'Coralie Alexandru - BDE MMI',
         description: 'Ce logo a été conçu à la suite du concours annuel du BDE MMI visant à créer une identité visuelle pour la formation de l\'année 2024-2025.',
         images: [
             '/assets/illu-logommi.webp',
@@ -139,14 +139,14 @@ const projectDetails = {
     },
     /*autocollant: {
         category: "Illustration",
-        title: 'Autocollant - Dessin numérique',
+        title: 'Coralie Alexandru -  Autocollant',
         images: [
             '/assets/autocollant.webp',
         ],
     },*/
     miel: {
         category: "Illustration",
-        title: 'Miel de 4SH - Étiquette',
+        title: 'Coralie Alexandru - Miel de 4SH',
         description: 'Cette étiquette a été créée suite à la demande de 4SH (entreprise d\'alternance) pour ses pots de miel.',
         images: [
             '/assets/miel-1.webp',
@@ -155,7 +155,7 @@ const projectDetails = {
     },
     art: {
         category: "Illustration",
-        title: 'Art - Essais tableaux',
+        title: 'Coralie Alexandru - Art',
         description: 'Suite à une visite du Musée des Beaux-Art de Bordeaux, j\'ai redessiné les tableaux qui m\'ont plu. Dans l\'ordre :  Madeleine en extase - Copie (Anonyme, XVIIème siècle), Rolla (Herni Gervex, 1878), L\'été ou Cérès (Jean-François Millet, 1865).',
         images: [
             '/assets/art-1.webp',
@@ -165,7 +165,7 @@ const projectDetails = {
     },
     amis: {
         category: "Illustration",
-        title: 'Amis - Dessin numérique',
+        title: 'Coralie Alexandru - Amis',
         images: [
             '/assets/ami-1.webp',
             '/assets/ami-2.webp'
@@ -173,7 +173,7 @@ const projectDetails = {
     },
     cephalopode: {
         category: "Illustration",
-        title: 'Céphalopodes - Dessin numérique',
+        title: 'Coralie Alexandru - Céphalopodes',
         images: [
             '/assets/c-1.webp',
             '/assets/c-2.webp'
@@ -181,14 +181,14 @@ const projectDetails = {
     },
     cocktails: {
         category: "Illustration",
-        title: 'Cocktails - Dessin numérique',
+        title: 'Coralie Alexandru - Cocktails',
         images: [
             '/assets/illu-cocktails.webp',
         ],
     },
     nature: {
         category: "Illustration",
-        title: 'Nature - Gouache',
+        title: 'Coralie Alexandru - Nature',
         images: [
             '/assets/gouache-5.webp',
             '/assets/gouache-2.webp',
