@@ -151,6 +151,7 @@ const projectDetails = {
         images: [
             '/assets/miel-1.webp',
             '/assets/miel-2.webp',
+            '/assets/miel-pot.webp',
         ],
     },
     art: {
