@@ -286,7 +286,9 @@ const ProjectPage = () => {
 
                 {figmaEmbeds[id] ? (
                     <div className="figma-embed">
-                        <iframe title="Figma Embed"
+                        <iframe
+                            title={"embed-figma-" + id}
+                            loading="lazy"
                             style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
                             width="800"
                             height="450"
