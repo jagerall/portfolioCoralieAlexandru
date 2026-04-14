@@ -4,12 +4,22 @@ import Button from "./button";
 import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
 import '../style/projectpage.scss';
-import { Helmet } from 'react-helmet';
 
 const projectDetails = {
+    booking: {
+        category: "UI/UX",
+        title: 'Booking Refonte',
+        description: 'J’ai réalisé la refonte de l’interface d’une plateforme de réservation type Booking afin d’améliorer l’expérience utilisateur. L’objectif était de simplifier la navigation, clarifier les informations et fluidifier le parcours de réservation.\n' +
+            '\n' +
+            'Après une analyse des points de friction, j’ai repensé l’architecture de l’information et conçu une interface plus épurée et intuitive, avec une meilleure hiérarchisation des contenus et une optimisation pour mobile.\n' +
+            '\n' +
+            'Ce projet m’a permis de renforcer mes compétences en UX/UI design et en conception d’interfaces centrées utilisateur.',
+        images: [],
+        linkFigma: 'https://www.figma.com/design/mVKZJIssy5jUCxBWxXQ2gs/Boooking---Refonte?node-id=32-11984&t=HV3r2zPZtVBdjBDM-1',
+    },
     pasnumerise: {
         category: "UI/UX",
-        title: 'Coralie Alexandru - Nous n\'avons pas numérisé',
+        title: 'Nous n\'avons pas numérisé',
         description: 'Site présentant notre remise en question de la création d\'une application web',
         images: ['/assets/pasnumerise-1.webp', '/assets/pasnumerise-2.webp', '/assets/pasnumerise-3.webp'],
         linkWebsite: 'https://nousnavonspasnumerise.mmibordeaux.com/',
@@ -18,14 +28,14 @@ const projectDetails = {
     },
     flop: {
         category: "UI/UX",
-        title: 'Coralie Alexandru - Flop\'EDT ',
+        title: 'Flop\'EDT ',
         description: 'Au cours d\'un projet de deux semaines sur l\'UI/UX design, j\'ai collaboré avec mon groupe pour repenser le gestionnaire d\'emploi du tempsFlop!Edt. La première semaine était dédiée à la recherche utilisateur pour comprendre les besoins et les frustrations des utilisateurs, tandis que la deuxième était consacrée à la conception et à l\'itération des solutions. Nous avons identifié les lacunes du système existant et élaboré des wireframes détaillés, puis des maquettes interactives. Ce projet m\'a permis de maîtriser le processus d\'UX/UI design et de développer mes compétences sur Figma.',
         images: ['/assets/flop-1.webp', '/assets/flop-2.webp', '/assets/flop-3.webp'],
         linkFigma: 'https://www.figma.com/design/9fY2i3PUefoq9BwAPgPAYa/Refonte-Flop!Edt?node-id=446-73601&t=vd7N5q6ntJLqgEuS-1',
     },
     maria: {
         category: "UI/UX",
-        title: 'Coralie Alexandru - Maria ',
+        title: 'Maria ',
         description: 'Ce projet, est en partenariat avec le MusBa pour la Bacchanight 2024. Nous avons créé une histoire interactive avec les tableaux du musée. Notre groupe étions sur la période du siècle d’or hollandais. Nous avons effectué des recherches approfondies sur ce mouvement, pour réaliser une histoire fictive cohérente. Pendant ce projet, j’ai réalisé des visuels et des illustrations. ' +
             'Attention, il faut consulter le site en format mobile.',
         images: ['/assets/maria-1.webp', '/assets/maria-3.webp', '/assets/maria-2.webp', '/assets/maria-4.webp', '/assets/maria-5.webp', '/assets/maria-6.webp'],
@@ -35,14 +45,14 @@ const projectDetails = {
     },
     capc: {
         category: "UI/UX",
-        title: 'Coralie Alexandru - CAPC',
+        title: 'CAPC',
         description: 'Modernisation du site du musée pour améliorer l’accessibilité, avec un design responsive et une navigation optimisée.',
         images: ['/assets/capc-1.webp', '/assets/capc-2.webp'],
         linkWebsite: 'https://capc-2022.netlify.app/',
     },
     smash: {
         category: "UI/UX",
-        title: 'Coralie Alexandru - Smash',
+        title: 'Smash',
         description: 'Smash est un média destiné aux 18-25 ans. Il propose de lutter contre la désinformation. \n' +
             'Tous les jours, l\'utilisateur a accès à 3 citations de personnes publiques sur des sujets d\'actualité et doit déterminer si c\'est une info (basé sur des faits) ou une intox (basé sur une opinion ou une interprétation des faits). Il peut ensuite s\'informer de façon plurielle sur cette actualité et en débattre dans un espace commentaire.\n' +
             'Notre application avait plusieurs besoins : des comptes utilisateurs, un système de sondage, d\'amis et de commentaires ainsi que la création et gestion d\'articles.' +
@@ -53,7 +63,7 @@ const projectDetails = {
     },
     reserve: {
         category: "UI/UX",
-        title: 'Coralie Alexandru - La Réserve du Musba',
+        title: 'La Réserve du Musba',
         description: 'La Réserve est un jeu narratif à fins multiples, réalisé en partenariat avec le Musée des Beaux-Arts de Bordeaux (Musba) pour la Nuit au Musée. Le joueur incarne un assistant du conservateur chargé de préparer une exposition en sélectionnant et disposant des œuvres issues des réserves du musée. Chaque choix impacte l’ambiance et l’environnement du musée, offrant une expérience immersive et personnalisée. Pour ce projet, j’ai réalisé l’ensemble des assets et des décors, contribuant à l’atmosphère de notre expérience. Vous pourrez bientôt tester notre expérience directement au Musba. ' +
             'Attention, il faut consulter le site avec le format de la tablette au MusBA : 3840x2160px.',
         images: ['/assets/reserve-1.webp', '/assets/reserve-2.webp', '/assets/reserve-3.webp', '/assets/reserve-4.webp', '/assets/reserve-5.webp'],
@@ -63,7 +73,7 @@ const projectDetails = {
     },
     argentique: {
         category: "Photographie",
-        title: 'Coralie Alexandru - Argentique',
+        title: 'Argentique',
         description: 'Voici quelques photos prises à l\'Olympus M1 sur la Côte d\'Azur.',
         images: ['/assets/argentique-5.webp',
             '/assets/argentique-2.webp',
@@ -74,7 +84,7 @@ const projectDetails = {
     },
     auto: {
         category: "Photographie",
-        title: 'Coralie Alexandru - Portraits',
+        title: 'Portraits',
         images: ['/assets/auto-1.webp',
             '/assets/auto-2.webp',
             '/assets/auto-3.webp',
@@ -83,7 +93,7 @@ const projectDetails = {
     },
     faune: {
         category: "Photographie",
-        title: 'Coralie Alexandru - Faune et flore',
+        title: 'Faune et flore',
         images: ['/assets/fauneflore-1.webp',
             '/assets/fauneflore-2.webp',
             '/assets/fauneflore-3.webp',
@@ -94,7 +104,7 @@ const projectDetails = {
     },
     bordeaux: {
         category: "Photographie",
-        title: 'Coralie Alexandru - Urbain',
+        title: 'Urbain',
         images: [
             '/assets/bordeaux-1.webp',
             '/assets/bordeaux-2.webp',
@@ -109,7 +119,7 @@ const projectDetails = {
     },
     macro: {
         category: "Photographie",
-        title: 'Coralie Alexandru - Macrophoto ',
+        title: 'Macrophoto ',
         images: [
             '/assets/macro-1.webp',
             '/assets/macro-2.webp',
@@ -122,7 +132,7 @@ const projectDetails = {
     },
     allo: {
         category: "Illustration",
-        title: 'Coralie Alexandru -  Coques de téléphone',
+        title: ' Coques de téléphone',
         description:'',
         images: [
             '/assets/allo-1.webp',
@@ -131,7 +141,7 @@ const projectDetails = {
     },
     logommi: {
         category: "Illustration",
-        title: 'Coralie Alexandru - BDE MMI',
+        title: 'BDE MMI',
         description: 'Ce logo a été conçu à la suite du concours annuel du BDE MMI visant à créer une identité visuelle pour la formation de l\'année 2024-2025.',
         images: [
             '/assets/illu-logommi.webp',
@@ -139,14 +149,14 @@ const projectDetails = {
     },
     /*autocollant: {
         category: "Illustration",
-        title: 'Coralie Alexandru -  Autocollant',
+        title: ' Autocollant',
         images: [
             '/assets/autocollant.webp',
         ],
     },*/
     miel: {
         category: "Illustration",
-        title: 'Coralie Alexandru - Miel de 4SH',
+        title: 'Miel de 4SH',
         description: 'Cette étiquette a été créée suite à la demande de 4SH pour ses pots de miel.',
         images: [
             '/assets/miel-1.webp',
@@ -156,7 +166,7 @@ const projectDetails = {
     },
     art: {
         category: "Illustration",
-        title: 'Coralie Alexandru - Art',
+        title: 'Art',
         description: 'Suite à une visite du Musée des Beaux-Art de Bordeaux, j\'ai redessiné les tableaux qui m\'ont plu. Dans l\'ordre :  Madeleine en extase - Copie (Anonyme, XVIIème siècle), Rolla (Herni Gervex, 1878), L\'été ou Cérès (Jean-François Millet, 1865).',
         images: [
             '/assets/art-1.webp',
@@ -166,7 +176,7 @@ const projectDetails = {
     },
     amis: {
         category: "Illustration",
-        title: 'Coralie Alexandru - Amis',
+        title: 'Amis',
         images: [
             '/assets/ami-1.webp',
             '/assets/ami-2.webp'
@@ -174,7 +184,7 @@ const projectDetails = {
     },
     cephalopode: {
         category: "Illustration",
-        title: 'Coralie Alexandru - Céphalopodes',
+        title: 'Céphalopodes',
         images: [
             '/assets/c-1.webp',
             '/assets/c-2.webp'
@@ -182,14 +192,14 @@ const projectDetails = {
     },
     cocktails: {
         category: "Illustration",
-        title: 'Coralie Alexandru - Cocktails',
+        title: 'Cocktails',
         images: [
             '/assets/illu-cocktails.webp',
         ],
     },
     nature: {
         category: "Illustration",
-        title: 'Coralie Alexandru - Nature',
+        title: 'Nature',
         images: [
             '/assets/gouache-5.webp',
             '/assets/gouache-2.webp',
@@ -218,7 +228,7 @@ const ProjectPage = () => {
     useEffect(() => {
         if (project.title) {
             const categoryPrefix = project.category ? `${project.category} - ` : "";
-            document.title = `${categoryPrefix}${project.title}`;
+            document.title = `Coralie Alexandru - ${project.title}`;
         } else {
             document.title = "Coralie Alexandru";
         }
@@ -248,24 +258,7 @@ const ProjectPage = () => {
 
     return (
         <main className="project-page page-content">
-            <Helmet>
-                <title>{project?.title || "Un projet créatif"}</title>
-                <meta name="description" content={project?.description || "Explorez ce projet que j'ai conçu pour répondre à des besoins spécifiques."} />
-                <meta name="keywords" content={project?.keywords || "design, créatif, UI/UX, photographie"} />
 
-                {/* Open Graph */}
-                <meta property="og:title" content={project?.title || "Un projet créatif"} />
-                <meta property="og:description" content={project?.description || "Explorez ce projet que j'ai conçu pour répondre à des besoins spécifiques."} />
-                <meta property="og:image" content={project?.image || "/assets/default-thumbnail.jpg"} />
-                <meta property="og:url" content={window.location.href} />
-
-                {/* Twitter Cards */}
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content={project?.title || "Un projet créatif"} />
-                <meta name="twitter:description" content={project?.description || "Découvrez un projet sur lequel j'ai travaillé."} />
-                <meta name="twitter:image" content={project?.image || "/assets/default-thumbnail.jpg"} />
-            </Helmet>
-            <Button onClick={() => navigate(-1)} label="Retour aux projets"/>
             <div className="project-description">
                 <h1>{project.title}</h1>
                 {project.description && (
@@ -285,28 +278,42 @@ const ProjectPage = () => {
             </div>
 
             <div className="project-images">
-                <Swiper
-                    slidesPerView="auto"
-                    spaceBetween={10}
-                    pagination={{clickable: true}}
-                    preloadImages={true}
-                    lazy={false}
-                    freeMode={true}
-                    speed={500}
-                >
-                    {project.images?.map((image, index) => (
-                        <SwiperSlide key={index}>
-                            <img
-                                src={image}
-                                alt={`${project.title} ${index + 1}`}
-                                onClick={() => setSelectedImage(image)}
-                                style={{cursor: 'pointer'}}
-                                loading="eager"
-                            />
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
-            < /div>
+
+                {id === "booking" ? (
+                    <div className="figma-embed">
+                        <iframe
+                            style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
+                            width="800"
+                            height="450"
+                            src="https://embed.figma.com/proto/mVKZJIssy5jUCxBWxXQ2gs/Boooking---Refonte?node-id=2069-66&p=f&viewport=322%2C-209%2C0.43&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2069%3A66&page-id=3%3A181&embed-host=share"
+                            allowFullScreen
+                        ></iframe>
+                    </div>
+                ) : (
+                    <Swiper
+                        slidesPerView="auto"
+                        spaceBetween={10}
+                        pagination={{ clickable: true }}
+                        preloadImages={true}
+                        lazy={false}
+                        freeMode={true}
+                        speed={500}
+                    >
+                        {project.images?.map((image, index) => (
+                            <SwiperSlide key={index}>
+                                <img
+                                    src={image}
+                                    alt={`${project.title} ${index + 1}`}
+                                    onClick={() => setSelectedImage(image)}
+                                    style={{ cursor: 'pointer' }}
+                                    loading="eager"
+                                />
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                )}
+
+            </div>
 
             <div
                 className={`touch-indicator ${isActive ? "active" : ""}`}
@@ -325,7 +332,7 @@ const ProjectPage = () => {
                     </div>
                 </div>
             )}
-
+            <Button onClick={() => navigate(-1)} label="Retour aux projets"/>
         </main>
     );
 };

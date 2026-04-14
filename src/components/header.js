@@ -8,6 +8,7 @@ const category = {
     "/uiux": "uiux",
     "/photographie": "photographie",
     "/illustration": "illustration",
+    "/uiux/booking": "uiux",
     "/uiux/pasnumerise": "uiux",
     "/uiux/flop": "uiux",
     "/uiux/maria": "uiux",

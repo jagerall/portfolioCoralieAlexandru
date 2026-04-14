@@ -17,6 +17,7 @@ const PageContent = ({ category }) => {
 
     const categoryData = {
         uiux: [
+            { id: 'booking', label: 'Booking', image: '/assets/ui-booking.svg', category: 'uiux', type: 'Refonte' },
             { id: 'pasnumerise', label: 'Nous n\'avons pas numérisé', image: '/assets/ui-pasnumerise.svg', category: 'uiux', type: 'Retour d\'expérience' },
             { id: 'flop', label: 'FlopEdt', image: '/assets/ui-flop.svg', category: 'uiux', type: 'Audit UX & UI' },
             { id: 'maria', label: 'Maria', image: '/assets/ui-maria.svg', category: 'uiux', type: 'Narration interactive' },

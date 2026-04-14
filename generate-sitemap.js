@@ -12,6 +12,7 @@ const routes = [
     '/photographie',
     '/illustration',
    /* '/about',*/
+    '/uiux/booking',
     '/uiux/pasnumerise',
     '/uiux/flop',
     '/uiux/maria',
