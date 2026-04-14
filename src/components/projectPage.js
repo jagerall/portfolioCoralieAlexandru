@@ -147,7 +147,7 @@ const projectDetails = {
     miel: {
         category: "Illustration",
         title: 'Coralie Alexandru - Miel de 4SH',
-        description: 'Cette étiquette a été créée suite à la demande de 4SH (entreprise d\'alternance) pour ses pots de miel.',
+        description: 'Cette étiquette a été créée suite à la demande de 4SH pour ses pots de miel.',
         images: [
             '/assets/miel-1.webp',
             '/assets/miel-2.webp',
