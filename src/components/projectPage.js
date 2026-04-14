@@ -216,7 +216,7 @@ const ProjectPage = () => {
 
         livretCyber: "https://embed.figma.com/proto/MWFT7RRzr5dSMiwM64qdlW/Rendu---Design---cybers%C3%A9curit%C3%A9?node-id=419-13284&viewport=-3858%2C-179%2C0.07&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&embed-host=share"
     };
-    
+
     const {id} = useParams();
     const navigate = useNavigate();
     const project = projectDetails[id] || {};
@@ -233,7 +233,6 @@ const ProjectPage = () => {
 
     useEffect(() => {
         if (project.title) {
-            const categoryPrefix = project.category ? `${project.category} - ` : "";
             document.title = `Coralie Alexandru - ${project.title}`;
         } else {
             document.title = "Coralie Alexandru";
@@ -287,7 +286,7 @@ const ProjectPage = () => {
 
                 {figmaEmbeds[id] ? (
                     <div className="figma-embed">
-                        <iframe
+                        <iframe title="Figma Embed"
                             style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
                             width="800"
                             height="450"
