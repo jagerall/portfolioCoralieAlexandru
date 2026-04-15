@@ -127,6 +127,124 @@ Notre application avait plusieurs besoins : des comptes utilisateurs, un systèm
             "/assets/argentique-6.webp",
         ],
     },
+
+    auto: {
+        category: "Photographie",
+        title: "Portraits",
+        images: [
+            "/assets/auto-1.webp",
+            "/assets/auto-2.webp",
+            "/assets/auto-3.webp",
+            "/assets/auto-4.webp",
+            "/assets/auto-5.webp",
+        ],
+    },
+
+    faune: {
+        category: "Photographie",
+        title: "Faune et flore",
+        images: [
+            "/assets/fauneflore-1.webp",
+            "/assets/fauneflore-2.webp",
+            "/assets/fauneflore-3.webp",
+            "/assets/fauneflore-4.webp",
+            "/assets/fauneflore-5.webp",
+            "/assets/fauneflore-6.webp",
+            "/assets/fauneflore-7.webp",
+        ],
+    },
+
+    bordeaux: {
+        category: "Photographie",
+        title: "Urbain",
+        images: [
+            "/assets/bordeaux-1.webp",
+            "/assets/bordeaux-2.webp",
+            "/assets/bordeaux-3.webp",
+            "/assets/bordeaux-4.webp",
+            "/assets/bordeaux-5.webp",
+            "/assets/bordeaux-6.webp",
+            "/assets/bordeaux-7.webp",
+            "/assets/bordeaux-8.webp",
+            "/assets/bordeaux-9.webp",
+        ],
+    },
+
+    macro: {
+        category: "Photographie",
+        title: "Macrophoto",
+        images: [
+            "/assets/macro-1.webp",
+            "/assets/macro-2.webp",
+            "/assets/macro-3.webp",
+            "/assets/macro-4.webp",
+            "/assets/macro-5.webp",
+            "/assets/macro-6.webp",
+            "/assets/macro-7.webp",
+        ],
+    },
+
+    allo: {
+        category: "Illustration",
+        title: "Coques de téléphone",
+        description: "",
+        images: ["/assets/allo-1.webp", "/assets/allo-2.webp"],
+    },
+
+    logommi: {
+        category: "Illustration",
+        title: "BDE MMI",
+        description:
+            "Ce logo a été conçu à la suite du concours annuel du BDE MMI visant à créer une identité visuelle pour la formation de l'année 2024-2025.",
+        images: ["/assets/illu-logommi.webp"],
+    },
+
+    miel: {
+        category: "Illustration",
+        title: "Miel de 4SH",
+        description:
+            "Cette étiquette a été créée suite à la demande de 4SH pour ses pots de miel.",
+        images: ["/assets/miel-1.webp", "/assets/miel-2.webp", "/assets/miel-pot.webp"],
+    },
+
+    art: {
+        category: "Illustration",
+        title: "Art",
+        description:
+            "Suite à une visite du Musée des Beaux-Art de Bordeaux, j'ai redessiné les tableaux qui m'ont plu. Dans l'ordre : Madeleine en extase - Copie (Anonyme, XVIIème siècle), Rolla (Herni Gervex, 1878), L'été ou Cérès (Jean-François Millet, 1865).",
+        images: ["/assets/art-1.webp", "/assets/art-2.webp", "/assets/art-3.webp"],
+    },
+
+    amis: {
+        category: "Illustration",
+        title: "Amis",
+        images: ["/assets/ami-1.webp", "/assets/ami-2.webp"],
+    },
+
+    cephalopode: {
+        category: "Illustration",
+        title: "Céphalopodes",
+        images: ["/assets/c-1.webp", "/assets/c-2.webp"],
+    },
+
+    cocktails: {
+        category: "Illustration",
+        title: "Cocktails",
+        images: ["/assets/illu-cocktails.webp"],
+    },
+
+    nature: {
+        category: "Illustration",
+        title: "Nature",
+        images: [
+            "/assets/gouache-5.webp",
+            "/assets/gouache-2.webp",
+            "/assets/gouache-3.webp",
+            "/assets/gouache-4.webp",
+            "/assets/gouache-1.webp",
+        ],
+    },
+
     livret: {
         category: "DA",
         title: "Guide Cybersécurité PME - Livret",
@@ -134,15 +252,19 @@ Notre application avait plusieurs besoins : des comptes utilisateurs, un systèm
             "Réalisation d’un livret de 16 pages destiné aux chefs d’entreprise, portant sur les enjeux de cybersécurité et les cyberattaques. Ce projet aborde les bonnes pratiques de prévention, la gestion des situations de crise ainsi que les stratégies de sortie de crise. Le livret inclut également des fiches pratiques afin de faciliter la compréhension et la mise en œuvre des mesures de sécurité en entreprise.",
         images: ["/assets/livret-1.webp"],
     },
+
     gfy: {
         category: "DA",
         title: "Go Fail Yourself — Campagne 360° (DA concept)",
         description: `Dans un univers outdoor dominé par la sécurité et la performance, la campagne interroge une problématique clé : comment valoriser l’échec comme apprentissage tout en renforçant la confiance dans le matériel de haute montagne ?
+
 Go Fail Yourself transforme les erreurs en données utiles et en preuve de résistance produit.
+
 Print : visuels construits à partir de traces d’échec, comme preuve de robustesse
 App AR/IA : analyse des usages et des “fails”, simulation de scénarios extrêmes et check matériel
 UGC Instagram : partage des échecs comme expériences valorisées
 Activation retail : mousquetons d’or à débloquer après usages répétés de l’app et enregistrement d’échecs
+
 Une campagne qui fait de l’échec un outil de design, de preuve et de narration produit.`,
         images: [
             "/assets/gfy-4.webp",
@@ -153,12 +275,16 @@ Une campagne qui fait de l’échec un outil de design, de preuve et de narratio
             "/assets/gfy-1.webp",
         ],
     },
+
     penmarch: {
         category: "DA",
         title: "Pointe de Penmarc'h - Rebranding",
         description: `Projet de redesign global pour une marque de conserves de poisson fondée en 1920 au Guilvinec en Bretagne. L’objectif est de moderniser l’identité visuelle tout en renforçant un positionnement premium et un ancrage français fort, lié au terroir et à la pêche artisanale.
+
 La direction artistique s’appuie sur l’authenticité, l’univers maritime et le savoir-faire local afin de repositionner la marque dans un registre plus contemporain sans perdre son héritage.
+
 Le projet comprend la création d’un nouveau logo, la refonte d’un packaging (boîte de sardines ou de thon), des déclinaisons produits (nature, tomate basilic, citron huile d’olive) ainsi que trois affiches de campagne présentant les différentes saveurs.
+
 Une identité qui valorise l’héritage breton tout en affirmant une image plus moderne et premium.`,
         images: [
             "/assets/penmarch-1.webp",
@@ -171,11 +297,57 @@ Une identité qui valorise l’héritage breton tout en affirmant une image plus
             "/assets/penmarch-8.webp",
         ],
     },
+
+    wordbroker: {
+        category: "DA",
+        title: "THE WORD_BROKER & THE SCRIPT_MINER - Création intéractive",
+        description:
+            "Dans le cadre du Digital Event de l’ESD Bordeaux, j’ai participé à la production complète de deux expériences interactives publiées sur Neonova.art : THE WORD_BROKER et THE SCRIPT_MINER.\n\n" +
+            "THE WORD_BROKER propose une expérience immersive de boutique fictive où chaque interaction utilisateur génère des artefacts visuels et textuels. THE SCRIPT_MINER explore un univers plus algorithmique autour de la génération de langage et de scripts, en mêlant dispositif physique et système numérique.\n\n" +
+            "J’ai participé à la conception visuelle (tickets de caisse, interfaces et éléments graphiques), à l’intégration CSS et au développement en Python sur Raspberry Pi pour les dispositifs interactifs.\n\n" +
+            "J’ai également pris part à la fabrication physique via impression 3D des socles, embouchures et inserts d’écran pour téléphones, ainsi qu’à la partie hardware avec la soudure des interphones et la connexion des téléphones aux microphones et haut-parleurs.\n\n" +
+            "Enfin, j’ai contribué à l’installation complète de la scénographie sur site, dans une logique de production hybride mêlant design graphique, code, fabrication et expérience immersive.\n\n" +
+            "Projet réalisé sous la direction de Kamel Ghabte et Gatien Leclere.\n",
+        sources: [
+            {
+                label: "NEONOVA - THE WORD_BROKER",
+                url: "https://www.neonova.art/work/sonder-goods",
+            },
+            {
+                label: "NEONOVA -  THE SCRIPT_MINER",
+                url: "https://www.neonova.art/work/script-minner",
+            },
+        ],
+        images: [
+            "/assets/wordbroker-7.webp",
+            "/assets/wordbroker-8.webp",
+            "/assets/wordbroker-4.webp",
+            "/assets/wordbroker-5.webp",
+            "/assets/wordbroker-1.webp",
+            "/assets/wordbroker-2.webp",
+            "/assets/wordbroker-3.webp",
+        ],
+        videos: [
+            {
+                src: "https://framerusercontent.com/assets/HiPEns9vSjrvfNKK9F9FAWhJpbE.mp4",
+                type: "video/mp4",
+            },
+            {
+                src: "https://framerusercontent.com/assets/1AqDt7IyOyPCbj4edidzqHCX4U.mp4",
+                type: "video/mp4",
+            },
+        ],
+    },
+
     fanzine: {
         category: "DA",
         title: "What about zebra crossings ? - Fanzine",
         description:
-            "Projet réalisé en une matinée avec l’objectif de concevoir et produire un fanzine complet sur un sujet libre, en créant l’ensemble des ressources visuelles (textures, photographies et éléments graphiques).",
+            "Projet réalisé en une matinée avec l’objectif de concevoir et produire un fanzine complet sur un sujet libre, en créant l’ensemble des ressources visuelles (textures, photographies et éléments graphiques).\n\n" +
+            "J’ai choisi de travailler autour des passages piétons et de leur signalétique, en détournant ces éléments urbains pour leur donner une dimension narrative et personnifiée.\n\n" +
+            "Le projet imagine les passages piétons comme des entités fatiguées, subissant le quotidien sans reconnaissance, lassées des mégots jetés sur eux et de leur usage répété sans attention.\n\n" +
+            "Dans cet univers, les petits bonhommes verts des feux piétons prennent vie et s’échappent temporairement pour faire une pause, comme une forme de respiration hors du rythme urbain.\n\n" +
+            "Ce fanzine explore une approche narrative et critique de l’espace public, en transformant une signalétique fonctionnelle en personnages vivants, porteurs d’émotions et de comportements humains.",
         images: [
             "/assets/illu-fanzine.webp",
             "/assets/fanzine-4.webp",
