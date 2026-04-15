@@ -119,8 +119,8 @@ Notre application avait plusieurs besoins : des comptes utilisateurs, un systèm
         description:
             "Voici quelques photos prises à l'Olympus M1 sur la Côte d'Azur.",
         images: [
-            "/assets/argentique-5.webp",
             "/assets/argentique-2.webp",
+            "/assets/argentique-5.webp",
             "/assets/argentique-3.webp",
             "/assets/argentique-4.webp",
             "/assets/argentique-1.webp",
@@ -144,11 +144,11 @@ Notre application avait plusieurs besoins : des comptes utilisateurs, un systèm
         category: "Photographie",
         title: "Faune et flore",
         images: [
+            "/assets/fauneflore-5.webp",
+            "/assets/fauneflore-4.webp",
             "/assets/fauneflore-1.webp",
             "/assets/fauneflore-2.webp",
             "/assets/fauneflore-3.webp",
-            "/assets/fauneflore-4.webp",
-            "/assets/fauneflore-5.webp",
             "/assets/fauneflore-6.webp",
             "/assets/fauneflore-7.webp",
         ],
@@ -176,11 +176,8 @@ Notre application avait plusieurs besoins : des comptes utilisateurs, un systèm
         images: [
             "/assets/macro-1.webp",
             "/assets/macro-2.webp",
-            "/assets/macro-3.webp",
             "/assets/macro-4.webp",
-            "/assets/macro-5.webp",
             "/assets/macro-6.webp",
-            "/assets/macro-7.webp",
         ],
     },
 
@@ -417,14 +414,14 @@ const ProjectPage = () => {
             {project.description && (<div>
                 <p>{project.description}</p>
                 {project.sources?.length > 0 && (
-                <p>Sources :
-                    <ul>{project.sources?.map((s) => (
-                        <li key={s.url} className="project-source flex">
-                            <Link key={s.url} href={s.url} label={s.label}/>
-                        </li>
+                    <p>Sources :
+                        <ul>{project.sources?.map((s) => (
+                            <li key={s.url} className="project-source flex">
+                                <Link key={s.url} href={s.url} label={s.label}/>
+                            </li>
 
-                    ))}  </ul></p>
-                    )}
+                        ))}  </ul></p>
+                )}
             </div>)}
 
             <div className="project-links">

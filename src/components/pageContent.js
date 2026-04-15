@@ -54,7 +54,7 @@ const PageContent = ({category}) => {
             {
                 id: 'argentique',
                 label: 'Argentique',
-                image: '/assets/photo-argentique.webp',
+                image:  '/assets/argentique-2.webp',
                 category: 'photographie',
                 type: 'Èze'
             },
@@ -68,27 +68,27 @@ const PageContent = ({category}) => {
             {
                 id: 'faune',
                 label: 'Faune et flore',
-                image: '/assets/photo-animaux.webp',
+                image: '/assets/fauneflore-5.webp',
                 category: 'photographie',
                 type: 'Zoo de la Palmyre'
             },
-            {
+            /*{
                 id: 'bordeaux',
                 label: 'Urbain',
                 image: '/assets/photo-bordeaux.webp',
                 category: 'photographie',
                 type: 'Bordeaux'
-            },
-            {id: 'macro', label: 'Macro', image: '/assets/photo-macro.webp', category: 'photographie', type: 'Vendée'},
+            },*/
+            {id: 'macro', label: 'Macro', image: '/assets/macro-4.webp', category: 'photographie', type: 'Vendée'},
         ],
         illustration: [
-            {
+            /*{
                 id: 'allo',
                 label: 'Coques de téléphone',
                 image: '/assets/illu-allo.webp',
                 category: 'illustration',
                 type: 'Design'
-            },
+            },*/
             {
                 id: 'logommi',
                 label: 'BDE MMI',
@@ -103,13 +103,13 @@ const PageContent = ({category}) => {
                 category: 'illustration',
                 type: 'Étiquette '
             },
-            {
+            /*{
                 id: 'art',
                 label: 'Art',
                 image: '/assets/illu-art.webp',
                 category: 'illustration',
                 type: 'Essais tableaux'
-            },
+            },*/
             {
                 id: 'amis',
                 label: 'Amis',
