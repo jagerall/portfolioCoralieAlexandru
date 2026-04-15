@@ -416,13 +416,15 @@ const ProjectPage = () => {
             <h1 className={"project-description-title"}>{project.title}</h1>
             {project.description && (<div>
                 <p>{project.description}</p>
-                <p>Sources (photos / vidéos):
+                {project.sources?.length > 0 && (
+                <p>Sources :
                     <ul>{project.sources?.map((s) => (
                         <li key={s.url} className="project-source flex">
                             <Link key={s.url} href={s.url} label={s.label}/>
                         </li>
 
                     ))}  </ul></p>
+                    )}
             </div>)}
 
             <div className="project-links">
