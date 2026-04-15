@@ -8,7 +8,9 @@ const category = {
     "/uiux": "uiux",
     "/photographie": "photographie",
     "/illustration": "illustration",
+    "/da": "da",
     "/uiux/booking": "uiux",
+    "/uiux/voiesavenir": "uiux",
     "/uiux/pasnumerise": "uiux",
     "/uiux/flop": "uiux",
     "/uiux/maria": "uiux",
@@ -29,6 +31,11 @@ const category = {
     "/illustration/art": "illustration",
     "/illustration/cocktails": "illustration",
     "/illustration/nature": "illustration",
+    "/da/gfy": "da",
+    "/da/penmarch": "da",
+    "/da/wordbroker": "da",
+    "/da/fanzine": "da",
+    "/da/livret": "da",
 };
 
 function Header() {
@@ -80,6 +87,7 @@ function Header() {
 
             {/* Navigation Desktop */}
             <nav className="desktop-nav">
+                <HeaderLink to="/da" label="Direction Artistique" isActive={activeCategory === "da"} />
                 <HeaderLink to="/uiux" label="UI/UX" isActive={activeCategory === "uiux"} />
                 <HeaderLink to="/photographie" label="Photographie" isActive={activeCategory === "photographie"} />
                 <HeaderLink to="/illustration" label="Illustration" isActive={activeCategory === "illustration"} />
@@ -89,6 +97,7 @@ function Header() {
             <div className={`mobile-menu ${menuOpen ? 'open' : 'closed'}`}>
                 <Button className="close-menu" onClick={handleMenuToggle} label="✕" />
                 <nav className="menu-nav">
+                    <HeaderLink to="/da" label="Direction Artistique" isActive={activeCategory === "da"} />
                     <HeaderLink to="/uiux" label="UI/UX" isActive={activeCategory === "uiux"} />
                     <HeaderLink to="/photographie" label="Photographie" isActive={activeCategory === "photographie"} />
                     <HeaderLink to="/illustration" label="Illustration" isActive={activeCategory === "illustration"} />

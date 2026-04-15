@@ -10,18 +10,18 @@ import StaticPage from "../components/staticPage";
 
 
 function App() {
-   /* const [loading, setLoading] = useState(true);
+    /* const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        setTimeout(() => {
-            setLoading(false);
-        }, 1700);
-    }, []);
+     useEffect(() => {
+         setTimeout(() => {
+             setLoading(false);
+         }, 1700);
+     }, []);
 
-    if (loading) {
-        return <Loader/>;
-    }
-*/
+     if (loading) {
+         return <Loader/>;
+     }
+ */
     return (
         <Router>
             <ScrollToTop/>
@@ -32,8 +32,8 @@ function App() {
                     <Route path="/uiux" element={<PageContent category="uiux"/>}/>
                     <Route path="/photographie" element={<PageContent category="photographie"/>}/>
                     <Route path="/illustration" element={<PageContent category="illustration"/>}/>
-                    {/* <Route path="/autre" element={<PageContent category="autre"/>}/>*/}
-                    <Route path="/:category/:id" element={<ProjectPage/>}/>
+                    <Route path="/da" element={<PageContent category="da"/>}/>
+                        <Route path="/:category/:id" element={<ProjectPage/>}/>
 
                     <Route
                         path="/mentions-legales"
@@ -61,7 +61,7 @@ function App() {
                             />
                         }
                     />
-                   {/* <Route
+                    {/* <Route
                         path="/about"
                         element={
                             <StaticPage className="page-content"

@@ -20,9 +20,14 @@
         justify-content: center;
         align-items: center;
 
+        &-title {
+            margin-bottom: 2rem;
+        }
+
         p {
             text-align: left;
             max-width: 800px;
+            white-space: pre-line;
 
             @media screen and (max-width: 900px) {
                 font-size: 14px;
@@ -34,10 +39,11 @@
         }
     }
 
+    /* ✅ IFRAME + IMAGES STACK PROPRE */
     &-images {
         display: flex;
-        flex-wrap: wrap;
-        align-items: flex-end;
+        flex-direction: column;
+        gap: 2rem;
         width: 100%;
         position: relative;
 
@@ -57,6 +63,7 @@
         a {
             text-align: center;
             width: 9rem;
+
             @media screen and (max-width: 900px) {
                 font-size: 14px;
             }
@@ -68,20 +75,59 @@
         }
     }
 }
-.figma-embed {
+
+/* =========================
+   🎥 IFRAME
+========================= */
+
+.iframe-embed {
     width: 100%;
     display: flex;
     justify-content: center;
 
     iframe {
         width: 100%;
-        height: 900px;
+        height: 800px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
         border-radius: 12px;
-        @media screen and (max-width: 700px) {
+    }
+
+    @media screen and (max-width: 700px) {
+        iframe {
             height: 500px;
         }
     }
 }
+
+/* =========================
+   📦 BEHANCE MODE (plus petit)
+========================= */
+
+.behance-mode {
+    iframe {
+        height: 60vh; /* 👈 plus petit que Figma */
+        max-width: 1000px;
+        border-radius: 12px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    }
+}
+
+/* =========================
+   📖 LIVRET MODE (encore plus “book”)
+========================= */
+
+.livret-mode {
+    iframe {
+        height: 65vh;
+        max-width: 1100px;
+        border-radius: 14px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+    }
+}
+
+/* =========================
+   🖼 SWIPER
+========================= */
 
 .swiper {
     overflow: visible;
@@ -95,11 +141,16 @@
         height: 100%;
         width: auto;
         object-fit: cover;
+
         @media screen and (max-width: 700px) {
             width: 300px;
         }
     }
 }
+
+/* =========================
+   🔍 FULLSCREEN IMAGE
+========================= */
 
 .fullscreen-overlay {
     position: fixed;
@@ -128,6 +179,10 @@
     right: 48px;
     cursor: pointer;
 }
+
+/* =========================
+   👆 CURSOR EFFECT
+========================= */
 
 .touch-indicator {
     position: fixed;
