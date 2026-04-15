@@ -416,7 +416,7 @@ const ProjectPage = () => {
     }, []);
 
     return (<main className="project-page page-content">
-
+        <Button onClick={() => navigate(-1)} label="Retour aux projets"/>
         <div className="project-description">
             <h1 className={"project-description-title"}>{project.title}</h1>
             {project.description && (<p>{project.description}</p>)}
@@ -488,7 +488,7 @@ const ProjectPage = () => {
                 </Button>
             </div>
         </div>)}
-        <Button onClick={() => navigate(-1)} label="Retour aux projets"/>
+
     </main>);
 };
 

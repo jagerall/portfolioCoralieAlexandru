@@ -1,15 +1,35 @@
 .button {
-    padding: .5rem 1rem ;
+    padding: .5rem 1rem;
     background-color: #FFFFFF;
     border: 1px solid #101010;
     font-family: inherit;
     font-size: 1rem;
     color: #101010;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
 
     &:hover, &:focus {
         border: 1px solid #FFFFFF;
         background-color: #101010;
         color: #FFFFFF;
         transition: .2s ease-in-out;
+
+        .button-icon img {
+            filter: invert(1);
+        }
+    }
+
+    &-icon {
+        display: flex;
+        align-items: center;
+
+        img {
+            height: 1rem;
+            width: auto;
+        }
     }
 }

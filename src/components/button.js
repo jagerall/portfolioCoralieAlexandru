@@ -7,7 +7,8 @@ const Button = ({ to, onClick, label, className = '', type = 'button', external 
     if (external) {
         return (
             <a href={to} className={`button ${className}`} target="_blank" rel="noopener noreferrer">
-                <span className="button-text">{label}</span>
+                <div className="button-text">{label}</div>
+                <span className="button-icon"><img src={"/assets/icons/icon-external-link.svg"} alt={"Icone lien externe"}/></span>
             </a>
         );
     }
