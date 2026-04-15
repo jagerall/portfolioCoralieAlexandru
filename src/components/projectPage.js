@@ -21,7 +21,7 @@ Ce projet m’a permis de renforcer mes compétences en UX/UI design et en conce
 
     voiesavenir: {
         category: "UI/UX",
-        title: "Les voies de l'avenir - Plateforme pédagogique interactive",
+        title: "Les voies de l\'avenir - Plateforme pédagogique interactive",
         description: `J’ai participé à la conception de cette plateforme pédagogique dédiée à l’orientation et à la mixité professionnelle. L’objectif était de valoriser des parcours de femmes inspirantes à travers une interface dynamique et accessible.
 
 Le projet repose sur une architecture de l’information segmentée par filières d’études et sur un dispositif de médiation interactive. J’ai travaillé sur la création d’un parcours utilisateur fluide pour les lycéens, en mettant l’accent sur la hiérarchisation des contenus et l’optimisation de l’expérience de lecture.
@@ -37,7 +37,7 @@ Ce projet m’a permis de mobiliser des compétences en UX/UI design, en gestion
 
     pasnumerise: {
         category: "UI/UX",
-        title: "Nous n'avons pas numérisé - Retour d\'expérience",
+        title: "Nous n\'avons pas numérisé - Retour d\'expérience",
         description: "Site présentant notre remise en question de la création d'une application web",
         images: [
             "/assets/pasnumerise-1.webp",
