@@ -50,7 +50,7 @@ Ce projet m’a permis de mobiliser des compétences en UX/UI design, en gestion
 
     flop: {
         category: "UI/UX",
-        title: "Flop'EDT - Audit UX & UI",
+        title: "Flop\'EDT - Audit UX & UI",
         description: `Au cours d'un projet de deux semaines sur l'UI/UX design, j'ai collaboré avec mon groupe pour repenser le gestionnaire d'emploi du temps Flop!Edt. La première semaine était dédiée à la recherche utilisateur pour comprendre les besoins et les frustrations des utilisateurs, tandis que la deuxième était consacrée à la conception et à l'itération des solutions. Nous avons identifié les lacunes du système existant et élaboré des wireframes détaillés, puis des maquettes interactives. Ce projet m'a permis de maîtriser le processus d'UX/UI design et de développer mes compétences sur Figma.`,
         images: [
             "/assets/flop-1.webp",
