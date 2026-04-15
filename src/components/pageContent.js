@@ -32,16 +32,6 @@ const PageContent = ({category}) => {
                 category: 'uiux',
                 type: 'Retour d\'expérience'
             },
-            {id: 'flop', label: 'FlopEdt', image: '/assets/ui-flop.svg', category: 'uiux', type: 'Audit UX & UI'},
-            {
-                id: 'maria',
-                label: 'Maria',
-                image: '/assets/ui-maria.svg',
-                category: 'uiux',
-                type: 'Narration interactive'
-            },
-            {id: 'capc', label: 'CAPC', image: '/assets/ui-capc.webp', category: 'uiux', type: 'Refonte de site'},
-            {id: 'smash', label: 'Smash', image: '/assets/ui-smash.svg', category: 'uiux', type: 'Application'},
             {
                 id: 'reserve',
                 label: 'La Réserve du Musba',
@@ -49,12 +39,22 @@ const PageContent = ({category}) => {
                 category: 'uiux',
                 type: 'Narration interactive'
             },
+
+            {
+                id: 'maria',
+                label: 'Maria',
+                image: '/assets/ui-maria.svg',
+                category: 'uiux',
+                type: 'Narration interactive'
+            }, {id: 'flop', label: 'FlopEdt', image: '/assets/ui-flop.svg', category: 'uiux', type: 'Audit UX & UI'},
+            {id: 'capc', label: 'CAPC', image: '/assets/ui-capc.webp', category: 'uiux', type: 'Refonte de site'},
+            {id: 'smash', label: 'Smash', image: '/assets/ui-smash.svg', category: 'uiux', type: 'Application'},
         ],
         photographie: [
             {
                 id: 'argentique',
                 label: 'Argentique',
-                image:  '/assets/argentique-2.webp',
+                image: '/assets/argentique-2.webp',
                 category: 'photographie',
                 type: 'Èze'
             },
