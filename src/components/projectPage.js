@@ -249,7 +249,7 @@ Notre application avait plusieurs besoins : des comptes utilisateurs, un systèm
         category: "DA",
         title: "Guide Cybersécurité PME - Livret",
         description:
-            "Réalisation d’un livret de 16 pages destiné aux chefs d’entreprise, portant sur les enjeux de cybersécurité et les cyberattaques. Ce projet aborde les bonnes pratiques de prévention, la gestion des situations de crise ainsi que les stratégies de sortie de crise. Le livret inclut également des fiches pratiques afin de faciliter la compréhension et la mise en œuvre des mesures de sécurité en entreprise.",
+            "Réalisation d’un livret destiné aux chefs d’entreprise, portant sur les enjeux de cybersécurité et les cyberattaques. Ce projet aborde les bonnes pratiques de prévention, la gestion des situations de crise ainsi que les stratégies de sortie de crise. Le livret inclut également des fiches pratiques afin de faciliter la compréhension et la mise en œuvre des mesures de sécurité en entreprise.",
         images: ["/assets/livret-1.webp"],
     },
 
