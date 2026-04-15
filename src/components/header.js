@@ -43,6 +43,7 @@ function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
     const location = useLocation();
 
+
     useEffect(() => {
         setMenuOpen(false);
     }, [location.pathname]);
@@ -79,12 +80,11 @@ function Header() {
             </div>
 
             {/* Bouton Menu Mobile */}
-            <Button
-                className="menu-button mobile-only"
-                onClick={handleMenuToggle}
-                label="Menu"
-            />
-
+                <Button
+                    className="menu-button mobile-only"
+                    onClick={handleMenuToggle}
+                    label="Menu"
+                />
             {/* Navigation Desktop */}
             <nav className="desktop-nav">
                 <HeaderLink to="/da" label="Direction Artistique" isActive={activeCategory === "da"} />
@@ -94,15 +94,17 @@ function Header() {
             </nav>
 
             {/* Menu Mobile */}
-            <div className={`mobile-menu ${menuOpen ? 'open' : 'closed'}`}>
-                <Button className="close-menu" onClick={handleMenuToggle} label="✕" />
-                <nav className="menu-nav">
-                    <HeaderLink to="/da" label="Direction Artistique" isActive={activeCategory === "da"} />
-                    <HeaderLink to="/uiux" label="UI/UX" isActive={activeCategory === "uiux"} />
-                    <HeaderLink to="/photographie" label="Photographie" isActive={activeCategory === "photographie"} />
-                    <HeaderLink to="/illustration" label="Illustration" isActive={activeCategory === "illustration"} />
-                </nav>
-            </div>
+                <div className={`mobile-menu ${menuOpen ? 'open' : 'closed'}`}
+                     aria-hidden={!menuOpen}  inert={!menuOpen ? "" : undefined}>
+                    <Button className="close-menu" onClick={handleMenuToggle} label="✕" />
+                    <nav className="menu-nav">
+                        <HeaderLink to="/da" label="Direction Artistique" isActive={activeCategory === "da"}/>
+                        <HeaderLink to="/uiux" label="UI/UX" isActive={activeCategory === "uiux"}/>
+                        <HeaderLink to="/photographie" label="Photographie" isActive={activeCategory === "photographie"}/>
+                        <HeaderLink to="/illustration" label="Illustration" isActive={activeCategory === "illustration"}/>
+                    </nav>
+                </div>
+
         </header>
     );
 }
