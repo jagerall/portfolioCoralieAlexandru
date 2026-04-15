@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {useNavigate, useParams} from 'react-router-dom';
 import Button from "./button";
+import Link from "./link";
 import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
 import '../style/projectpage.scss';
@@ -306,10 +307,17 @@ Une identité qui valorise l’héritage breton tout en affirmant une image plus
             "J’ai participé à la conception visuelle (tickets de caisse, interfaces et éléments graphiques), à l’intégration CSS et au développement en Python sur Raspberry Pi pour les dispositifs interactifs.\n\n" +
             "J’ai également pris part à la fabrication physique via impression 3D des socles, embouchures et inserts d’écran pour téléphones, ainsi qu’à la partie hardware avec la soudure des interphones et la connexion des téléphones aux microphones et haut-parleurs.\n\n" +
             "Enfin, j’ai contribué à l’installation complète de la scénographie sur site, dans une logique de production hybride mêlant design graphique, code, fabrication et expérience immersive.\n\n" +
-            "Projet réalisé sous la direction de Kamel Ghabte et Gatien Leclere.\n\n" +
-            "Sources vidéos :\n" +
-            "https://www.neonova.art/work/sonder-goods\n" +
-            "https://www.neonova.art/work/script-minner\n",
+            "Projet réalisé sous la direction de Kamel Ghabte et Gatien Leclere.\n",
+        sources: [
+            {
+                label: "NEONOVA - THE WORD_BROKER",
+                url: "https://www.neonova.art/work/sonder-goods",
+            },
+            {
+                label: "NEONOVA -  THE SCRIPT_MINER",
+                url: "https://www.neonova.art/work/script-minner",
+            },
+        ],
         images: [
             "/assets/wordbroker-7.webp",
             "/assets/wordbroker-8.webp",
@@ -406,7 +414,17 @@ const ProjectPage = () => {
         <Button onClick={() => navigate(-1)} label="Retour aux projets"/>
         <div className="project-description">
             <h1 className={"project-description-title"}>{project.title}</h1>
-            {project.description && (<p>{project.description}</p>)}
+            {project.description && (<div>
+                <p>{project.description}</p>
+                <p>Sources (photos / vidéos):
+                    <ul>{project.sources?.map((s) => (
+                        <li key={s.url} className="project-source flex">
+                            <Link key={s.url} href={s.url} label={s.label}/>
+                        </li>
+
+                    ))}  </ul></p>
+            </div>)}
+
             <div className="project-links">
                 {project.linkFigma && (<Button to={project.linkFigma} external={true} label="Voir le Figma"/>)}
                 {project.linkWebsite && (<Button to={project.linkWebsite} external={true} label="Voir le site"/>)}

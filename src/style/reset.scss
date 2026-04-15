@@ -1,6 +1,13 @@
 @font-face {
     font-family: 'Swiss721 Lt BT Extended';
     src: url('../../public/assets/font/Swiss721BT-LightExtended.otf') format('opentype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Swiss721 Bold';
+    src: url('../../public/assets/font/swiss-721-extended-bt.ttf') format('opentype');
+    font-style: normal;
 }
 
 *,
@@ -9,6 +16,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.light {
+    font-family: 'Swiss721 Lt BT Extended';
+    font-weight: 300;
+}
+
+.bold {
+    font-family: 'Swiss721 Bold';
+    font-weight: 700;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
 }
 
 body {
