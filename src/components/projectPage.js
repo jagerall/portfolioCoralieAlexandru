@@ -297,7 +297,7 @@ Une identité qui valorise l’héritage breton tout en affirmant une image plus
 
     wordbroker: {
         category: "DA",
-        title: "THE WORD_BROKER & THE SCRIPT_MINER - Création intéractive",
+        title: "THE WORD_BROKER & THE SCRIPT_MINER - Création interactive",
         description:
             "Dans le cadre du Digital Event de l’ESD Bordeaux, j’ai participé à la production complète de deux expériences interactives publiées sur Neonova.art : THE WORD_BROKER et THE SCRIPT_MINER.\n\n" +
             "THE WORD_BROKER propose une expérience immersive de boutique fictive où chaque interaction utilisateur génère des artefacts visuels et textuels. THE SCRIPT_MINER explore un univers plus algorithmique autour de la génération de langage et de scripts, en mêlant dispositif physique et système numérique.\n\n" +
