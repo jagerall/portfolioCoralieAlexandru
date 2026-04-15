@@ -117,7 +117,7 @@ Notre application avait plusieurs besoins : des comptes utilisateurs, un systèm
         category: "Photographie",
         title: "Argentique",
         description:
-            "Voici quelques photos prises à l'Olympus M1 sur la Côte d'Azur.",
+            "Voici quelques photos prises à l\'Olympus M1 sur la Côte d'Azur.",
         images: [
             "/assets/argentique-5.webp",
             "/assets/argentique-2.webp",
