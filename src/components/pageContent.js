@@ -47,8 +47,8 @@ const PageContent = ({category}) => {
                 category: 'uiux',
                 type: 'Narration interactive'
             }, {id: 'flop', label: 'FlopEdt', image: '/assets/ui-flop.svg', category: 'uiux', type: 'Audit UX & UI'},
-            {id: 'capc', label: 'CAPC', image: '/assets/ui-capc.webp', category: 'uiux', type: 'Refonte de site'},
-            {id: 'smash', label: 'Smash', image: '/assets/ui-smash.svg', category: 'uiux', type: 'Application'},
+           /* {id: 'capc', label: 'CAPC', image: '/assets/ui-capc.webp', category: 'uiux', type: 'Refonte de site'},*/
+            /*{id: 'smash', label: 'Smash', image: '/assets/ui-smash.svg', category: 'uiux', type: 'Application'},*/
         ],
         photographie: [
             {
