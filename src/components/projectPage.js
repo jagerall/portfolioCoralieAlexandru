@@ -21,7 +21,7 @@ Ce projet m’a permis de renforcer mes compétences en UX/UI design et en conce
 
     voiesavenir: {
         category: "UI/UX",
-        title: "Les voies de l\'avenir - Plateforme pédagogique interactive",
+        title: "Les voies de l'avenir - Plateforme pédagogique interactive",
         description: `J’ai participé à la conception de cette plateforme pédagogique dédiée à l’orientation et à la mixité professionnelle. L’objectif était de valoriser des parcours de femmes inspirantes à travers une interface dynamique et accessible.
 
 Le projet repose sur une architecture de l’information segmentée par filières d’études et sur un dispositif de médiation interactive. J’ai travaillé sur la création d’un parcours utilisateur fluide pour les lycéens, en mettant l’accent sur la hiérarchisation des contenus et l’optimisation de l’expérience de lecture.
@@ -37,7 +37,7 @@ Ce projet m’a permis de mobiliser des compétences en UX/UI design, en gestion
 
     pasnumerise: {
         category: "UI/UX",
-        title: "Nous n\'avons pas numérisé - Retour d\'expérience",
+        title: "Nous n'avons pas numérisé - Retour d'expérience",
         description: "Site présentant notre remise en question de la création d'une application web",
         images: [
             "/assets/pasnumerise-1.webp",
@@ -50,7 +50,7 @@ Ce projet m’a permis de mobiliser des compétences en UX/UI design, en gestion
 
     flop: {
         category: "UI/UX",
-        title: "Flop\'EDT - Audit UX & UI",
+        title: "Flop'EDT - Audit UX & UI",
         description: `Au cours d'un projet de deux semaines sur l'UI/UX design, j'ai collaboré avec mon groupe pour repenser le gestionnaire d'emploi du temps Flop!Edt. La première semaine était dédiée à la recherche utilisateur pour comprendre les besoins et les frustrations des utilisateurs, tandis que la deuxième était consacrée à la conception et à l'itération des solutions. Nous avons identifié les lacunes du système existant et élaboré des wireframes détaillés, puis des maquettes interactives. Ce projet m'a permis de maîtriser le processus d'UX/UI design et de développer mes compétences sur Figma.`,
         images: [
             "/assets/flop-1.webp",
@@ -117,7 +117,7 @@ Notre application avait plusieurs besoins : des comptes utilisateurs, un systèm
         category: "Photographie",
         title: "Argentique",
         description:
-            "Voici quelques photos prises à l\'Olympus M1 sur la Côte d'Azur.",
+            "Voici quelques photos prises à l'Olympus M1 sur la Côte d'Azur.",
         images: [
             "/assets/argentique-5.webp",
             "/assets/argentique-2.webp",
