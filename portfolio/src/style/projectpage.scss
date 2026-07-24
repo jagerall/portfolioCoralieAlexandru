@@ -1,0 +1,304 @@
+@import './reset';
+
+.project {
+    &-page {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        margin: 0;
+        height: 100%;
+        align-items: center;
+        position: relative;
+
+        @media screen and (max-width: 900px) {
+            flex-direction: column;
+            height: auto;
+            padding: 1rem;
+        }
+
+        &-tags {
+                display: flex;
+                flex-direction: column;
+                color: white;
+                margin-bottom: 2rem;
+                font-size:  14px;
+                font-style: italic;
+            }
+
+        &-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 60%;
+            padding: 2rem;
+            height: 100%;
+            overflow-y: auto;
+            padding-right: 2rem;
+            background-color: #FA0026;
+            color: white;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+
+            @media screen and (max-width: 900px) {
+                width: 100%;
+                height: auto;
+                overflow-y: visible;
+                padding-right: 0;
+            }
+        }
+
+        &-section {
+            width: 40%;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+
+            &:before {
+                content: '';
+                position: absolute;
+                left: -1rem;
+                top: 0;
+                width: 2px;
+                height: 100%;
+                background-color: #FA0026;
+            }
+
+            @media screen and (max-width: 900px) {
+                width: 100%;
+                height: auto;
+
+                &:before {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+
+        ul {
+            padding-top: .5rem;
+        }
+
+        &-title {
+            margin-bottom: .4rem;
+            color: white;
+        }
+
+        p {
+            text-align: left;
+            max-width: 800px;
+            white-space: pre-line;
+
+            @media screen and (max-width: 900px) {
+                font-size: 14px;
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            gap: 1rem;
+        }
+    }
+
+
+    &-source {
+        padding-bottom: .5rem;
+    }
+
+    &-images {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+        &:has(.project-image-item:only-child) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &-image-item {
+        width: 100%;
+        height: 15rem;
+        position: relative;
+        cursor: none;
+        outline: 3px solid transparent;
+        transition: outline 0.2s ease-in-out;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #FA0026;
+            mix-blend-mode: screen;
+            opacity: 1;
+            transition: opacity 0.5s ease;
+        }
+
+        &:hover {
+            outline: 3px inset #FA0026;
+            z-index: 1;
+
+            &::before {
+                opacity: 0;
+            }
+        }
+
+        &:only-child {
+            height: 100%;
+        }
+
+        img, video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &-links {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: left;
+        align-items: left;
+
+        a {
+            text-align: center;
+            width: 11rem;
+
+            @media screen and (max-width: 900px) {
+                font-size: 14px;
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+}
+
+/* =========================
+   🎥 IFRAME
+========================= */
+
+.iframe-embed {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer; /* Make iframe clickable */
+
+    iframe {
+        width: 100%;
+        height: 800px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+    }
+
+    @media screen and (max-width: 700px) {
+        iframe {
+            height: 500px;
+        }
+    }
+}
+
+/* =========================
+   📦 BEHANCE MODE (plus petit)
+========================= */
+
+.behance-mode {
+    iframe {
+        height: 60vh; /* 👈 plus petit que Figma */
+        max-width: 1000px;
+        border-radius: 12px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    }
+}
+
+/* =========================
+   📖 LIVRET MODE (encore plus “book”)
+========================= */
+
+.livret-mode {
+    iframe {
+        height: 65vh;
+        max-width: 1100px;
+        border-radius: 14px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+    }
+}
+
+/* =========================
+   🔍 FULLSCREEN IMAGE
+========================= */
+
+.fullscreen-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+    background: rgba(250, 250, 250, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="%23FA0026"/></svg>') 12 12, auto;
+}
+
+.fullscreen-content {
+    img {
+        max-width: 90vw;
+        max-height: 90vh;
+        object-fit: contain;
+    }
+}
+
+.close-btn {
+    position: fixed;
+    bottom: 24px;
+    right: 48px;
+    padding: .5rem 1rem;
+    background-color: transparent;
+    border: 2px solid #FA0026;
+    border-radius: 50px;
+    font-family: 'Swiss721 bold', sans-serif;
+    font-size: 1rem;
+    line-height: 82%;
+    text-transform: lowercase;
+    letter-spacing: -1px;
+    color: #FA0026;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    justify-content: center;
+    text-decoration: none;
+    width: fit-content;
+
+    &:hover, &:focus {
+        border: 2px solid #FA0026;
+        background-color: #FA0026;
+        color: #FFFFFF;
+        transition: .1s ease-in-out;
+    }
+}

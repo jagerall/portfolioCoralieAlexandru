@@ -1,0 +1,110 @@
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FBEAEE;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    flex: 1 1 calc(30% - .3rem);
+    max-width: calc(30% - .3rem);
+    aspect-ratio: 1 / 1;
+    border: 3px solid white;
+
+    &:hover {
+          border: none;
+        }
+
+    .card-image {
+        background-size : fill;
+        transition: filter 0.5s ease;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #FA0026;
+        mix-blend-mode: screen;
+        opacity: 1;
+        transition: opacity 0.5s ease;
+    }
+
+    &:hover, &:focus {
+        cursor: none;
+        outline: 3px solid white;
+        outline-offset: 4px;
+        transition: outline-offset 0.2s linear;
+
+        &::before {
+            opacity: 0;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        max-height: 15rem;
+        max-width: 9rem;
+        padding: 1.5rem;
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: .5rem;
+    background-color: rgba(255, 255, 255, 0.90);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    backdrop-filter: blur(4px);
+    padding: 1rem;
+
+     &-tags {
+            display: flex;
+             flex-direction: column;
+             color: #FA0026;
+             margin-bottom: 2rem;
+             font-style: italic;
+        }
+
+    @media screen and (max-width: 900px) {
+        display: none;
+    }
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.project-name {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: #FA0026;
+    text-align: center;
+}
+
+.project-type {
+    font-size: 1rem;
+    color: #FA0026;
+    text-align: center;
+    font-style: italic;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.3rem;
+    font-size: 0.875rem;
+    color: #FA0026;
+}

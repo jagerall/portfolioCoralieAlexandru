@@ -1,0 +1,19 @@
+[build]
+base = "portfolio"
+command = "npm run build"
+publish = "build"
+
+[build.environment]
+NODE_VERSION = "22"
+CI = "false"
+
+[[redirects]]
+from = "https://coraliealexandru.netlify.app/*"
+to = "https://coraliealexandru.fr/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200

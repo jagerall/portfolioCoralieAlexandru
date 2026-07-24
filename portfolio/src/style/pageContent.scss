@@ -1,0 +1,40 @@
+.page-content {
+    animation: appear .1s linear  forwards;
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+
+    @keyframes appear {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1
+        }
+    }
+    @media screen and (max-width: 768px) {
+        height: auto;
+    }
+}
+
+.main-content {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    justify-items: center;
+    background-color: #FA0026;
+    height: 100%;
+
+    @media screen and (max-width: 768px) {
+       flex: 1 1 100%;
+       max-width: 100%;
+    }
+}

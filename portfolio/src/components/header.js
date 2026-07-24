@@ -1,0 +1,101 @@
+import React, {useState, useEffect} from 'react';
+import {useLocation} from 'react-router-dom';
+import HeaderLink from '../components/headerlink';
+import '../style/header.scss';
+import Button from "./button";
+
+const category = {
+    "/uiux": "uiux",
+    "/photographie": "photographie",
+    "/illustration": "illustration",
+    "/da": "da",
+    "/uiux/booking": "uiux",
+    "/uiux/voiesavenir": "uiux",
+    "/uiux/pasnumerise": "uiux",
+    "/uiux/flop": "uiux",
+    "/uiux/maria": "uiux",
+    "/uiux/capc": "uiux",
+    "/uiux/smash": "uiux",
+    "/uiux/reserve": "uiux",
+    "/photographie/argentique": "photographie",
+    "/photographie/auto": "photographie",
+    "/photographie/faune": "photographie",
+    "/photographie/bordeaux": "photographie",
+    "/photographie/macro": "photographie",
+    "/illustration/allo": "illustration",
+    "/illustration/ami": "illustration",
+    "/illustration/logommi": "illustration",
+    "/illustration/autocollant": "illustration",
+    "/illustration/miel": "illustration",
+    "/illustration/cephalopode": "illustration",
+    "/illustration/art": "illustration",
+    "/illustration/cocktails": "illustration",
+    "/illustration/nature": "illustration",
+    "/da/gfy": "da",
+    "/da/penmarch": "da",
+    "/da/wordbroker": "da",
+    "/da/fanzine": "da",
+    "/da/livret": "da",
+};
+
+function Header() {
+    const [isHovered, setIsHovered] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
+    const location = useLocation();
+
+
+    useEffect(() => {
+        setMenuOpen(false);
+    }, [location.pathname]);
+
+    const handleMouseLeave = () => {
+        setIsHovered(false);
+    };
+
+    const activeCategory = category[
+        Object.keys(category).find((path) => location.pathname.startsWith(path))
+        ] || null;
+
+    const handleMenuToggle = () => {
+        setMenuOpen((prev) => !prev);
+    };
+
+    return (
+        <header className="header">
+            <div>
+            <img
+                className={`header-image`}
+                src='../assets/ca-logo-header.svg'
+                alt="Logo"
+            />
+            </div>
+            {/* Bouton Menu Mobile */}
+            <Button
+                className="menu-button mobile-only"
+                onClick={handleMenuToggle}
+                label="Menu"
+            />
+            {/* Navigation Desktop */}
+            <nav className="desktop-nav">
+                <HeaderLink to="/da" label="Direction Artistique" isActive={activeCategory === "da"}/>
+                <HeaderLink to="/uiux" label="UI/UX" isActive={activeCategory === "uiux"}/>
+                <HeaderLink to="/photographie" label="Photographie" isActive={activeCategory === "photographie"}/>
+                <HeaderLink to="/illustration" label="Illustration" isActive={activeCategory === "illustration"}/>
+            </nav>
+
+            {/* Menu Mobile */}
+            <div className={`mobile-menu ${menuOpen ? 'open' : 'closed'}`}
+                 aria-hidden={!menuOpen} inert={!menuOpen ? "" : undefined}>
+                <Button className="close-menu" onClick={handleMenuToggle} label="✕"/>
+                <nav className="menu-nav">
+                    <HeaderLink to="/da" label="Direction Artistique" isActive={activeCategory === "da"}/>
+                    <HeaderLink to="/uiux" label="UI/UX" isActive={activeCategory === "uiux"}/>
+                    <HeaderLink to="/photographie" label="Photographie" isActive={activeCategory === "photographie"}/>
+                    <HeaderLink to="/illustration" label="Illustration" isActive={activeCategory === "illustration"}/>
+                </nav>
+            </div>
+        </header>
+    );
+}
+
+export default Header;

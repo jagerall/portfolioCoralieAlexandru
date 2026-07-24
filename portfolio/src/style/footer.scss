@@ -1,0 +1,23 @@
+.footer {
+    position: relative;
+    z-index: 1;
+    color: #FA0026;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 0 1rem 0 2rem;
+
+    &-links {
+        width: 100%;
+        display: flex;
+        flex: 1 1 0;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: right;
+        justify-content: right;
+
+        @media screen and (max-width: 720px) {
+            flex-direction: column;
+        }
+    }
+}
