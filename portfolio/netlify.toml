@@ -6,6 +6,7 @@ publish = "build"
 [build.environment]
 NODE_VERSION = "18"
 CI = "false"
+GENERATE_SOURCEMAP = "false"
 
 [[redirects]]
 from = "https://coraliealexandru.netlify.app/*"
