@@ -422,19 +422,19 @@ const ProjectPage = () => {
         <div className="project-page-section">
             <div className="project-images">
                 {allMedia.map((item, index) => (
-                        <div key={index} className="project-image-item" onClick={() => openImage(index)}>
-                            {item.type === "video" || item.type === 'gif' ? (<video
-                                src={item.src}
-                                loop
-                                muted
-                                playsInline
-                                autoPlay
-                            />) : (<img
-                                src={item.src}
-                                alt={`${project.title} ${index + 1}`}
-                            />)}
-                        </div>
-                    ))
+                    <div key={index} className="project-image-item" onClick={() => openImage(index)}>
+                        {item.type === "video" || item.type === 'gif' ? (<video
+                            src={item.src}
+                            loop
+                            muted
+                            playsInline
+                            autoPlay
+                        />) : (<img
+                            src={item.src}
+                            alt={`${project.title} ${index + 1}`}
+                        />)}
+                    </div>
+                ))
                 }
 
                 {iframeEmbeds[id] && (<div

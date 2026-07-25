@@ -125,3 +125,8 @@ p {
        display: none;
     }
 }
+
+html.custom-cursor-active,
+html.custom-cursor-active * {
+    cursor: none !important;
+}
