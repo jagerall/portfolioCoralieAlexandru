@@ -252,9 +252,44 @@
 }
 
 .fullscreen-content {
-    img {
+    position: relative;
+
+    img, video {
         max-width: 90vw;
         max-height: 90vh;
         object-fit: contain;
     }
+}
+
+.fullscreen-nav-prev, .fullscreen-nav-next {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1001;
+
+    .button {
+        background-color: transparent;
+        border: 2px solid #FA0026;
+        color: #FA0026;
+
+        &:hover {
+            background-color: #FA0026;
+            color: white;
+        }
+    }
+}
+
+.fullscreen-nav-prev {
+    left: 24px;
+}
+
+.fullscreen-nav-next {
+    right: 24px;
+}
+
+.close-btn {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
 }

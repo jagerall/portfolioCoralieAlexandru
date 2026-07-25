@@ -353,6 +353,33 @@ const ProjectPage = () => {
     const project = projectDetails[id] || {};
 
     const [selectedImage, setSelectedImage] = useState(null);
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    const allMedia = [...(project.videos || []).map(video => ({
+        type: video.type.includes('gif') ? 'gif' : 'video',
+        src: video.src
+    })), ...(project.images || []).map(img => ({
+        type: "image", src: img
+    }))];
+
+    const openImage = (index) => {
+        setCurrentIndex(index);
+        setSelectedImage(allMedia[index]);
+    };
+
+    const closeImage = () => {
+        setSelectedImage(null);
+    };
+
+    const nextImage = () => {
+        const nextIndex = (currentIndex + 1) % allMedia.length;
+        openImage(nextIndex);
+    };
+
+    const prevImage = () => {
+        const prevIndex = (currentIndex - 1 + allMedia.length) % allMedia.length;
+        openImage(prevIndex);
+    };
 
     useEffect(() => {
         if (project.title) {
@@ -394,14 +421,8 @@ const ProjectPage = () => {
         </div>
         <div className="project-page-section">
             <div className="project-images">
-                {(project.images?.length > 0 || project.videos?.length > 0) &&
-                    [...(project.videos || []).map(video => ({
-                        type: video.type.includes('gif') ? 'gif' : 'video',
-                        src: video.src
-                    })), ...(project.images || []).map(img => ({
-                        type: "image", src: img
-                    }))].map((item, index) => (
-                        <div key={index} className="project-image-item">
+                {allMedia.map((item, index) => (
+                        <div key={index} className="project-image-item" onClick={() => openImage(index)}>
                             {item.type === "video" || item.type === 'gif' ? (<video
                                 src={item.src}
                                 loop
@@ -411,7 +432,6 @@ const ProjectPage = () => {
                             />) : (<img
                                 src={item.src}
                                 alt={`${project.title} ${index + 1}`}
-                                onClick={() => setSelectedImage(item.src)}
                             />)}
                         </div>
                     ))
@@ -429,10 +449,20 @@ const ProjectPage = () => {
                 </div>)}
             </div>
 
-            {selectedImage && (<div className="fullscreen-overlay" onClick={() => setSelectedImage(null)}>
+            {selectedImage && (<div className="fullscreen-overlay" onClick={closeImage}>
                 <div className="fullscreen-content">
-                    <img src={selectedImage} alt="Fullscreen preview"/>
-                    <Button className="close-btn" label={'Fermer'} onClick={() => setSelectedImage(null)}>
+                    {selectedImage.type === 'video' || selectedImage.type === 'gif' ? (
+                        <video src={selectedImage.src} loop muted playsInline autoPlay />
+                    ) : (
+                        <img src={selectedImage.src} alt="Fullscreen preview"/>
+                    )}
+                    <div className="fullscreen-nav-prev">
+                        <Button className="nav-btn" onClick={(e) => {e.stopPropagation(); prevImage();}} label="Précédent" />
+                    </div>
+                    <div className="fullscreen-nav-next">
+                        <Button className="nav-btn" onClick={(e) => {e.stopPropagation(); nextImage();}} label="Suivant" />
+                    </div>
+                    <Button className="close-btn" label={'Fermer'} onClick={closeImage}>
 
                     </Button>
                 </div>
