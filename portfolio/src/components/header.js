@@ -24,8 +24,6 @@ const category = {
     "/da/gfy": "da",
     "/da/penmarch": "da",
     "/da/wordbroker": "da",
-    "/da/fanzine": "da",
-    "/da/livret": "da",
 };
 
 function Header() {

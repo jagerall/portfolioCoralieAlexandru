@@ -9,11 +9,12 @@
     flex: 1 1 30%;
     max-width: 30%;
     aspect-ratio: 1 / 1;
+    border: 5px solid #FA0026;
 
     .card-image {
-        background-size: fill;
+        background-size: cover;
+        scale: 1.3;
         filter: grayscale(100%);
-        transition: filter 10s ease;
     }
 
     &::after{
@@ -26,7 +27,6 @@
         background-color: #FA0026;
         mix-blend-mode: screen;
         opacity: 1;
-        transition: opacity 0.5s ease;
     }
 
     &:hover, &:focus {
