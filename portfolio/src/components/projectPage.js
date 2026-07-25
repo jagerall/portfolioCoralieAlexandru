@@ -365,10 +365,12 @@ const ProjectPage = () => {
     const openImage = (index) => {
         setCurrentIndex(index);
         setSelectedImage(allMedia[index]);
+        document.body.classList.add('overlay-active');
     };
 
     const closeImage = () => {
         setSelectedImage(null);
+        document.body.classList.remove('overlay-active');
     };
 
     const nextImage = () => {
@@ -388,6 +390,24 @@ const ProjectPage = () => {
             document.title = "Coralie Alexandru";
         }
     }, [project.title, project.category]);
+
+    useEffect(() => {
+        const handleKeyDown = (event) => {
+            if (selectedImage) {
+                if (event.key === 'ArrowLeft') {
+                    prevImage();
+                } else if (event.key === 'ArrowRight') {
+                    nextImage();
+                }
+            }
+        };
+
+        window.addEventListener('keydown', handleKeyDown);
+
+        return () => {
+            window.removeEventListener('keydown', handleKeyDown);
+        };
+    }, [selectedImage, currentIndex]);
 
     return (<main className="project-page">
         <div className="project-page-text">
@@ -422,19 +442,19 @@ const ProjectPage = () => {
         <div className="project-page-section">
             <div className="project-images">
                 {allMedia.map((item, index) => (
-                    <div key={index} className="project-image-item" onClick={() => openImage(index)}>
-                        {item.type === "video" || item.type === 'gif' ? (<video
-                            src={item.src}
-                            loop
-                            muted
-                            playsInline
-                            autoPlay
-                        />) : (<img
-                            src={item.src}
-                            alt={`${project.title} ${index + 1}`}
-                        />)}
-                    </div>
-                ))
+                        <div key={index} className="project-image-item" onClick={() => openImage(index)}>
+                            {item.type === "video" || item.type === 'gif' ? (<video
+                                src={item.src}
+                                loop
+                                muted
+                                playsInline
+                                autoPlay
+                            />) : (<img
+                                src={item.src}
+                                alt={`${project.title} ${index + 1}`}
+                            />)}
+                        </div>
+                    ))
                 }
 
                 {iframeEmbeds[id] && (<div

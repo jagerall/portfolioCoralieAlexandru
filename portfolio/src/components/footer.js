@@ -6,7 +6,6 @@ import Link from './link';
 const Footer = () => {
     return (
         <footer className="footer">
-            <span className="footer-text bold">Contact</span>
             <div className="footer-links bold">
                 <FooterLink
                     to="https://www.linkedin.com/in/coralie-alexandru-0a57391b9/"

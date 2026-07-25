@@ -10,6 +10,10 @@
         align-items: center;
         position: relative;
 
+        &.overlay-active {
+            pointer-events: none;
+        }
+
         @media screen and (max-width: 900px) {
             flex-direction: column;
             height: auto;
@@ -178,6 +182,17 @@
         justify-content: left;
         align-items: left;
 
+        .button {
+            background-color: transparent;
+            border: 2px solid #FA0026;
+            color: #FA0026;
+
+            &:hover {
+                background-color: #FA0026;
+                color: white;
+            }
+        }
+
         a {
             text-align: center;
             width: 11rem;
@@ -248,7 +263,6 @@
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="%23FA0026"/></svg>') 12 12, auto;
 }
 
 .fullscreen-content {
@@ -256,7 +270,7 @@
 
     img, video {
         max-width: 90vw;
-        max-height: 90vh;
+        max-height: 85vh;
         object-fit: contain;
     }
 }
