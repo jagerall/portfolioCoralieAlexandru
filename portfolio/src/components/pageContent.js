@@ -7,9 +7,7 @@ import {Helmet} from 'react-helmet';
 const categoryTitles = {
     uiux: "Coralie Alexandru - UI/UX",
     photographie: "Coralie Alexandru - Photographie",
-    illustration: "Coralie Alexandru - Illustrations",
     da: "Coralie Alexandru - Direction Artistique",
-    /*    about: "Coralie Alexandru - À propos",*/
 };
 
 const PageContent = ({category}) => {
@@ -79,49 +77,6 @@ const PageContent = ({category}) => {
                 tags: ['Photographie']
             },
             {id: 'macro', label: 'Macro', image: '/assets/macro-4.webp', category: 'photographie', type: 'Vendée', tags: ['Macrophoto']},
-        ],
-        illustration: [
-            {
-                id: 'logommi',
-                label: 'BDE MMI',
-                image: '/assets/illu-logommi.webp',
-                category: 'illustration',
-                type: 'Logo',
-                tags: ['Logo design']
-            },
-            {
-                id: 'miel',
-                label: 'Miel de 4SH',
-                image: '/assets/illu-miel.webp',
-                category: 'illustration',
-                type: 'Étiquette',
-                tags: ['Packaging design']
-            },
-            {
-                id: 'amis',
-                label: 'Amis',
-                image: '/assets/illu-ami.webp',
-                category: 'illustration',
-                type: 'Dessin numérique',
-                tags: ['Illustration']
-            },
-            {
-                id: 'cephalopode',
-                label: 'Céphalopodes',
-                image: '/assets/illu-pieuvre.webp',
-                category: 'illustration',
-                type: 'Dessin numérique',
-                tags: ['Illustration']
-            },
-            {
-                id: 'cocktails',
-                label: 'Cocktails',
-                image: '/assets/illu-cocktails.webp',
-                category: 'illustration',
-                type: 'Dessin numérique',
-                tags: ['Illustration']
-            },
-            {id: 'nature', label: 'Nature', image: '/assets/gouache-5.webp', category: 'illustration', type: 'Gouache', tags: ['Illustration']},
         ],
         da: [
             {

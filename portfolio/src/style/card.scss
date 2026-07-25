@@ -6,21 +6,17 @@
     position: relative;
     overflow: hidden;
     border-radius: 50%;
-    flex: 1 1 calc(25% - .3rem);
-    max-width: calc(25% - .3rem);
+    flex: 1 1 30%;
+    max-width: 30%;
     aspect-ratio: 1 / 1;
-    border: 5px solid red;
-
-    &:hover {
-          border: none;
-        }
 
     .card-image {
-        background-size : fill;
-        transition: filter 0.5s ease;
+        background-size: fill;
+        filter: grayscale(100%);
+        transition: filter 10s ease;
     }
 
-    &::before {
+    &::after{
         content: '';
         position: absolute;
         top: 0;
@@ -36,7 +32,11 @@
     &:hover, &:focus {
         cursor: none;
 
-        &::before {
+        .card-image {
+            filter: none;
+        }
+
+        &::after {
             opacity: 0;
         }
     }
@@ -62,8 +62,6 @@
     justify-content: center;
     gap: 1rem;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    backdrop-filter: blur(4px);
     padding: 1rem;
 
      &-tags {

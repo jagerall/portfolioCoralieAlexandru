@@ -8,7 +8,7 @@ const SNAP_RADIUS = 15;
 const DEFAULT_SIZE = 25;
 const DOT_SIZE = 10;
 const HEADER_DOT_OFFSET_TOP = 64;
-const FOOTER_DOT_OFFSET_TOP = 54;
+const FOOTER_DOT_OFFSET_TOP = 58;
 
 const getDotCenter = (element) => {
     const rect = element.getBoundingClientRect();
@@ -43,6 +43,7 @@ const CustomCursor = () => {
     const [isMagnetic, setIsMagnetic] = useState(false);
     const [isTransitioning, setIsTransitioning] = useState(false);
     const [isCardHovered, setIsCardHovered] = useState(false);
+    const [isPulsing, setIsPulsing] = useState(false);
 
     const cursorRef = useRef(null);
     const activeLinkRef = useRef(null);
@@ -92,6 +93,8 @@ const CustomCursor = () => {
 
             const target = event.target;
             const hoveredCard = target?.closest?.('.card');
+            const isProjectImage = target?.closest?.('.project-image-item');
+            setIsPulsing(!!isProjectImage);
 
             // --- CAS 1: SURVOL D'UNE CARD ---
             if (hoveredCard) {
@@ -189,7 +192,7 @@ const CustomCursor = () => {
     return (
         <motion.div
             ref={cursorRef}
-            className={`custom-cursor ${isCardHovered ? 'is-card-hover' : ''}`}
+            className={`custom-cursor ${isCardHovered ? 'is-card-hover' : ''} ${isPulsing ? 'is-pulsing' : ''}`}
             style={{
                 left: springX,
                 top: springY,

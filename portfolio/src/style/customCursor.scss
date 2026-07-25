@@ -5,6 +5,17 @@
     }
 }
 
+@keyframes sonar {
+    0% {
+        transform: scale(0.5);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
 .custom-cursor {
     position: fixed;
     top: 0;
@@ -15,6 +26,19 @@
     border: 5px solid transparent;
     background-color: #FA0026;
     will-change: transform, width, height, border-radius;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+        border-radius: 50%;
+        border: 5px solid #FA0026;
+        opacity: 0;
+        transform: scale(0);
+    }
 
     /* --- Mode Survol de Carte --- */
     &.is-card-hover {
@@ -45,5 +69,11 @@
         background-color: #FA0026;
         border-color: transparent;
         opacity: 0;
+    }
+
+    &.is-pulsing {
+        &::after {
+            animation: sonar 0.8s infinite;
+        }
     }
 }

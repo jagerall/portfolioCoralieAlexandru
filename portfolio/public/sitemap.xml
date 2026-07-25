@@ -18,11 +18,6 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.coraliealexandru.fr/illustration</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
         <loc>https://www.coraliealexandru.fr/uiux/pasnumerise</loc>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -74,51 +69,6 @@
     </url>
     <url>
         <loc>https://www.coraliealexandru.fr/photographie/macro</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.coraliealexandru.fr/illustration/allo</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.coraliealexandru.fr/illustration/ami</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.coraliealexandru.fr/illustration/logommi</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.coraliealexandru.fr/illustration/autocollant</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.coraliealexandru.fr/illustration/miel</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.coraliealexandru.fr/illustration/cephalopode</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.coraliealexandru.fr/illustration/art</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.coraliealexandru.fr/illustration/cocktails</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.coraliealexandru.fr/illustration/nature</loc>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>

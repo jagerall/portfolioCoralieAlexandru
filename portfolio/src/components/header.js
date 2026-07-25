@@ -7,7 +7,6 @@ import Button from "./button";
 const category = {
     "/uiux": "uiux",
     "/photographie": "photographie",
-    "/illustration": "illustration",
     "/da": "da",
     "/uiux/booking": "uiux",
     "/uiux/voiesavenir": "uiux",
@@ -22,15 +21,6 @@ const category = {
     "/photographie/faune": "photographie",
     "/photographie/bordeaux": "photographie",
     "/photographie/macro": "photographie",
-    "/illustration/allo": "illustration",
-    "/illustration/ami": "illustration",
-    "/illustration/logommi": "illustration",
-    "/illustration/autocollant": "illustration",
-    "/illustration/miel": "illustration",
-    "/illustration/cephalopode": "illustration",
-    "/illustration/art": "illustration",
-    "/illustration/cocktails": "illustration",
-    "/illustration/nature": "illustration",
     "/da/gfy": "da",
     "/da/penmarch": "da",
     "/da/wordbroker": "da",
@@ -80,7 +70,6 @@ function Header() {
                 <HeaderLink to="/da" label="Direction Artistique" isActive={activeCategory === "da"}/>
                 <HeaderLink to="/uiux" label="UI/UX" isActive={activeCategory === "uiux"}/>
                 <HeaderLink to="/photographie" label="Photographie" isActive={activeCategory === "photographie"}/>
-                <HeaderLink to="/illustration" label="Illustration" isActive={activeCategory === "illustration"}/>
             </nav>
 
             {/* Menu Mobile */}
@@ -91,7 +80,6 @@ function Header() {
                     <HeaderLink to="/da" label="Direction Artistique" isActive={activeCategory === "da"}/>
                     <HeaderLink to="/uiux" label="UI/UX" isActive={activeCategory === "uiux"}/>
                     <HeaderLink to="/photographie" label="Photographie" isActive={activeCategory === "photographie"}/>
-                    <HeaderLink to="/illustration" label="Illustration" isActive={activeCategory === "illustration"}/>
                 </nav>
             </div>
         </header>
