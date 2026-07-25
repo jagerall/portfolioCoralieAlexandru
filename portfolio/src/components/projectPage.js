@@ -6,6 +6,73 @@ import Tag from "./tag";
 import '../style/projectpage.scss';
 
 const projectDetails = {
+    liko: {
+        category: "DA",
+        title: "Liko",
+        tags: ["Direction Artistique"],
+        description: `le but de liko est d’encourager ses usagers à se déplacer.
+
+Plus l’effort est intense et prolongé, plus le temps d’infusion augmente, donnant naissance à une boisson plus riche en goût et plus alcoolisée. Le produit associe ainsi dépassement de soi, plaisir et récompense.
+
+Liko est une gourde capable de transformer vos aromates, plantes et composants éco-responsables en alcool lors de la descente après un effort en altitude.
+
+la gourde s’adresse aux aventuriers urbains ou de montagne, ceux qui aiment jouer avec les limites et qui ont besoin de réconfort après un gros effort (ou pas).
+
+Elle devient un objet hybride entre une gourde technique, un objet design et une expérience sensorielle. Son design futuriste inspiré des contenants japonais traduit une nouvelle manière de consommer : plus consciente, plus qualitative et davantage liée aux moments vécus.
+
+Les formes organiques, les matériaux durables et une palette inspirée des paysages renforcent l'idée d'un objet compagnon d'aventure.`,
+        images: [
+            "/assets/liko-1.png",
+            "/assets/liko-2.png",
+            "/assets/liko-3.png",
+            "/assets/liko-4.png",
+            "/assets/liko-5.png",
+            "/assets/liko-6.png",
+            "/assets/liko-7.png",
+            "/assets/liko-8.png",
+        ],
+        videos: [
+            {
+                src: "/assets/liko-vid-2.mp4",
+                type: "video/mp4",
+            },
+            {
+                src: "/assets/liko-vid-1.mp4",
+                type: "video/mp4",
+            },
+        ],
+    },
+    sliced: {
+        category: "DA",
+        title: "Sliced",
+        tags: ["Direction Artistique"],
+        description: `Sliced est un voyage graphique au cœur de la matière. À travers une série de coupes transversales, cette identité visuelle explore l'anatomie comparée du vivant et des objets du quotidien. Une mise à nu esthétique où l'animé et l'inanimé se croisent, révélant la complexité graphique de ce qui nous entoure.`,
+        images: [
+            "/assets/sliced-1.png",
+            "/assets/sliced-2.png",
+            "/assets/sliced-3.png",
+            "/assets/sliced-4.png",
+            "/assets/sliced-5.png",
+            "/assets/sliced-6.png",
+            "/assets/sliced-7.png",
+            "/assets/sliced-8.png",
+            "/assets/sliced-9.png",
+            "/assets/sliced-10.png",
+            "/assets/sliced-11.png",
+            "/assets/sliced-12.png",
+            "/assets/sliced-13.png",
+        ],
+        videos: [
+            {
+                src: "/assets/sliced-15.gif",
+                type: "video/gif",
+            },
+            {
+                src: "/assets/sliced-14.gif",
+                type: "video/gif",
+            },
+        ],
+    },
     booking: {
         category: "UI/UX",
         title: "Booking",
@@ -15,8 +82,7 @@ const projectDetails = {
 Après une analyse des points de friction, j'ai repensé l'architecture de l'information et conçu une interface plus épurée et intuitive, avec une meilleure hiérarchisation des contenus et une optimisation pour mobile.
 
 Ce projet m'a permis de renforcer mes compétences en UX/UI design et en conception d'interfaces centrées utilisateur.`,
-        images: [
-        ],
+        images: [],
         linkFigma: "https://www.figma.com/design/mVKZJIssy5jUCxBWxXQ2gs/Boooking---Refonte?node-id=32-11984&t=HV3r2zPZtVBdjBDM-1",
     },
 
@@ -193,16 +259,6 @@ Notre application avait plusieurs besoins : des comptes utilisateurs, un systèm
             "/assets/macro-6.webp",
         ],
     },
-
-    livret: {
-        category: "DA",
-        title: "Guide Cybersécurité PME",
-        tags: ["Livret"],
-        description:
-            "Réalisation d'un livret destiné aux chefs d'entreprise, portant sur les enjeux de cybersécurité et les cyberattaques. Ce projet aborde les bonnes pratiques de prévention, la gestion des situations de crise ainsi que les stratégies de sortie de crise. Le livret inclut également des fiches pratiques afin de faciliter la compréhension et la mise en œuvre des mesures de sécurité en entreprise.",
-        images: ["/assets/livret-1.webp"],
-    },
-
     gfy: {
         category: "DA",
         title: "Go Fail Yourself",
@@ -283,24 +339,6 @@ Une identité qui valorise l'héritage breton tout en affirmant une image plus m
         ],
     },
 
-    fanzine: {
-        category: "DA",
-        title: "What about zebra crossings ?",
-        tags: ["Fanzine", "Design graphique"],
-        description:
-            "Projet réalisé en une matinée avec l’objectif de concevoir et produire un fanzine complet sur un sujet libre, en créant l’ensemble des ressources visuelles (textures, photographies et éléments graphiques).\n\n" +
-            "J’ai choisi de travailler autour des passages piétons et de leur signalétique, en détournant ces éléments urbains pour leur donner une dimension narrative et personnifiée.\n\n" +
-            "Le projet imagine les passages piétons comme des entités fatiguées, subissant le quotidien sans reconnaissance, lassées des mégots jetés sur eux et de leur usage répété sans attention.\n\n" +
-            "Dans cet univers, les petits bonhommes verts des feux piétons prennent vie et s’échappent temporairement pour faire une pause, comme une forme de respiration hors du rythme urbain.\n\n" +
-            "Ce fanzine explore une approche narrative et critique de l’espace public, en transformant une signalétique fonctionnelle en personnages vivants, porteurs d’émotions et de comportements humains.",
-        images: [
-            "/assets/illu-fanzine.webp",
-            "/assets/fanzine-4.webp",
-            "/assets/fanzine-2.webp",
-            "/assets/fanzine-1.webp",
-            "/assets/fanzine-3.webp",
-        ],
-    },
 };
 
 const ProjectPage = () => {
@@ -315,6 +353,35 @@ const ProjectPage = () => {
     const project = projectDetails[id] || {};
 
     const [selectedImage, setSelectedImage] = useState(null);
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    const allMedia = [...(project.videos || []).map(video => ({
+        type: video.type.includes('gif') ? 'gif' : 'video',
+        src: video.src
+    })), ...(project.images || []).map(img => ({
+        type: "image", src: img
+    }))];
+
+    const openImage = (index) => {
+        setCurrentIndex(index);
+        setSelectedImage(allMedia[index]);
+        document.body.classList.add('overlay-active');
+    };
+
+    const closeImage = () => {
+        setSelectedImage(null);
+        document.body.classList.remove('overlay-active');
+    };
+
+    const nextImage = () => {
+        const nextIndex = (currentIndex + 1) % allMedia.length;
+        openImage(nextIndex);
+    };
+
+    const prevImage = () => {
+        const prevIndex = (currentIndex - 1 + allMedia.length) % allMedia.length;
+        openImage(prevIndex);
+    };
 
     useEffect(() => {
         if (project.title) {
@@ -323,6 +390,24 @@ const ProjectPage = () => {
             document.title = "Coralie Alexandru";
         }
     }, [project.title, project.category]);
+
+    useEffect(() => {
+        const handleKeyDown = (event) => {
+            if (selectedImage) {
+                if (event.key === 'ArrowLeft') {
+                    prevImage();
+                } else if (event.key === 'ArrowRight') {
+                    nextImage();
+                }
+            }
+        };
+
+        window.addEventListener('keydown', handleKeyDown);
+
+        return () => {
+            window.removeEventListener('keydown', handleKeyDown);
+        };
+    }, [selectedImage, currentIndex]);
 
     return (<main className="project-page">
         <div className="project-page-text">
@@ -356,14 +441,9 @@ const ProjectPage = () => {
         </div>
         <div className="project-page-section">
             <div className="project-images">
-                {(project.images?.length > 0 || project.videos?.length > 0) &&
-                    [...(project.videos || []).map(video => ({
-                        type: "video", src: video.src
-                    })), ...(project.images || []).map(img => ({
-                        type: "image", src: img
-                    }))].map((item, index) => (
-                        <div key={index} className="project-image-item">
-                            {item.type === "video" ? (<video
+                {allMedia.map((item, index) => (
+                        <div key={index} className="project-image-item" onClick={() => openImage(index)}>
+                            {item.type === "video" || item.type === 'gif' ? (<video
                                 src={item.src}
                                 loop
                                 muted
@@ -372,7 +452,6 @@ const ProjectPage = () => {
                             />) : (<img
                                 src={item.src}
                                 alt={`${project.title} ${index + 1}`}
-                                onClick={() => setSelectedImage(item.src)}
                             />)}
                         </div>
                     ))
@@ -390,10 +469,20 @@ const ProjectPage = () => {
                 </div>)}
             </div>
 
-            {selectedImage && (<div className="fullscreen-overlay" onClick={() => setSelectedImage(null)}>
+            {selectedImage && (<div className="fullscreen-overlay" onClick={closeImage}>
                 <div className="fullscreen-content">
-                    <img src={selectedImage} alt="Fullscreen preview"/>
-                    <Button className="close-btn" label={'Fermer'} onClick={() => setSelectedImage(null)}>
+                    {selectedImage.type === 'video' || selectedImage.type === 'gif' ? (
+                        <video src={selectedImage.src} loop muted playsInline autoPlay />
+                    ) : (
+                        <img src={selectedImage.src} alt="Fullscreen preview"/>
+                    )}
+                    <div className="fullscreen-nav-prev">
+                        <Button className="nav-btn" onClick={(e) => {e.stopPropagation(); prevImage();}} label="Précédent" />
+                    </div>
+                    <div className="fullscreen-nav-next">
+                        <Button className="nav-btn" onClick={(e) => {e.stopPropagation(); nextImage();}} label="Suivant" />
+                    </div>
+                    <Button className="close-btn" label={'Fermer'} onClick={closeImage}>
 
                     </Button>
                 </div>

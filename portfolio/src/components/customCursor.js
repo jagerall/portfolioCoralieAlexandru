@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 import '../style/customCursor.scss';
 
 const MAGNETIC_SELECTOR = 'a, button, [role="button"], .header-link, .footer-link';
-const MAGNETIC_RADIUS = -20;
+const MAGNETIC_RADIUS = -10;
 const SNAP_RADIUS = 15;
 const DEFAULT_SIZE = 25;
 const DOT_SIZE = 10;
