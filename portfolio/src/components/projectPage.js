@@ -11,12 +11,15 @@ const projectDetails = {
         title: "Liko",
         tags: ["Direction Artistique"],
         description: `le but de liko est d’encourager ses usagers à se déplacer.
+
 Plus l’effort est intense et prolongé, plus le temps d’infusion augmente, donnant naissance à une boisson plus riche en goût et plus alcoolisée. Le produit associe ainsi dépassement de soi, plaisir et récompense.
-Liko est une gourde capable de transformer vos aromates, plantes et composants éco-responsables
-en alcool lors de la descente après un effort en altitude.
-la gourde s’adresse aux aventuriers urbains ou de montagne, ceux qui aiment jouer avec les limites et
-qui ont besoin de réconfort après un gros effort (ou pas).
+
+Liko est une gourde capable de transformer vos aromates, plantes et composants éco-responsables en alcool lors de la descente après un effort en altitude.
+
+la gourde s’adresse aux aventuriers urbains ou de montagne, ceux qui aiment jouer avec les limites et qui ont besoin de réconfort après un gros effort (ou pas).
+
 Elle devient un objet hybride entre une gourde technique, un objet design et une expérience sensorielle. Son design futuriste inspiré des contenants japonais traduit une nouvelle manière de consommer : plus consciente, plus qualitative et davantage liée aux moments vécus.
+
 Les formes organiques, les matériaux durables et une palette inspirée des paysages renforcent l'idée d'un objet compagnon d'aventure.`,
         images: [
             "/assets/liko-1.png",
@@ -30,11 +33,11 @@ Les formes organiques, les matériaux durables et une palette inspirée des pays
         ],
         videos: [
             {
-                src: "/assets/liko-vid-1.mp4",
+                src: "/assets/liko-vid-2.mp4",
                 type: "video/mp4",
             },
             {
-                src: "/assets/liko-vid-2.mp4",
+                src: "/assets/liko-vid-1.mp4",
                 type: "video/mp4",
             },
         ],
@@ -399,7 +402,7 @@ const ProjectPage = () => {
                         type: "image", src: img
                     }))].map((item, index) => (
                         <div key={index} className="project-image-item">
-                            {item.type === "video" ? (<video
+                            {item.type === "video" || item.type === 'gif' ? (<video
                                 src={item.src}
                                 loop
                                 muted
