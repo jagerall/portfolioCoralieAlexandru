@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion, useMotionValue, useSpring } from 'framer-motion';
+import { useLocation } from 'react-router-dom';
 import '../style/customCursor.scss';
 
 const MAGNETIC_SELECTOR = 'a, button, [role="button"], .header-link, .footer-link';
@@ -49,6 +50,8 @@ const CustomCursor = () => {
     const activeLinkRef = useRef(null);
     const transitionTimeoutRef = useRef(null);
 
+    const location = useLocation();
+
     // Valeurs Motion dynamiques pour gérer la largeur, la hauteur et le Border-Radius
     const x = useMotionValue(-100);
     const y = useMotionValue(-100);
@@ -64,6 +67,21 @@ const CustomCursor = () => {
     const springWidth = useSpring(width, springConfig);
     const springHeight = useSpring(height, springConfig);
     const springBorderRadius = useSpring(borderRadius, springConfig);
+
+    // Réinitialisation du curseur lors des changements de page
+    useEffect(() => {
+        setIsCardHovered(false);
+        setIsPulsing(false);
+        setIsMagnetic(false);
+        setIsTransitioning(false);
+        width.set(DEFAULT_SIZE);
+        height.set(DEFAULT_SIZE);
+        borderRadius.set('50%');
+        if (activeLinkRef.current) {
+            activeLinkRef.current.classList.remove('magnetic-cursor-active');
+            activeLinkRef.current = null;
+        }
+    }, [location, width, height, borderRadius]);
 
     useEffect(() => {
         const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
