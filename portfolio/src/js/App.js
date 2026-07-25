@@ -7,27 +7,30 @@ import PageContent from '../components/pageContent';
 import ProjectPage from '../components/projectPage';
 import ScrollToTop from '../components/scrollToTop';
 import StaticPage from "../components/staticPage";
+import { PageTransitionProvider } from '../components/PageTransitionContext';
 
 
 function App() {
 
     return (
         <Router>
-            <CustomCursor/>
-            <ScrollToTop/>
-            <div className="page-content">
-                <Header/>
-                <main className="main-content">
-                    <Routes>
-                        <Route path="/" element={<Navigate to="/da"/>}/>
-                        <Route path="/uiux" element={<PageContent category="uiux"/>}/>
-                        <Route path="/photographie" element={<PageContent category="photographie"/>}/>
-                        <Route path="/da" element={<PageContent category="da"/>}/>
-                        <Route path="/:category/:id" element={<ProjectPage/>}/>
-                    </Routes>
-                </main>
-                <Footer/>
-            </div>
+            <PageTransitionProvider>
+                <CustomCursor/>
+                <ScrollToTop/>
+                <div className="page-content">
+                    <Header/>
+                    <main className="main-content">
+                        <Routes>
+                            <Route path="/" element={<Navigate to="/da"/>}/>
+                            <Route path="/uiux" element={<PageContent category="uiux"/>}/>
+                            <Route path="/photographie" element={<PageContent category="photographie"/>}/>
+                            <Route path="/da" element={<PageContent category="da"/>}/>
+                            <Route path="/:category/:id" element={<ProjectPage/>}/>
+                        </Routes>
+                    </main>
+                    <Footer/>
+                </div>
+            </PageTransitionProvider>
         </Router>
     );
 }

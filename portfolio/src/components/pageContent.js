@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {useNavigate} from 'react-router-dom';
+import { usePageTransition } from './PageTransitionContext';
 import Card from './card';
 import '../style/pageContent.scss';
 import {Helmet} from 'react-helmet';
@@ -11,7 +11,7 @@ const categoryTitles = {
 };
 
 const PageContent = ({category}) => {
-    const navigate = useNavigate();
+    const { startTransition } = usePageTransition();
 
     const categoryData = {
         uiux: [
@@ -165,7 +165,7 @@ const PageContent = ({category}) => {
                         key={project.id}
                         image={project.image}
                         label={project.label}
-                        onClick={() => navigate(`/${project.category}/${project.id}`)}
+                        onClick={(e) => startTransition(e, `/${project.category}/${project.id}`, '#FA0026')}
                         type={project.type}
                         tags={project.tags}
                     />
