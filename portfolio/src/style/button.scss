@@ -45,3 +45,37 @@
         }
     }
 }
+
+
+.close-btn, .back-btn {
+    position: fixed;
+    bottom: 24px;
+    right: 48px;
+    padding: .5rem 1rem;
+    background-color: transparent;
+    border: 2px solid #FA0026;
+    border-radius: 50px;
+    font-family: 'Swiss721 bold', sans-serif;
+    font-size: 1rem;
+    line-height: 82%;
+    text-transform: lowercase;
+    letter-spacing: -1px;
+    color: #FA0026;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    justify-content: center;
+    text-decoration: none;
+    width: fit-content;
+
+    &:hover, &:focus {
+        border: 2px solid #FA0026;
+        background-color: #FA0026;
+        color: #FFFFFF;
+        transition: .1s ease-in-out;
+    }
+}
+
+.back-btn {
+    position: static;
+}

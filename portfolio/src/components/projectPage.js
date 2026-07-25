@@ -16,12 +16,6 @@ Après une analyse des points de friction, j'ai repensé l'architecture de l'inf
 
 Ce projet m'a permis de renforcer mes compétences en UX/UI design et en conception d'interfaces centrées utilisateur.`,
         images: [
-            "/assets/booking-1.webp",
-            "/assets/booking-2.webp",
-            "/assets/booking-3.webp",
-            "/assets/booking-4.webp",
-            "/assets/booking-5.webp",
-            "/assets/booking-6.webp",
         ],
         linkFigma: "https://www.figma.com/design/mVKZJIssy5jUCxBWxXQ2gs/Boooking---Refonte?node-id=32-11984&t=HV3r2zPZtVBdjBDM-1",
     },
@@ -281,7 +275,7 @@ Notre application avait plusieurs besoins : des comptes utilisateurs, un systèm
     gfy: {
         category: "DA",
         title: "Go Fail Yourself",
-        tags: ["Campagne 360°", "DA concept"],
+        tags: ["Campagne 360°"],
         description: `Dans un univers outdoor dominé par la sécurité et la performance, la campagne interroge une problématique clé : comment valoriser l'échec comme apprentissage tout en renforçant la confiance dans le matériel de haute montagne ?
 
 Go Fail Yourself transforme les erreurs en données utiles et en preuve de résistance produit.
@@ -401,7 +395,7 @@ const ProjectPage = () => {
 
     return (<main className="project-page">
         <div className="project-page-text">
-            <Button onClick={() => navigate(-1)} label="retour"/>
+            <Button className={'back-btn'} onClick={() => navigate(-1)} label="retour"/>
             <div className="project-description">
                 <h1 className={"project-description-title bold"}>{project.title}</h1>
                 {project.tags && project.tags.length > 0 && (

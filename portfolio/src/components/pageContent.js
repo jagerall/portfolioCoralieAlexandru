@@ -129,8 +129,8 @@ const PageContent = ({category}) => {
                 label: 'Go Fail Yourself',
                 image: '/assets/illu-gfy.svg',
                 category: 'da',
-                type: 'DA concept',
-                tags: ['Campagne 360°', 'DA concept']
+                type: 'Campagne 360°',
+                tags: ['Campagne 360°']
             },
             {
                 id: 'penmarch',

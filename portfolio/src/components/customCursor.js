@@ -5,7 +5,7 @@ import '../style/customCursor.scss';
 const MAGNETIC_SELECTOR = 'a, button, [role="button"], .header-link, .footer-link';
 const MAGNETIC_RADIUS = -20;
 const SNAP_RADIUS = 15;
-const DEFAULT_SIZE = 30;
+const DEFAULT_SIZE = 25;
 const DOT_SIZE = 10;
 const HEADER_DOT_OFFSET_TOP = 64;
 const FOOTER_DOT_OFFSET_TOP = 54;
