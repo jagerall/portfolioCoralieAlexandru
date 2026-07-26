@@ -1,8 +1,8 @@
-    import React, {useEffect} from 'react';
-    import {useNavigate} from 'react-router-dom';
-    import Card from './card';
-    import '../style/pageContent.scss';
-    import {Helmet} from 'react-helmet';
+import React, {useEffect} from 'react';
+import { usePageTransition } from './PageTransitionContext';
+import Card from './card';
+import '../style/pageContent.scss';
+import {Helmet} from 'react-helmet';
 
     const categoryTitles = {
         uiux: "Coralie Alexandru - UI/UX",
@@ -10,8 +10,8 @@
         da: "Coralie Alexandru - Direction Artistique",
     };
 
-    const PageContent = ({category}) => {
-        const navigate = useNavigate();
+const PageContent = ({category}) => {
+    const { startTransition } = usePageTransition();
 
         const categoryData = {
             uiux: [
@@ -159,20 +159,20 @@
                     <meta name="robots" content="index, follow"/>
                 </Helmet>
 
-                <div className="cards-container">
-                    {projects.map(project => (
-                        <Card
-                            key={project.id}
-                            image={project.image}
-                            label={project.label}
-                            onClick={() => navigate(`/${project.category}/${project.id}`)}
-                            type={project.type}
-                            tags={project.tags}
-                        />
-                    ))}
-                </div>
-        </>
-        );
-    };
+            <div className="cards-container">
+                {projects.map(project => (
+                    <Card
+                        key={project.id}
+                        image={project.image}
+                        label={project.label}
+                        onClick={(e) => startTransition(e, `/${project.category}/${project.id}`, '#FA0026')}
+                        type={project.type}
+                        tags={project.tags}
+                    />
+                ))}
+            </div>
+    </>
+    );
+};
 
     export default PageContent;
