@@ -65,6 +65,7 @@ Les formes organiques, les matériaux durables et une palette inspirée des pays
             "/assets/sliced-15.gif",
         ],
         videos: [],
+        linkBehance: "https://www.behance.net/gallery/250749467/Sliced-Exposition-Conceptuelle",
     },
     booking: {
         category: "UI/UX",
@@ -297,6 +298,7 @@ Une identité qui valorise l'héritage breton tout en affirmant une image plus m
             "/assets/penmarch-7.webp",
             "/assets/penmarch-8.webp",
         ],
+        linkBehance: "https://www.behance.net/gallery/247470423/Pointe-de-Penmarch",
     },
 
     wordbroker: {
@@ -337,7 +339,6 @@ Une identité qui valorise l'héritage breton tout en affirmant une image plus m
 const ProjectPage = () => {
     const iframeEmbeds = {
         booking: "https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/mVKZJIssy5jUCxBWxXQ2gs/Boooking---Refonte?node-id=2069-66",
-        penmarch: "https://www.behance.net/embed/project/247470423?ilo0=1",
         livret: "https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/MWFT7RRzr5dSMiwM64qdlW/Rendu---Design---cybers%C3%A9curit%C3%A9?node-id=419-13284&page-id=0%3A1"
     };
 
@@ -430,6 +431,7 @@ const ProjectPage = () => {
                 {project.linkFigma && (<Button to={project.linkFigma} external={true} label="Voir le Figma"/>)}
                 {project.linkWebsite && (<Button to={project.linkWebsite} external={true} label="Voir le site"/>)}
                 {project.linkGithub && (<Button to={project.linkGithub} external={true} label="Voir le Github"/>)}
+                {project.linkBehance && (<Button to={project.linkBehance} external={true} label="Ouvrir le Behance"/>)}
             </div>
 
         </div>

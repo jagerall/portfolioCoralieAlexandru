@@ -124,8 +124,8 @@ const CustomCursor = () => {
                 y.set(rect.top + rect.height / 2);
 
                 // Le curseur prend la taille de la carte (avec un léger padding de 8px pour bien l'entourer)
-                width.set(rect.width + 8);
-                height.set(rect.height + 8);
+                width.set(rect.width + 5);
+                height.set(rect.height + 5);
 
                 // On recopie le border-radius de la carte (ex: 50% pour un cercle)
                 borderRadius.set(computedStyle.borderRadius || '50%');

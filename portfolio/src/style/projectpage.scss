@@ -51,7 +51,8 @@
                 width: 100%;
                 height: auto;
                 overflow-y: visible;
-                padding-right: 0;
+                padding: 0;
+                margin-bottom: 2rem;
             }
         }
 
@@ -190,12 +191,16 @@
             &:hover {
                 background-color: #FA0026;
                 color: white;
+
+                .button-icon img {
+                    filter: brightness(0) invert(1);
+                }
             }
         }
 
         a {
             text-align: center;
-            width: 11rem;
+            width: fit-content;
 
             @media screen and (max-width: 900px) {
                 font-size: 14px;
