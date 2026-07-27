@@ -61,17 +61,10 @@ Les formes organiques, les matériaux durables et une palette inspirée des pays
             "/assets/sliced-11.png",
             "/assets/sliced-12.png",
             "/assets/sliced-13.png",
+            "/assets/sliced-14.gif",
+            "/assets/sliced-15.gif",
         ],
-        videos: [
-            {
-                src: "/assets/sliced-15.gif",
-                type: "video/gif",
-            },
-            {
-                src: "/assets/sliced-14.gif",
-                type: "video/gif",
-            },
-        ],
+        videos: [],
     },
     booking: {
         category: "UI/UX",
@@ -356,10 +349,11 @@ const ProjectPage = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const allMedia = [...(project.videos || []).map(video => ({
-        type: video.type.includes('gif') ? 'gif' : 'video',
+        type: 'video',
         src: video.src
     })), ...(project.images || []).map(img => ({
-        type: "image", src: img
+        type: img.endsWith('.gif') ? 'gif' : 'image',
+        src: img
     }))];
 
     const openImage = (index) => {
@@ -443,7 +437,7 @@ const ProjectPage = () => {
             <div className="project-images">
                 {allMedia.map((item, index) => (
                         <div key={index} className="project-image-item" onClick={() => openImage(index)}>
-                            {item.type === "video" || item.type === 'gif' ? (<video
+                            {item.type === "video" ? (<video
                                 src={item.src}
                                 loop
                                 muted
@@ -471,7 +465,7 @@ const ProjectPage = () => {
 
             {selectedImage && (<div className="fullscreen-overlay" onClick={closeImage}>
                 <div className="fullscreen-content">
-                    {selectedImage.type === 'video' || selectedImage.type === 'gif' ? (
+                    {selectedImage.type === 'video' ? (
                         <video src={selectedImage.src} loop muted playsInline autoPlay />
                     ) : (
                         <img src={selectedImage.src} alt="Fullscreen preview"/>
