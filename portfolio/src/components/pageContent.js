@@ -168,6 +168,7 @@ const PageContent = ({category}) => {
                         onClick={(e) => startTransition(e, `/${project.category}/${project.id}`, '#FA0026')}
                         type={project.type}
                         tags={project.tags}
+                        category={project.category}
                     />
                 ))}
             </div>

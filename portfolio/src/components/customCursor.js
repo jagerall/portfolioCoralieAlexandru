@@ -44,6 +44,7 @@ const CustomCursor = () => {
     const [isMagnetic, setIsMagnetic] = useState(false);
     const [isTransitioning, setIsTransitioning] = useState(false);
     const [isCardHovered, setIsCardHovered] = useState(false);
+    const [isBreadcrumbHovered, setIsBreadcrumbHovered] = useState(false);
     const [isPulsing, setIsPulsing] = useState(false);
 
     const cursorRef = useRef(null);
@@ -71,6 +72,7 @@ const CustomCursor = () => {
     // Réinitialisation du curseur lors des changements de page
     useEffect(() => {
         setIsCardHovered(false);
+        setIsBreadcrumbHovered(false);
         setIsPulsing(false);
         setIsMagnetic(false);
         setIsTransitioning(false);
@@ -111,6 +113,7 @@ const CustomCursor = () => {
 
             const target = event.target;
             const hoveredCard = target?.closest?.('.card');
+            const hoveredBreadcrumb = target?.closest?.('.breadcrumb-link, .project-external-link');
             const isProjectImage = target?.closest?.('.project-image-item');
             setIsPulsing(!!isProjectImage);
 
@@ -124,19 +127,38 @@ const CustomCursor = () => {
                 y.set(rect.top + rect.height / 2);
 
                 // Le curseur prend la taille de la carte (avec un léger padding de 8px pour bien l'entourer)
-                width.set(rect.width + 5);
-                height.set(rect.height + 5);
+                width.set(rect.width);
+                height.set(rect.height);
 
                 // On recopie le border-radius de la carte (ex: 50% pour un cercle)
                 borderRadius.set(computedStyle.borderRadius || '50%');
 
                 setIsCardHovered(true);
+                setIsBreadcrumbHovered(false);
                 setActiveLink(null);
                 return;
             }
 
-            // Réinitialisation de l'état Card si on en sort
+            // --- CAS 1.5: SURVOL D'UN BREADCRUMB ---
+            if (hoveredBreadcrumb) {
+                const rect = hoveredBreadcrumb.getBoundingClientRect();
+
+                x.set(rect.left + rect.width / 2);
+                y.set(rect.top + rect.height / 2);
+
+                width.set(rect.width + 16);
+                height.set(rect.height + 8);
+                borderRadius.set('12px');
+
+                setIsBreadcrumbHovered(true);
+                setIsCardHovered(false);
+                setActiveLink(null);
+                return;
+            }
+
+            // Réinitialisation des états spécifiques si on en sort
             setIsCardHovered(false);
+            setIsBreadcrumbHovered(false);
             borderRadius.set('50%');
 
             // --- CAS 2: ÉLÉMENTS MAGNÉTIQUES (BOUTONS / LIENS) ---
@@ -210,7 +232,7 @@ const CustomCursor = () => {
     return (
         <motion.div
             ref={cursorRef}
-            className={`custom-cursor ${isCardHovered ? 'is-card-hover' : ''} ${isPulsing ? 'is-pulsing' : ''}`}
+            className={`custom-cursor ${isCardHovered ? 'is-card-hover' : ''} ${isBreadcrumbHovered ? 'is-breadcrumb-hover' : ''} ${isPulsing ? 'is-pulsing' : ''}`}
             style={{
                 left: springX,
                 top: springY,

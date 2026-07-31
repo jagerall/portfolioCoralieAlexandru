@@ -17,7 +17,7 @@
         justify-content: right;
 
         @media screen and (max-width: 720px) {
-            flex-direction: column;
+            flex-direction: row;
             align-items: center;
             justify-content: center;
             gap: 1rem;

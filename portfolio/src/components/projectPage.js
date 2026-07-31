@@ -406,32 +406,43 @@ const ProjectPage = () => {
 
     return (<main className="project-page">
         <div className="project-page-text">
-            <Button className={'back-btn'} onClick={() => navigate(-1)} label="retour"/>
-            <div className="project-description">
-                <h1 className={"project-description-title bold"}>{project.title}</h1>
-                {project.tags && project.tags.length > 0 && (
-                    <p className="project-page-tags">
-                        {project.tags.join(', ')}
-                    </p>
-                )}
-                {project.description && (<div>
-                    <p>{project.description}</p>
-                    {project.sources?.length > 0 && (
-                        <p>Sources :
-                            <ul>{project.sources?.map((s) => (
-                                <li key={s.url} className="project-source flex">
-                                    <Link key={s.url} href={s.url} label={s.label}/>
-                                </li>
-
-                            ))}  </ul></p>
-                    )}
-                </div>)}
+            <div className="breadcrumb">
+                <span className="breadcrumb-link bold" onClick={() => navigate(-1)}>
+                    {project.category === "DA" ? "Direction Artistique" : project.category}
+                </span>
+                <span className="breadcrumb-separator"> / </span>
+                <span className="breadcrumb-current">{project.title}</span>
             </div>
-            <div className="project-links">
-                {project.linkFigma && (<Button to={project.linkFigma} external={true} label="Voir le Figma"/>)}
-                {project.linkWebsite && (<Button to={project.linkWebsite} external={true} label="Voir le site"/>)}
-                {project.linkGithub && (<Button to={project.linkGithub} external={true} label="Voir le Github"/>)}
-                {project.linkBehance && (<Button to={project.linkBehance} external={true} label="Ouvrir le Behance"/>)}
+            <div className="project-content-wrapper" style={{ margin: 'auto 0' }}>
+                <div className="project-header">
+                    <h1 className="project-description-title bold">{project.title}</h1>
+                    {project.tags && project.tags.length > 0 && (
+                        <p className="project-page-tags">
+                            {project.tags.join(', ')}
+                        </p>
+                    )}
+                    <div className="project-links">
+                        {project.linkFigma && (<a href={project.linkFigma} target="_blank" rel="noreferrer" className="project-external-link bold">Voir le Figma <img src="/assets/icons/icon-external-link.svg" alt="" className="external-icon"/></a>)}
+                        {project.linkWebsite && (<a href={project.linkWebsite} target="_blank" rel="noreferrer" className="project-external-link bold">Voir le site <img src="/assets/icons/icon-external-link.svg" alt="" className="external-icon"/></a>)}
+                        {project.linkGithub && (<a href={project.linkGithub} target="_blank" rel="noreferrer" className="project-external-link bold">Voir le Github <img src="/assets/icons/icon-external-link.svg" alt="" className="external-icon"/></a>)}
+                        {project.linkBehance && (<a href={project.linkBehance} target="_blank" rel="noreferrer" className="project-external-link bold">Ouvrir le Behance <img src="/assets/icons/icon-external-link.svg" alt="" className="external-icon"/></a>)}
+                    </div>
+                </div>
+
+                <div className="project-description">
+                    {project.description && (<div>
+                        <p>{project.description}</p>
+                        {project.sources?.length > 0 && (
+                            <p>Sources :
+                                <ul>{project.sources?.map((s) => (
+                                    <li key={s.url} className="project-source flex">
+                                        <Link key={s.url} href={s.url} label={s.label}/>
+                                    </li>
+
+                                ))}  </ul></p>
+                        )}
+                    </div>)}
+                </div>
             </div>
 
         </div>

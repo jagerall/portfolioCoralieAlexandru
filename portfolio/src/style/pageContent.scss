@@ -1,5 +1,5 @@
 .page-content {
-    animation: appear .1s linear  forwards;
+    animation: appear .1s linear forwards;
     height: 100svh;
     display: flex;
     flex-direction: column;
@@ -8,10 +8,12 @@
         0% {
             opacity: 0;
         }
+
         100% {
             opacity: 1
         }
     }
+
     @media screen and (max-width: 768px) {
         height: auto;
     }
@@ -33,9 +35,9 @@
     max-height: 100%;
 
     @media screen and (max-width: 768px) {
-       flex: 1 1 100%;
-       max-width: 100%;
-       padding: 0 1rem;
-       gap: 1.5rem;
+        flex: 1 1 100%;
+        max-width: 100%;
+        padding: 0 1rem;
+        gap: 1.5rem;
     }
 }

@@ -1,4 +1,5 @@
 @media (pointer: fine) {
+
     html.custom-cursor-active,
     html.custom-cursor-active * {
         cursor: none !important;
@@ -8,11 +9,12 @@
 @keyframes sonar {
     0% {
         transform: scale(0.5);
-        opacity: 0.5;
+        opacity: 1;
     }
+
     100% {
         transform: scale(2);
-        opacity: 0;
+        opacity: 1;
     }
 }
 
@@ -30,21 +32,30 @@
     &::after {
         content: '';
         position: absolute;
-        top: -5px;
-        left: -5px;
-        right: -5px;
-        bottom: -5px;
+        top: -3px;
+        left: -3px;
+        right: -3px;
+        bottom: -3px;
         border-radius: 50%;
-        border: 5px solid #FA0026;
+        border: 1px solid #FA0026;
         opacity: 0;
         transform: scale(0);
     }
 
     /* --- Mode Survol de Carte --- */
     &.is-card-hover {
-        /* On retire le rouge opaque pour ne pas cacher le contenu de la carte */
         background-color: rgba(255, 255, 255, 0);
         border-color: #FA0026;
+        box-shadow: 0 0 0 1px #FA0026, inset 0 0 0 1px #FA0026;
+    }
+
+    /* --- Mode Survol Fil d'Ariane --- */
+    &.is-breadcrumb-hover {
+        background-color: transparent;
+        border-color: #FA0026;
+        border-width: 2px;
+        border-radius: 16px !important;
+        transition: border-radius .2 ease-out, border-width .2s ease-out;
     }
 
     /* --- Mode Intéractif classique (Lien / Bouton) --- */
@@ -73,7 +84,7 @@
 
     &.is-pulsing {
         &::after {
-            animation: sonar 0.8s infinite;
+            animation: sonar 1s infinite;
         }
     }
 }
