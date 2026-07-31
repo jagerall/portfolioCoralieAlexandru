@@ -33,19 +33,20 @@
                 cursor: pointer;
                 display: inline-block;
                 line-height: 1;
-                padding: 2px 0; /* slight buffer so text bounds are more natural */
+                padding: 2px 0;
+                /* slight buffer so text bounds are more natural */
             }
 
             @media screen and (max-width: 900px) {
-                margin-bottom: 4rem;
+                display: none;
             }
         }
 
         .project-header {
             display: flex;
             flex-direction: column;
-            margin-bottom: 2.5rem; 
-            
+            margin-bottom: 2.5rem;
+
             @media screen and (max-width: 900px) {
                 margin-bottom: 6rem;
             }
@@ -84,8 +85,8 @@
                 height: auto;
                 overflow-y: visible;
                 padding: 0;
-                margin-bottom: 2rem;
-                gap: 3rem;
+                margin-top: 8rem;
+                  margin-bottom: 8rem;
             }
         }
 
@@ -239,7 +240,6 @@
             .external-icon {
                 width: 14px;
                 height: 14px;
-                filter: invert(18%) sepia(85%) saturate(6906%) hue-rotate(346deg) brightness(101%) contrast(106%); /* #FA0026 */
             }
         }
 
