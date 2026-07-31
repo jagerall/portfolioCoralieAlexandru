@@ -11,9 +11,7 @@
     @media screen and (max-width: 900px) {
         padding-left: 1rem;
         padding-right: 1rem;
-        flex-direction: column;
-        justify-content: center;
-        padding-top: 1rem;
+        justify-content: space-between;
         gap: 0.5rem;
     }
     
@@ -23,7 +21,7 @@
     }
 
     .header-image {
-        height: 50px;
+        height: 58px;
 
         @media screen and (max-width: 900px) {
             height: 40px;

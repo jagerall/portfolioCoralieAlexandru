@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {useLocation} from 'react-router-dom';
+import {useLocation, Link} from 'react-router-dom';
 import HeaderLink from '../components/headerlink';
 import '../style/header.scss';
 import Button from "./button";
@@ -50,13 +50,13 @@ function Header() {
 
     return (
         <header className="header">
-            <div>
-            <img
-                className={`header-image`}
-                src='../assets/ca-logo-header.svg'
-                alt="Logo"
-            />
-            </div>
+            <Link to="/">
+                <img
+                    className={`header-image`}
+                    src='../assets/ca-logo-header.svg'
+                    alt="Logo"
+                />
+            </Link>
             {/* Navigation (Desktop & Mobile) */}
             <nav className="main-nav">
                 <HeaderLink to="/da" label="Direction Artistique" isActive={activeCategory === "da"}/>

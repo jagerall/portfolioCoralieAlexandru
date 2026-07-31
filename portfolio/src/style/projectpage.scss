@@ -35,15 +35,19 @@
                 line-height: 1;
                 padding: 2px 0; /* slight buffer so text bounds are more natural */
             }
+
+            @media screen and (max-width: 900px) {
+                margin-bottom: 4rem;
+            }
         }
 
         .project-header {
             display: flex;
             flex-direction: column;
-            margin-bottom: 2.5rem; /* Reduced space as requested */
+            margin-bottom: 2.5rem; 
             
             @media screen and (max-width: 900px) {
-                margin-bottom: 2rem;
+                margin-bottom: 6rem;
             }
         }
 
@@ -79,7 +83,7 @@
                 width: 100%;
                 height: auto;
                 overflow-y: visible;
-                padding: 0.5rem 1rem;
+                padding: 0;
                 margin-bottom: 2rem;
                 gap: 3rem;
             }

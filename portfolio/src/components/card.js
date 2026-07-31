@@ -9,7 +9,7 @@ const Card = ({ image, label, onClick, type, tags, category }) => {
             <div className="overlay bold">
                 <div className="project-name">{label}</div>
                 {tags && tags.length > 0 && (
-                    <div className="overlay-tags">
+                    <div className="project-tags">
                         {tags.map((tag, index) => (
                             <Tag key={index} label={tag} />
                         ))}

@@ -10,23 +10,29 @@ const DEFAULT_SIZE = 25;
 const DOT_SIZE = 10;
 const HEADER_DOT_OFFSET_TOP = 64;
 const FOOTER_DOT_OFFSET_TOP = 58;
+const LOGO_DOT_OFFSET_TOP = 51; 
+const LOGO_DOT_OFFSET_LEFT = 32; 
+const LOGO_DOT_SIZE = 1;
 
 const getDotCenter = (element) => {
     const rect = element.getBoundingClientRect();
     const isHeaderLink = element.classList.contains('header-link');
     const isFooterLink = element.classList.contains('footer-link');
+    const isLogo = element.querySelector('.header-image') !== null;
 
-    let offsetTop = DOT_SIZE / 2;
+    let targetX = rect.left + rect.width / 2;
+    let targetY = rect.top + rect.height / 2;
+
     if (isHeaderLink) {
-        offsetTop = HEADER_DOT_OFFSET_TOP + DOT_SIZE / 2;
+        targetY = rect.top + HEADER_DOT_OFFSET_TOP + DOT_SIZE / 2;
     } else if (isFooterLink) {
-        offsetTop = FOOTER_DOT_OFFSET_TOP + DOT_SIZE / 2;
+        targetY = rect.top + FOOTER_DOT_OFFSET_TOP + DOT_SIZE / 2;
+    } else if (isLogo) {
+        targetX = rect.left + LOGO_DOT_OFFSET_LEFT;
+        targetY = rect.top + LOGO_DOT_OFFSET_TOP;
     }
 
-    return {
-        x: rect.left + rect.width / 2,
-        y: isHeaderLink || isFooterLink ? rect.top + offsetTop : rect.top + rect.height / 2,
-    };
+    return { x: targetX, y: targetY };
 };
 
 const getMagneticPull = (distance, isHoveringLink) => {
@@ -186,12 +192,15 @@ const CustomCursor = () => {
             });
 
             if (closestLink && closestPull > 0) {
+                const isLogo = closestLink.querySelector('.header-image') !== null;
+                const targetDotSize = isLogo ? LOGO_DOT_SIZE : DOT_SIZE;
+
                 const dot = getDotCenter(closestLink);
 
                 targetX = event.clientX + (dot.x - event.clientX) * closestPull;
                 targetY = event.clientY + (dot.y - event.clientY) * closestPull;
 
-                const newSize = DEFAULT_SIZE - (DEFAULT_SIZE - DOT_SIZE) * closestPull;
+                const newSize = DEFAULT_SIZE - (DEFAULT_SIZE - targetDotSize) * closestPull;
                 width.set(newSize);
                 height.set(newSize);
 
