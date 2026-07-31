@@ -6,11 +6,10 @@
     flex: 1 1 30%;
     max-width: 30%;
     aspect-ratio: 1 / 1;
-    margin-top: 1rem;
 
     @media screen and (max-width: 768px) {
         flex: 1 1 50%;
-        max-width: 92%;
+        max-width: 98%;
         margin-bottom: 0.5rem;
     }
 }
@@ -67,7 +66,7 @@
     }
 
     @media screen and (max-width: 900px) {
-        transform: scale(0.92);
+        transform: scale(0.95);
     }
 }
 

@@ -23,13 +23,12 @@ const Card = ({ image, label, onClick, type, tags, category }) => {
             <div className="mobile-curved-text">
                 <svg viewBox="0 0 200 200" className="curved-svg">
                     <path id={uniqueId} fill="transparent" d="
-                        M 100, 100
-                        m -96, 0
-                        a 96,96 0 1,1 192,0
-                        a 96,96 0 1,1 -192,0
+                        M 100, -8
+                        a 108,108 0 1,0 0,216
+                        a 108,108 0 1,0 0,-216
                     " />
                     <text>
-                        <textPath href={`#${uniqueId}`} startOffset="25%" textAnchor="middle" fill="#FA0026">
+                        <textPath href={`#${uniqueId}`} startOffset="50%" textAnchor="middle" fill="#FA0026">
                             {curvedTextContent}
                         </textPath>
                     </text>
