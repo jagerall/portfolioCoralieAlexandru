@@ -47,6 +47,8 @@
 
     @media screen and (min-width: 769px) {
         display: grid;
+        column-gap: 1.5rem;
+        row-gap: 2.5rem;
         /* Default for 5 cards */
         grid-template-columns: repeat(6, 1fr);
         
@@ -62,8 +64,10 @@
     }
 
     @media screen and (max-width: 768px) {
-        flex: 1 1 100%;
-        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
         padding: 0 1rem;
+        width: 100%;
     }
 }

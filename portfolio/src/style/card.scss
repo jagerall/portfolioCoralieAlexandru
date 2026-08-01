@@ -40,9 +40,8 @@
     }
 
     @media screen and (max-width: 768px) {
-        flex: 1 1 50%;
-        max-width: 98%;
-        margin-bottom: 0.5rem;
+        width: 100%;
+        max-width: 100%;
     }
 }
 
