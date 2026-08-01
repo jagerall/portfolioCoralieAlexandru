@@ -8,9 +8,37 @@
     aspect-ratio: 1 / 1;
 
     @media screen and (min-width: 769px) {
-        /* Max 3 per row (28%) OR fits 2 rows in the screen (34vh) */
-        width: min(28%, 32vh);
+        /* In CSS Grid, percentages are relative to the grid cell (which is already ~33% of the container). 
+           So we use 100% to fill the grid cell, and remove the max-width: 27% which was making it tiny. */
+        width: min(100%, 34vh);
+        max-width: 100%;
+        margin: 0 auto;
         flex: 0 0 auto;
+
+        /* DEFAULT: 5 cards (6 columns, 3-2) */
+        &:nth-child(1) { grid-column: 1 / span 2; }
+        &:nth-child(2) { grid-column: 3 / span 2; }
+        &:nth-child(3) { grid-column: 5 / span 2; }
+        &:nth-child(4) { grid-column: 2 / span 2; }
+        &:nth-child(5) { grid-column: 4 / span 2; }
+
+        /* IF 4 CARDS (5 columns, 2-2) */
+        .cards-container:has(> :nth-child(4):last-child) & {
+            &:nth-child(1) { grid-column: 1 / span 2; }
+            &:nth-child(2) { grid-column: 3 / span 2; }
+            &:nth-child(3) { grid-column: 2 / span 2; }
+            &:nth-child(4) { grid-column: 4 / span 2; }
+        }
+
+        /* IF 6 CARDS (7 columns, 3-3) */
+        .cards-container:has(> :nth-child(6):last-child) & {
+            &:nth-child(1) { grid-column: 1 / span 2; }
+            &:nth-child(2) { grid-column: 3 / span 2; }
+            &:nth-child(3) { grid-column: 5 / span 2; }
+            &:nth-child(4) { grid-column: 2 / span 2; }
+            &:nth-child(5) { grid-column: 4 / span 2; }
+            &:nth-child(6) { grid-column: 6 / span 2; }
+        }
     }
 
     @media screen and (max-width: 768px) {
@@ -125,15 +153,22 @@
 }
 
 @keyframes textSpinIn {
-    0% { transform: rotate(-45deg) scale(0.85); opacity: 0; }
-    100% { transform: rotate(0deg) scale(1); opacity: 1; }
+    0% {
+        transform: rotate(-45deg) scale(0.85);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotate(0deg) scale(1);
+        opacity: 1;
+    }
 }
 
 @media screen and (min-width: 901px) {
     .curved-text-container {
         svg {
             opacity: 0;
-            
+
             text {
                 font-size: 14px;
                 letter-spacing: -0.5px;

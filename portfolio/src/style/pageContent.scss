@@ -39,9 +39,25 @@
     gap: 1.5rem;
     padding: 0 12rem;
     justify-items: center;
-  margin-top: 1.5rem;
+    margin-top: 1.5rem;
     padding-bottom: 3rem;
     row-gap: 2rem;
+
+    @media screen and (min-width: 769px) {
+        display: grid;
+        /* Default for 5 cards */
+        grid-template-columns: repeat(6, 1fr);
+        
+        /* If 4 cards */
+        &:has(> :nth-child(4):last-child) {
+            grid-template-columns: repeat(5, 1fr);
+        }
+
+        /* If 6 cards */
+        &:has(> :nth-child(6):last-child) {
+            grid-template-columns: repeat(7, 1fr);
+        }
+    }
 
     @media screen and (max-width: 768px) {
         flex: 1 1 100%;

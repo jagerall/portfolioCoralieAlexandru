@@ -1,15 +1,23 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import '../style/card.scss';
 import Tag from './tag';
 
-const Card = ({ image, label, onClick, type, tags, category }) => {
+const Card = ({ image, label, onClick, type, tags, category, variants }) => {
     const tagsText = tags && tags.length > 0 ? tags.join(' • ') : '';
     const typeText = type ? type : '';
     const curvedTextContent = [label, typeText].filter(Boolean).join(' • ');
     const uniqueId = `curve-${label.replace(/\s+/g, '-').toLowerCase()}-${Math.random().toString(36).substr(2, 9)}`;
 
     return (
-        <div className="card-wrapper" onClick={onClick} role="button" tabIndex={0} onKeyDown={(e) => e.key === 'Enter' && onClick()}>
+        <motion.div 
+            className="card-wrapper" 
+            onClick={onClick} 
+            role="button" 
+            tabIndex={0} 
+            onKeyDown={(e) => e.key === 'Enter' && onClick()}
+            variants={variants}
+        >
             <div className={`card ${category ? `card-${category}` : ''}`}>
                 <img src={image} alt={label} className="card-image" />
                 <div className="overlay bold">
@@ -30,7 +38,7 @@ const Card = ({ image, label, onClick, type, tags, category }) => {
                     </text>
                 </svg>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

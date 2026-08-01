@@ -3,6 +3,7 @@ import { usePageTransition } from './PageTransitionContext';
 import Card from './card';
 import '../style/pageContent.scss';
 import {Helmet} from 'react-helmet';
+import { motion, AnimatePresence } from 'framer-motion';
 
     const categoryTitles = {
         uiux: "Coralie Alexandru - UI/UX",
@@ -159,19 +160,48 @@ const PageContent = ({category}) => {
                     <meta name="robots" content="index, follow"/>
                 </Helmet>
 
-            <div className="cards-container">
-                {projects.map(project => (
-                    <Card
-                        key={project.id}
-                        image={project.image}
-                        label={project.label}
-                        onClick={(e) => startTransition(e, `/${project.category}/${project.id}`, '#FA0026')}
-                        type={project.type}
-                        tags={project.tags}
-                        category={project.category}
-                    />
-                ))}
-            </div>
+            <AnimatePresence mode="wait">
+                <motion.div 
+                    className="cards-container"
+                    key={category}
+                    variants={{
+                        hidden: { opacity: 0 },
+                        visible: { 
+                            opacity: 1,
+                            transition: { staggerChildren: 0.1 }
+                        },
+                        exit: { 
+                            opacity: 0,
+                            transition: { staggerChildren: 0.05, staggerDirection: -1 }
+                        }
+                    }}
+                    initial="hidden"
+                    animate="visible"
+                    exit="exit"
+                >
+                    {projects.map(project => (
+                        <Card
+                            key={project.id}
+                            image={project.image}
+                            label={project.label}
+                            onClick={(e) => startTransition(e, `/${project.category}/${project.id}`, '#FA0026')}
+                            type={project.type}
+                            tags={project.tags}
+                            category={project.category}
+                            variants={{
+                                hidden: { opacity: 0, scale: 0.8, y: 20 },
+                                visible: { 
+                                    opacity: 1, 
+                                    scale: 1, 
+                                    y: 0, 
+                                    transition: { type: 'spring', stiffness: 200, damping: 20 } 
+                                },
+                                exit: { opacity: 0, scale: 0.8, y: -20, transition: { duration: 0.2 } }
+                            }}
+                        />
+                    ))}
+                </motion.div>
+            </AnimatePresence>
     </>
     );
 };
