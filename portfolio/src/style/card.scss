@@ -9,7 +9,7 @@
 
     @media screen and (min-width: 769px) {
         /* Max 3 per row (28%) OR fits 2 rows in the screen (34vh) */
-        width: min(28%, 34vh);
+        width: min(28%, 32vh);
         flex: 0 0 auto;
     }
 
@@ -85,7 +85,6 @@
     bottom: 0;
     z-index: 2;
     padding: .5rem;
-    background-color: #FA0026;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,63 +101,51 @@
     }
 }
 
-.mobile-curved-text {
-    display: none;
-}
+.curved-text-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 5;
 
-@media screen and (max-width: 900px) {
-    .mobile-curved-text {
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
+    svg {
         width: 100%;
         height: 100%;
-        pointer-events: none;
-        z-index: 5;
+        overflow: visible;
+        transform-origin: center;
 
-        svg {
-            width: 100%;
-            height: 100%;
-            overflow: visible;
-
-            text {
-                font-family: 'Swiss721 Bold', sans-serif;
-                font-size: 11px;
-                letter-spacing: -0.9px;
-            }
+        text {
+            font-family: 'Swiss721 Bold', sans-serif;
+            font-size: 11px;
+            letter-spacing: -0.9px;
         }
     }
 }
 
+@keyframes textSpinIn {
+    0% { transform: rotate(-45deg) scale(0.85); opacity: 0; }
+    100% { transform: rotate(0deg) scale(1); opacity: 1; }
+}
+
 @media screen and (min-width: 901px) {
+    .curved-text-container {
+        svg {
+            opacity: 0;
+            
+            text {
+                font-size: 14px;
+                letter-spacing: -0.5px;
+            }
+        }
+    }
+
+    .card-wrapper:hover .curved-text-container svg {
+        animation: textSpinIn 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    }
+
     .card:hover .overlay {
         opacity: 1;
     }
-}
-
-.project-name {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    color: white;
-    text-align: center;
-}
-
-.project-type {
-    font-size: 1rem;
-    color: white;
-    text-align: center;
-    font-style: italic;
-}
-
-.project-tags {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.3rem;
-    font-size: 0.875rem;
-    color: white;
-
-    font-size: 0.875rem;
-    color: white;
 }

@@ -13,19 +13,15 @@ const Card = ({ image, label, onClick, type, tags, category }) => {
             <div className={`card ${category ? `card-${category}` : ''}`}>
                 <img src={image} alt={label} className="card-image" />
                 <div className="overlay bold">
-                    <div className="project-name">{label}</div>
-                    <div className="project-tags">
-                            {tags}
-                        </div>
                 </div>
             </div>
 
-            <div className="mobile-curved-text">
+            <div className="curved-text-container">
                 <svg viewBox="0 0 200 200" className="curved-svg">
                     <path id={uniqueId} fill="transparent" d="
-                        M 100, -8
-                        a 108,108 0 1,0 0,216
-                        a 108,108 0 1,0 0,-216
+                        M 100, -15
+                        a 115,115 0 1,0 0,230
+                        a 115,115 0 1,0 0,-230
                     " />
                     <text>
                         <textPath href={`#${uniqueId}`} startOffset="50%" textAnchor="middle" fill="#FA0026">

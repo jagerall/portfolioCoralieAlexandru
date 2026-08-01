@@ -83,11 +83,11 @@ const CircleTransitionOverlay = ({ state }) => {
                             borderRadius: '50%',
                             x: '-50%',
                             y: '-50%',
-                            scale: 1,
-                            backgroundColor: color,
+                            backgroundColor: 'transparent',
+                            boxShadow: `0 0 0 0px ${color}, inset 0 0 0 0px ${color}`,
                         }}
                         animate={{
-                            scale: targetScale,
+                            boxShadow: `0 0 0 ${maxDistance * 1.5}px ${color}, inset 0 0 0 ${rect.width / 2 + 10}px ${color}`,
                             transition: {
                                 duration: 0.6,
                                 ease: [0.76, 0, 0, 1]
