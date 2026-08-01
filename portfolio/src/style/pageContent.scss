@@ -36,12 +36,14 @@
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    gap: 1.5rem;
-    padding: 0 12rem;
+    padding: 0 5rem;
     justify-items: center;
     margin-top: 1.5rem;
     padding-bottom: 3rem;
-    row-gap: 2rem;
+
+      @media screen and (max-width: 1000px) {
+            padding: 0 1rem;
+    }
 
     @media screen and (min-width: 769px) {
         display: grid;

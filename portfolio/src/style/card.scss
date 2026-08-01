@@ -7,10 +7,14 @@
     max-width: 27%;
     aspect-ratio: 1 / 1;
 
+    @media screen and (max-width: 1000px) {
+          width: min(100%, 30vh);
+    }
+
     @media screen and (min-width: 769px) {
         /* In CSS Grid, percentages are relative to the grid cell (which is already ~33% of the container). 
            So we use 100% to fill the grid cell, and remove the max-width: 27% which was making it tiny. */
-        width: min(100%, 34vh);
+        width: min(100%, 36vh);
         max-width: 100%;
         margin: 0 auto;
         flex: 0 0 auto;
