@@ -147,6 +147,16 @@
             letter-spacing: -0.9px;
         }
     }
+
+    @media screen and (max-width: 900px) {
+        svg {
+            transform: scale(0.92); /* Décale le texte un peu plus loin de la carte */
+            
+            text {
+                font-size: 12.5px; /* Ajustement proportionnel */
+            }
+        }
+    }
 }
 
 @keyframes textSpinIn {

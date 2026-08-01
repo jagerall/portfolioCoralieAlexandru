@@ -28,6 +28,10 @@
             overflow-y: hidden;
         }
     }
+
+    @media screen and (max-width: 768px) {
+        overflow-y: visible; /* Empêche ce conteneur de capturer et bloquer le scroll sur mobile */
+    }
 }
 
 .cards-container {
@@ -65,9 +69,11 @@
 
     @media screen and (max-width: 768px) {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-        padding: 0 1rem;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 0 2rem;
         width: 100%;
+        max-width: 400px; /* Keep the card from becoming gigantic on large phones */
+        height: auto;
     }
 }
