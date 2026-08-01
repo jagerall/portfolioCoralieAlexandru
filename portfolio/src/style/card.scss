@@ -7,6 +7,12 @@
     max-width: 27%;
     aspect-ratio: 1 / 1;
 
+    @media screen and (min-width: 769px) {
+        /* Max 3 per row (28%) OR fits 2 rows in the screen (34vh) */
+        width: min(28%, 34vh);
+        flex: 0 0 auto;
+    }
+
     @media screen and (max-width: 768px) {
         flex: 1 1 50%;
         max-width: 98%;
@@ -51,6 +57,7 @@
     }
 
     @media screen and (min-width: 901px) {
+
         &:hover,
         &:focus {
             cursor: none;
@@ -152,6 +159,6 @@
     font-size: 0.875rem;
     color: white;
 
-font-size: 0.875rem;
-color: white;
+    font-size: 0.875rem;
+    color: white;
 }
