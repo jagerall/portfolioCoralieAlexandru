@@ -3,6 +3,7 @@ import {useNavigate, useParams} from 'react-router-dom';
 import Button from "./button";
 import Link from "./link";
 import Tag from "./tag";
+import { motion, AnimatePresence } from 'framer-motion';
 import '../style/projectpage.scss';
 
 const projectDetails = {
@@ -476,24 +477,52 @@ const ProjectPage = () => {
                 </div>)}
             </div>
 
-            {selectedImage && (<div className="fullscreen-overlay" onClick={closeImage}>
-                <div className="fullscreen-content">
-                    {selectedImage.type === 'video' ? (
-                        <video src={selectedImage.src} loop muted playsInline autoPlay />
-                    ) : (
-                        <img src={selectedImage.src} alt="Fullscreen preview"/>
-                    )}
-                    <div className="fullscreen-nav-prev">
-                        <Button className="nav-btn" onClick={(e) => {e.stopPropagation(); prevImage();}} label="Précédent" />
-                    </div>
-                    <div className="fullscreen-nav-next">
-                        <Button className="nav-btn" onClick={(e) => {e.stopPropagation(); nextImage();}} label="Suivant" />
-                    </div>
-                    <Button className="close-btn" label={'Fermer'} onClick={closeImage}>
-
-                    </Button>
-                </div>
-            </div>)}
+            <AnimatePresence>
+                {selectedImage && (
+                    <motion.div 
+                        className="fullscreen-overlay" 
+                        onClick={closeImage}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                    >
+                        <motion.div 
+                            className="fullscreen-content"
+                            initial={{ scale: 0.9, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            exit={{ scale: 0.9, opacity: 0 }}
+                            transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+                            onClick={(e) => e.stopPropagation()}
+                        >
+                            <AnimatePresence mode="wait">
+                                <motion.div
+                                    key={currentIndex}
+                                    initial={{ opacity: 0, x: 20 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    exit={{ opacity: 0, x: -20 }}
+                                    transition={{ duration: 0.2 }}
+                                    className="fullscreen-media-container"
+                                >
+                                    {selectedImage.type === 'video' ? (
+                                        <video src={selectedImage.src} loop muted playsInline autoPlay />
+                                    ) : (
+                                        <img src={selectedImage.src} alt="Fullscreen preview"/>
+                                    )}
+                                </motion.div>
+                            </AnimatePresence>
+                        </motion.div>
+                        
+                        <div className="fullscreen-nav-prev">
+                            <Button className="nav-btn" onClick={(e) => {e.stopPropagation(); prevImage();}} label="Précédent" />
+                        </div>
+                        <div className="fullscreen-nav-next">
+                            <Button className="nav-btn" onClick={(e) => {e.stopPropagation(); nextImage();}} label="Suivant" />
+                        </div>
+                        <Button className="close-btn" label={'Fermer'} onClick={closeImage} />
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </div>
     </main>);
 };
