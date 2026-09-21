@@ -12,11 +12,7 @@
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
-    <url>
-        <loc>https://www.coraliealexandru.fr/photographie</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
+
     <url>
         <loc>https://www.coraliealexandru.fr/uiux/pasnumerise</loc>
         <changefreq>weekly</changefreq>
@@ -47,29 +43,5 @@
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
-    <url>
-        <loc>https://www.coraliealexandru.fr/photographie/argentique</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.coraliealexandru.fr/photographie/auto</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.coraliealexandru.fr/photographie/faune</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.coraliealexandru.fr/photographie/bordeaux</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.coraliealexandru.fr/photographie/macro</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
+
 </urlset>

@@ -23,7 +23,6 @@ function App() {
                         <Routes>
                             <Route path="/" element={<Navigate to="/da"/>}/>
                             <Route path="/uiux" element={<PageContent category="uiux"/>}/>
-                            <Route path="/photographie" element={<PageContent category="photographie"/>}/>
                             <Route path="/da" element={<PageContent category="da"/>}/>
                             <Route path="/:category/:id" element={<ProjectPage/>}/>
                         </Routes>

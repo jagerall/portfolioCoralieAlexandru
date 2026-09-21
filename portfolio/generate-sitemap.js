@@ -6,10 +6,8 @@ const baseUrl = 'https://www.coraliealexandru.fr'; // Remplace par l'URL de ton 
 const outputFile = path.resolve(__dirname, 'public', 'sitemap.xml'); // Le fichier sitemap sera généré ici
 
 // Liste de toutes les routes de ton site (adaptée avec les informations fournies)
-const routes = [
     '/',
     '/uiux',
-    '/photographie',
     '/illustration',
    /* '/about',*/
     '/uiux/booking',
@@ -19,11 +17,6 @@ const routes = [
     '/uiux/capc',
     '/uiux/smash',
     '/uiux/reserve',
-    '/photographie/argentique',
-    '/photographie/auto',
-    '/photographie/faune',
-    '/photographie/bordeaux',
-    '/photographie/macro',
     '/illustration/allo',
     '/illustration/ami',
     '/illustration/logommi',

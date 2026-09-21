@@ -6,7 +6,6 @@ import Button from "./button";
 
 const category = {
     "/uiux": "uiux",
-    "/photographie": "photographie",
     "/da": "da",
     "/uiux/booking": "uiux",
     "/uiux/voiesavenir": "uiux",
@@ -16,11 +15,6 @@ const category = {
     "/uiux/capc": "uiux",
     "/uiux/smash": "uiux",
     "/uiux/reserve": "uiux",
-    "/photographie/argentique": "photographie",
-    "/photographie/auto": "photographie",
-    "/photographie/faune": "photographie",
-    "/photographie/bordeaux": "photographie",
-    "/photographie/macro": "photographie",
     "/da/gfy": "da",
     "/da/penmarch": "da",
     "/da/wordbroker": "da",
@@ -61,7 +55,6 @@ function Header() {
             <nav className="main-nav">
                 <HeaderLink to="/da" label="Direction Artistique" isActive={activeCategory === "da"}/>
                 <HeaderLink to="/uiux" label="UI/UX" isActive={activeCategory === "uiux"}/>
-                <HeaderLink to="/photographie" label="Photographie" isActive={activeCategory === "photographie"}/>
             </nav>
         </header>
     );
