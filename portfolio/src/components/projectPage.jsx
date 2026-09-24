@@ -154,8 +154,8 @@ const projectDetails = {
           '/assets/sliced-11.png',
           '/assets/sliced-12.png',
           '/assets/sliced-13.png',
-          '/assets/sliced-14.gif',
-          '/assets/sliced-15.gif'
+          '/assets/sliced-15.gif',
+          '/assets/sliced-14.gif'
         ],
         videos: []
       },
