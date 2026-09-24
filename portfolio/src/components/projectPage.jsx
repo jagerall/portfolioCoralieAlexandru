@@ -959,8 +959,8 @@ const ProjectPage = () => {
 
           // 2. Extract all text, video, and image items
           const textItems = allElements.filter(el => el.type === 'text');
-          const videoItems = allElements.filter(el => el.type === 'video');
-          const imageItems = allElements.filter(el => el.type === 'image' || el.type === 'gif');
+          const videoItems = allElements.filter(el => el.type === 'video' || el.type === 'gif');
+          const imageItems = allElements.filter(el => el.type === 'image');
           
           const finalElements = [...videoItems, ...imageItems];
 
