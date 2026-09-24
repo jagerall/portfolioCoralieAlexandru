@@ -195,7 +195,7 @@ const projectDetails = {
       {
         type: 'text',
         title: "L'action",
-        content: <>J'ai principalement réalisé l'<strong>illustration</strong>, en plus d'une partie du <strong>développement</strong>, soit <strong>une quarantaine d'assets et de décors dessinés sous Procreate</strong>. Les réserves nous étant inaccessibles, nous avons fait de cet <strong>inconnu un lieu magique</strong> : Tristan, le réserviste, est un magicien à capuche et à bâton, dans l'esprit de Gandalf. <strong>Chaque œuvre choisie transforme le musée</strong> : les murs, la décoration de la salle et la musique, qui n'est pas toujours audible mais fait partie de l'expérience. Le scénario prévoyait 9 fins, dont 6 ont été développées. Nous avons travaillé à partir d'œuvres réellement exposées au musée et testé le jeu sur place pour valider son fonctionnement.</>
+        content: <>J'ai principalement réalisé l'<strong>illustration</strong>, en plus d'une partie du <strong>développement</strong>, soit <strong>une quarantaine d'assets et de décors dessinés sous Procreate</strong>. Les réserves nous étant inaccessibles, nous avons fait de cet <strong>inconnu un lieu magique</strong> : Tristan, le réserviste, est un magicien à capuche et à bâton, dans l'esprit de Gandalf. <strong>Chaque œuvre choisie transforme le musée</strong> : les murs, la décoration de la salle et la musique, qui n'est pas toujours audible mais fait partie de l'expérience. 6 fins ont été développées. Nous avons travaillé à partir d'œuvres réellement exposées au musée et testé le jeu sur place pour valider son fonctionnement.</>
       },
       {
         type: 'media',

@@ -133,7 +133,7 @@ const HomePage = () => {
                         </motion.p>
                         <br></br>
                         <motion.p style={{ y: pY3 }}>
-                          et qui a ne fonctionne pas sans musique
+                          et qui ne fonctionne pas sans musique
                         </motion.p>
                     </div>
                 </section>
