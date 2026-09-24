@@ -964,7 +964,7 @@ const ProjectPage = () => {
 
           const finalElements = [...videoItems, ...imageItems];
 
-          let offset = 3;
+          let offset = 0;
           textItems.forEach((textItem) => {
             const insertIndex = Math.min(offset, finalElements.length);
             finalElements.splice(insertIndex, 0, textItem);
