@@ -108,7 +108,7 @@ const projectDetails = {
       {
         type: 'text',
         title: 'Les résultats',
-        content: <>Mes profs nous ont fait des retours qui ont fait émerger l'idée d'une <strong>version infusée pour les non-buveurs d'alcool</strong>, ce qui élargit le produit. J'en retiens surtout une <strong>DA cohérente du produit jusqu'aux visuels</strong>, centrée sur l'expérience sensorielle et le storytelling.</>
+        content: <>Nous avons eu des retours qui ont fait émerger l'idée d'une <strong>version infusée pour les non-buveurs d'alcool</strong>, ce qui élargit le produit. J'en retiens surtout une <strong>DA cohérente du produit jusqu'aux visuels</strong>, centrée sur l'expérience sensorielle et le storytelling.</>
       }
     ]
   },
