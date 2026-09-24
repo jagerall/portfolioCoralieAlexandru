@@ -800,7 +800,7 @@ const projectDetails = {
       {
         type: 'text',
         title: "L'action",
-        content: <>Je me suis occupée de la DA, de la <strong>programmation de l'IA (Gemini, sur Raspberry Pi)</strong> et de l'<strong>intégration web du ticket</strong> pour pouvoir l'imprimer. Côté scénographie, j'ai voulu quelque chose d'austère : un stand, un spot, une salle noire. Le visiteur parle dans un <strong>interphone des années 70, que j'ai chiné et réactivé</strong>, et l'IA l'écoute puis le réduit à une valeur sur un ticket au ton cynique. J'ai construit le stand moi-même et <strong>imprimé en 3D les embouchures</strong> de sortie des tickets. Pendant que l'IA « réfléchit », une musique d'attente joyeuse (« veuillez patienter, votre prix arrive ») est cassée net par le ticket. Le plus pénible, c'était le Raspberry Pi et ses contraintes physiques.</>
+        content: <>Je me suis occupée de la DA, de la <strong>programmation de l'IA (Gemini, sur Raspberry Pi)</strong> et de l'<strong>intégration web du ticket</strong> pour pouvoir l'imprimer. Côté scénographie, j'ai voulu quelque chose d'austère : un stand, un spot, une salle noire. Le visiteur parle dans un <strong>interphone des années 70, chiné et réactivé</strong>, et l'IA l'écoute puis le réduit à une valeur sur un ticket au ton cynique. J'ai construit le stand moi-même et <strong>imprimé en 3D les embouchures</strong> de sortie des tickets. Pendant que l'IA « réfléchit », une musique d'attente joyeuse (« veuillez patienter, votre prix arrive ») est cassée net par le ticket. Le plus pénible, c'était le Raspberry Pi et ses contraintes physiques.</>
       },
       {
         type: 'media',
@@ -957,9 +957,12 @@ const ProjectPage = () => {
             }
           });
 
-          // 2. Extract all text items and reinsert them at specific positions
+          // 2. Extract all text, video, and image items
           const textItems = allElements.filter(el => el.type === 'text');
-          const finalElements = allElements.filter(el => el.type !== 'text');
+          const videoItems = allElements.filter(el => el.type === 'video');
+          const imageItems = allElements.filter(el => el.type === 'image' || el.type === 'gif');
+          
+          const finalElements = [...videoItems, ...imageItems];
 
           let offset = 3;
           textItems.forEach((textItem) => {
