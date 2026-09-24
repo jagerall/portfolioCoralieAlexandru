@@ -125,9 +125,9 @@ const projectDetails = {
       {
         type: 'media',
         images: [
+          '/assets/sliced-3.png',
           '/assets/sliced-1.png',
           '/assets/sliced-2.png',
-          '/assets/sliced-3.png',
           '/assets/sliced-4.png',
           '/assets/sliced-5.png',
           '/assets/sliced-6.png',
@@ -154,8 +154,8 @@ const projectDetails = {
           '/assets/sliced-11.png',
           '/assets/sliced-12.png',
           '/assets/sliced-13.png',
-          '/assets/sliced-15.gif',
-          '/assets/sliced-14.gif'
+          '/assets/sliced-14.gif',
+          '/assets/sliced-15.gif'
         ],
         videos: []
       },
@@ -785,7 +785,7 @@ const projectDetails = {
           '/assets/wordbroker-5.webp'
         ],
         videos: [
-          
+
           {
             src: 'https://framerusercontent.com/assets/1AqDt7IyOyPCbj4edidzqHCX4U.mp4',
             type: 'video/mp4'
@@ -961,14 +961,14 @@ const ProjectPage = () => {
           const textItems = allElements.filter(el => el.type === 'text');
           const videoItems = allElements.filter(el => el.type === 'video' || el.type === 'gif');
           const imageItems = allElements.filter(el => el.type === 'image');
-          
+
           const finalElements = [...videoItems, ...imageItems];
 
           let offset = 3;
           textItems.forEach((textItem) => {
-             const insertIndex = Math.min(offset, finalElements.length);
-             finalElements.splice(insertIndex, 0, textItem);
-             offset += 4;
+            const insertIndex = Math.min(offset, finalElements.length);
+            finalElements.splice(insertIndex, 0, textItem);
+            offset += 4;
           });
 
           // 3. Render items
