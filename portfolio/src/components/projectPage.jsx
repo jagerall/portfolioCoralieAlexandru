@@ -62,6 +62,7 @@ const ParallaxMedia = ({ item, idx, mIdx, projectTitle, onClick, aspectRatios })
 };
 
 const projectDetails = {
+ 
   liko: {
     category: 'DA',
     title: 'Liko',
@@ -70,7 +71,7 @@ const projectDetails = {
       {
         type: 'text',
         title: 'La situation',
-        content: <>AIGLE nous a demandé, pour un projet de M1, de créer un produit qui va dans le sens de la planète. On l'a fait à deux, sans durée imposée. J'ai relié la marque à ce qu'elle est : <strong>la montagne, l'outdoor, l'éco-responsabilité</strong>.</>
+        content: <>Dans le cadre d'un projet de M1, AIGLE nous a confié la création d'un produit allant dans le sens de la planète. Travaillant en binôme, sans durée imposée, j'ai ancré la marque dans ses territoires : <strong>la montagne, l'outdoor et l'éco-responsabilité</strong>.</>
       },
       {
         type: 'media',
@@ -88,12 +89,12 @@ const projectDetails = {
       {
         type: 'text',
         title: 'La tâche',
-        content: <>Livrer un produit et sa promo. Pour moi, ça voulait dire <strong>penser Liko de A à Z : l'objet, l'expérience et la communication</strong>.</>
+        content: <>Concevoir un produit et sa promotion. J'ai choisi de <strong>penser Liko de bout en bout : l'objet, l'expérience et la communication</strong>.</>
       },
       {
         type: 'text',
         title: "L'action",
-        content: <><strong>Liko est une gourde qui infuse pendant l'effort et transforme, à la descente, les fleurs et plantes cueillies sur la montagne qu'on vient de gravir en boisson alcoolisée</strong> : plus l'effort est long, plus elle est riche. Je voulais qu'elle donne un réconfort immédiat, grâce à soi. Elle existe en trois versions de couleur (fruits, plantes, fleurs). La DA s'inspire des <strong>hyōtan</strong>, anciennes bouteilles de sake, avec une gourde chromée gravée de reliefs de topographie. <strong>La forme a été générée par IA</strong>, et j'ai piloté la DA autour. Pour rester dans l'esprit d'AIGLE, j'ai gardé un style éditorial sur les <strong>8 livrables : 2 vidéos pour les réseaux, des affiches et un shooting photo</strong> avec un angle mode, parce que ça reste un objet classe.</>
+        content: <><strong>Liko est une gourde qui infuse pendant l'effort et transforme, lors de la descente, les fleurs et plantes cueillies sur la montagne gravie en boisson alcoolisée</strong> : plus l'effort est long, plus la boisson est riche. L'objet offre un réconfort immédiat, obtenu par soi-même. Il se décline en trois versions colorées (fruits, plantes, fleurs). La direction artistique s'inspire des <strong>hyōtan</strong>, gourdes traditionnelles japonaises utilisées pour transporter le saké ; la gourde est chromée et gravée de reliefs topographiques. <strong>La forme a été générée par IA</strong>, et j'ai piloté la direction artistique autour. Pour rester fidèle à l'esprit d'AIGLE, j'ai adopté un style éditorial sur l'ensemble des <strong>8 livrables : 2 vidéos pour les réseaux, des affiches et un shooting photo</strong> à l'angle mode, afin de préserver l'allure premium de l'objet.</>
       },
       {
         type: 'media',
@@ -108,7 +109,7 @@ const projectDetails = {
       {
         type: 'text',
         title: 'Les résultats',
-        content: <>Nous avons eu des retours qui ont fait émerger l'idée d'une <strong>version infusée pour les non-buveurs d'alcool</strong>, ce qui élargit le produit. J'en retiens surtout une <strong>DA cohérente du produit jusqu'aux visuels</strong>, centrée sur l'expérience sensorielle et le storytelling.</>
+        content: <>Les retours de nos enseignants ont fait émerger l'idée d'une <strong>version infusée sans alcool</strong>, qui élargit la cible du produit. J'en retiens une <strong>direction artistique cohérente de l'objet jusqu'aux visuels</strong>, centrée sur l'expérience sensorielle et le storytelling.</>
       }
     ]
   },
@@ -120,7 +121,7 @@ const projectDetails = {
       {
         type: 'text',
         title: 'La situation',
-        content: <>Pour mon projet de fin de première année de master, je n'avais aucune contrainte. Alors je m'en suis donné une : <strong>imaginer une expo qu'on n'a jamais vue</strong>. J'ai choisi le <strong>Natural History Museum</strong> parce qu'on y observe déjà l'intérieur des choses, vivantes ou non.</>
+        content: <>Pour mon projet de fin de première année de master, aucune contrainte n'était imposée. J'ai donc choisi de <strong>concevoir une exposition inédite</strong>. Mon choix s'est porté sur le <strong>Natural History Museum</strong>, dont la vocation est déjà d'observer l'intérieur des choses, vivantes ou non.</>
       },
       {
         type: 'media',
@@ -139,12 +140,12 @@ const projectDetails = {
       {
         type: 'text',
         title: 'La tâche',
-        content: <><strong>Faire découvrir au public des objets qu'il n'a jamais vus de l'intérieur.</strong> Sans l'intimider, en l'intriguant, et en gardant toute son attention sur les objets.</>
+        content: <><strong>Faire découvrir au public des objets qu'il n'a jamais vus de l'intérieur</strong>, sans l'intimider, en suscitant sa curiosité et en concentrant toute son attention sur les objets.</>
       },
       {
         type: 'text',
         title: "L'action",
-        content: <><strong>J'ai tout fait seule, de la DA à la signalétique.</strong> Une grande salle blanche, épurée, pour laisser la place aux objets. Chacun est <strong>coupé en tranches, présenté dans un cube en plexiglas</strong> et éclairé comme une pièce de collection. Les deux salles ont chacune leur couleur, <strong>rouge et bleu</strong>, deux complémentaires qui ne se confondent jamais : dans un musée tout blanc, on sait toujours où on est. J'ai décliné l'univers en <strong>12 livrables</strong> : affiches, panneaux intérieurs et extérieurs, tickets, tote bag, merch, badge interactif et un court motion.</>
+        content: <><strong>J'ai réalisé l'ensemble du projet seule, de la direction artistique à la signalétique.</strong> Les salles sont blanches et épurées, pour laisser toute la place aux objets. Chacun est <strong>découpé en tranches, présenté dans un cube en plexiglas</strong> et éclairé comme une pièce de collection. Chaque salle a sa propre couleur, <strong>rouge et bleu</strong> : deux complémentaires qui ne se confondent jamais, pour se repérer facilement dans un musée entièrement blanc. J'ai décliné l'univers en <strong>12 livrables</strong> : affiches, panneaux intérieurs et extérieurs, tickets, tote bag, merchandising, badge interactif et court motion.</>
       },
       {
         type: 'media',
@@ -162,271 +163,10 @@ const projectDetails = {
       {
         type: 'text',
         title: 'Les résultats',
-        content: <>L'expo n'a jamais été construite, je ne vais pas prétendre le contraire. Mais <strong>j'ai un univers complet</strong>, du panneau devant l'entrée jusqu'au badge qu'on garde en repartant, et je peux défendre chaque choix. J'ai appris qu'<strong>une DA muséale se joue autant dans le parcours que dans le graphisme</strong>.</>
+        content: <>L'exposition n'a pas été réalisée : elle reste un projet conceptuel. Elle a toutefois abouti à <strong>un univers complet et cohérent</strong>, du panneau d'entrée au badge que le visiteur emporte, dont je peux justifier chaque choix. J'en retiens qu'<strong>une direction artistique muséale se joue autant dans le parcours que dans le graphisme</strong>.</>
       }
     ],
     linkBehance: 'https://www.behance.net/gallery/250749467/Sliced-Exposition-Conceptuelle'
-  },
-  booking: {
-    category: 'UI/UX',
-    title: 'Booking',
-    tags: ['Refonte de site'],
-    sections: [
-      {
-        type: 'text',
-        title: 'Mise en contexte',
-        content: "J'ai réalisé la refonte de l'interface d'une plateforme de réservation type Booking afin d'améliorer l'expérience utilisateur. L'objectif était de simplifier la navigation, clarifier les informations et fluidifier le parcours de réservation.\n" +
-          '\n' +
-          "Après une analyse des points de friction, j'ai repensé l'architecture de l'information et conçu une interface plus épurée et intuitive, avec une meilleure hiérarchisation des contenus et une optimisation pour mobile.\n" +
-          '\n' +
-          "Ce projet m'a permis de renforcer mes compétences en UX/UI design et en conception d'interfaces centrées utilisateur."
-      },
-      {
-        type: 'text',
-        title: 'La problématique',
-        content: 'Texte à remplir...'
-      },
-      {
-        type: 'text',
-        title: "L'action",
-        content: 'Texte à remplir...'
-      },
-      {
-        type: 'text',
-        title: 'Les résultats',
-        content: 'Texte à remplir...'
-      }
-    ],
-    linkFigma: 'https://www.figma.com/design/mVKZJIssy5jUCxBWxXQ2gs/Boooking---Refonte?node-id=32-11984&t=HV3r2zPZtVBdjBDM-1'
-  },
-  voiesavenir: {
-    category: 'UI/UX',
-    title: "Les voies de l'avenir",
-    tags: ['Plateforme pédagogique interactive'],
-    sections: [
-      {
-        type: 'text',
-        title: 'Mise en contexte',
-        content: "J'ai participé à la conception de cette plateforme pédagogique dédiée à l'orientation et à la mixité professionnelle. L'objectif était de valoriser des parcours de femmes inspirantes à travers une interface dynamique et accessible.\n" +
-          '\n' +
-          "Le projet repose sur une architecture de l'information segmentée par filières d'études et sur un dispositif de médiation interactive. J'ai travaillé sur la création d'un parcours utilisateur fluide pour les lycéens, en mettant l'accent sur la hiérarchisation des contenus et l'optimisation de l'expérience de lecture.\n" +
-          '\n' +
-          "Ce projet m'a permis de mobiliser des compétences en UX/UI design, en gestion de projet collaboratif (BUT MMI) et en design inclusif."
-      },
-      {
-        type: 'media',
-        images: [
-          '/assets/voies-avenir-1.webp',
-          '/assets/voies-avenir-2.webp'
-        ],
-        videos: []
-      },
-      {
-        type: 'text',
-        title: 'La problématique',
-        content: 'Texte à remplir...'
-      },
-      {
-        type: 'text',
-        title: "L'action",
-        content: 'Texte à remplir...'
-      },
-      {
-        type: 'media',
-        images: ['/assets/voies-avenir-3.webp'],
-        videos: []
-      },
-      {
-        type: 'text',
-        title: 'Les résultats',
-        content: 'Texte à remplir...'
-      }
-    ],
-    linkWebsite: 'https://www.lesvoiesdelavenir.org/'
-  },
-  pasnumerise: {
-    category: 'UI/UX',
-    title: "Nous n'avons pas numérisé",
-    tags: ["Retour d'expérience"],
-    sections: [
-      {
-        type: 'text',
-        title: 'Mise en contexte',
-        content: "Site présentant notre remise en question de la création d'une application web"
-      },
-      {
-        type: 'media',
-        images: ['/assets/pasnumerise-1.webp', '/assets/pasnumerise-2.webp'],
-        videos: []
-      },
-      {
-        type: 'text',
-        title: 'La problématique',
-        content: 'Texte à remplir...'
-      },
-      {
-        type: 'text',
-        title: "L'action",
-        content: 'Texte à remplir...'
-      },
-      {
-        type: 'media',
-        images: ['/assets/pasnumerise-3.webp'],
-        videos: []
-      },
-      {
-        type: 'text',
-        title: 'Les résultats',
-        content: 'Texte à remplir...'
-      }
-    ],
-    linkWebsite: 'https://nousnavonspasnumerise.mmibordeaux.com/',
-    linkGithub: ''
-  },
-  flop: {
-    category: 'UI/UX',
-    title: "Flop'EDT",
-    tags: ['Audit UX & UI'],
-    sections: [
-      {
-        type: 'text',
-        title: 'Mise en contexte',
-        content: "Au cours d'un projet de deux semaines sur l'UI/UX design, j'ai collaboré avec mon groupe pour repenser le gestionnaire d'emploi du temps Flop!Edt. La première semaine était dédiée à la recherche utilisateur pour comprendre les besoins et les frustrations des utilisateurs, tandis que la deuxième était consacrée à la conception et à l'itération des solutions. Nous avons identifié les lacunes du système existant et élaboré des wireframes détaillés, puis des maquettes interactives. Ce projet m'a permis de maîtriser le processus d'UX/UI design et de développer mes compétences sur Figma."
-      },
-      {
-        type: 'media',
-        images: ['/assets/flop-1.webp', '/assets/flop-2.webp'],
-        videos: []
-      },
-      {
-        type: 'text',
-        title: 'La problématique',
-        content: 'Texte à remplir...'
-      },
-      {
-        type: 'text',
-        title: "L'action",
-        content: 'Texte à remplir...'
-      },
-      { type: 'media', images: ['/assets/flop-3.webp'], videos: [] },
-      {
-        type: 'text',
-        title: 'Les résultats',
-        content: 'Texte à remplir...'
-      }
-    ],
-    linkFigma: 'https://www.figma.com/design/9fY2i3PUefoq9BwAPgPAYa/Refonte-Flop!Edt?node-id=446-73601&t=vd7N5q6ntJLqgEuS-1'
-  },
-  maria: {
-    category: 'UI/UX',
-    title: 'Maria',
-    tags: ['Narration interactive'],
-    sections: [
-      {
-        type: 'text',
-        title: 'Mise en contexte',
-        content: "Ce projet, est en partenariat avec le MusBa pour la Bacchanight 2024. Nous avons créé une histoire interactive avec les tableaux du musée. Notre groupe étions sur la période du siècle d'or hollandais. Nous avons effectué des recherches approfondies sur ce mouvement, pour réaliser une histoire fictive cohérente. Pendant ce projet, j'ai réalisé des visuels et des illustrations. Attention, il faut consulter le site en format mobile."
-      },
-      {
-        type: 'media',
-        images: [
-          '/assets/maria-1.webp',
-          '/assets/maria-3.webp',
-          '/assets/maria-2.webp'
-        ],
-        videos: []
-      },
-      {
-        type: 'text',
-        title: 'La problématique',
-        content: 'Texte à remplir...'
-      },
-      {
-        type: 'text',
-        title: "L'action",
-        content: 'Texte à remplir...'
-      },
-      {
-        type: 'media',
-        images: [
-          '/assets/maria-4.webp',
-          '/assets/maria-5.webp',
-          '/assets/maria-6.webp'
-        ],
-        videos: []
-      },
-      {
-        type: 'text',
-        title: 'Les résultats',
-        content: 'Texte à remplir...'
-      }
-    ],
-    linkWebsite: 'https://maria-bacchanight.netlify.app/'
-  },
-  capc: {
-    category: 'UI/UX',
-    title: 'CAPC',
-    tags: ['Refonte de site'],
-    sections: [
-      {
-        type: 'text',
-        title: 'Mise en contexte',
-        content: "Modernisation du site du musée pour améliorer l'accessibilité, avec un design responsive et une navigation optimisée."
-      },
-      { type: 'media', images: ['/assets/capc-1.webp'], videos: [] },
-      {
-        type: 'text',
-        title: 'La problématique',
-        content: 'Texte à remplir...'
-      },
-      {
-        type: 'text',
-        title: "L'action",
-        content: 'Texte à remplir...'
-      },
-      { type: 'media', images: ['/assets/capc-2.webp'], videos: [] },
-      {
-        type: 'text',
-        title: 'Les résultats',
-        content: 'Texte à remplir...'
-      }
-    ],
-    linkWebsite: 'https://capc-2022.netlify.app/'
-  },
-  smash: {
-    category: 'UI/UX',
-    title: 'Smash',
-    tags: ['Application'],
-    sections: [
-      {
-        type: 'text',
-        title: 'Mise en contexte',
-        content: 'Smash est un média destiné aux 18-25 ans. Il propose de lutter contre la désinformation.\n' +
-          "Tous les jours, l'utilisateur a accès à 3 citations de personnes publiques sur des sujets d'actualité et doit déterminer si c'est une info (basé sur des faits) ou une intox (basé sur une opinion ou une interprétation des faits). Il peut ensuite s'informer de façon plurielle sur cette actualité et en débattre dans un espace commentaire.\n" +
-          "Notre application avait plusieurs besoins : des comptes utilisateurs, un système de sondage, d'amis et de commentaires ainsi que la création et gestion d'articles. Suite à un premier jet très scolaire, nous avons décidé d'en refaire une version où nous sommes plus libres dans notre création."
-      },
-      {
-        type: 'media',
-        images: ['/assets/smash-1.webp', '/assets/smash-2.webp'],
-        videos: []
-      },
-      {
-        type: 'text',
-        title: 'La problématique',
-        content: 'Texte à remplir...'
-      },
-      {
-        type: 'text',
-        title: "L'action",
-        content: 'Texte à remplir...'
-      },
-      { type: 'media', images: ['/assets/smash-3.webp'], videos: [] },
-      {
-        type: 'text',
-        title: 'Les résultats',
-        content: 'Texte à remplir...'
-      }
-    ]
   },
   reserve: {
     category: 'UI/UX',
@@ -436,7 +176,7 @@ const projectDetails = {
       {
         type: 'text',
         title: 'La situation',
-        content: <>Chaque année, le MusBA collabore avec l'école pour la <strong>Nuit au Musée</strong>. On avait une semaine pour créer le jeu, avec toute la classe et une contact au musée, et on était <strong>7 dans mon équipe</strong>.</>
+        content: <>Chaque année, le MusBA s'associe à l'école pour la <strong>Nuit au Musée</strong>. Nous disposions d'une semaine pour concevoir ce jeu, avec l'ensemble de la classe et une référente au sein du musée. Mon équipe comptait <strong>7 personnes</strong>.</>
       },
       {
         type: 'media',
@@ -450,12 +190,12 @@ const projectDetails = {
       {
         type: 'text',
         title: 'La tâche',
-        content: <><strong>Créer un jeu narratif</strong> qui donne envie de <strong>découvrir les réserves d'un musée</strong>, là où le public ne va jamais. Le joueur incarne l'assistant du conservateur et <strong>prépare une expo en choisissant des œuvres</strong>.</>
+        content: <><strong>Concevoir un jeu narratif</strong> qui donne envie de <strong>découvrir les réserves d'un musée</strong>, espace habituellement fermé au public. Le joueur incarne l'assistant du conservateur et <strong>prépare une exposition en sélectionnant des œuvres</strong>.</>
       },
       {
         type: 'text',
         title: "L'action",
-        content: <>J'ai fait de l'<strong>illustration surtout, et du dev</strong>. <strong>Une quarantaine d'assets et de décors dessinés sous Procreate</strong>. Comme personne n'avait accès aux vraies réserves, on a fait de cet <strong>inconnu un lieu magique</strong> : Tristan, le réserviste, est un magicien à capuche et à bâton, façon Gandalf. <strong>Chaque œuvre choisie change le musée</strong> : les murs, la déco de la salle, et même la musique, qu'on n'entend pas toujours mais qui est là. On visait 9 fins, on en a livré 6. On a travaillé avec des œuvres qui tournent réellement au musée, et on est allés sur place tester si tout fonctionnait.</>
+        content: <>J'ai principalement réalisé l'<strong>illustration</strong>, en plus d'une partie du <strong>développement</strong>, soit <strong>une quarantaine d'assets et de décors dessinés sous Procreate</strong>. Les réserves nous étant inaccessibles, nous avons fait de cet <strong>inconnu un lieu magique</strong> : Tristan, le réserviste, est un magicien à capuche et à bâton, dans l'esprit de Gandalf. <strong>Chaque œuvre choisie transforme le musée</strong> : les murs, la décoration de la salle et la musique, qui n'est pas toujours audible mais fait partie de l'expérience. Le scénario prévoyait 9 fins, dont 6 ont été développées. Nous avons travaillé à partir d'œuvres réellement exposées au musée et testé le jeu sur place pour valider son fonctionnement.</>
       },
       {
         type: 'media',
@@ -465,207 +205,10 @@ const projectDetails = {
       {
         type: 'text',
         title: 'Les résultats',
-        content: <>Le jeu a <strong>tourné sur la tablette du musée pendant un an</strong>, et le public a bien accroché. Le seul souci venait du tactile vieillissant de la tablette : on a donc <strong>supprimé le glisser-déposer pour ne garder que des clics</strong>.</>
+        content: <>Le jeu a été <strong>proposé au public sur la tablette du musée pendant un an</strong> et a été bien accueilli. Le tactile vieillissant de la tablette nous a conduits à <strong>supprimer le glisser-déposer au profit de simples clics</strong>.</>
       }
     ],
     linkWebsite: 'https://nuit-du-musba-2025.netlify.app/experiences/1-hub/index.html'
-  },
-  argentique: {
-    category: 'Photographie',
-    title: 'Argentique',
-    tags: ['Photographie argentique'],
-    sections: [
-      {
-        type: 'text',
-        title: 'Mise en contexte',
-        content: "Voici quelques photos prises à l'Olympus M1 sur la Côte d'Azur."
-      },
-      {
-        type: 'media',
-        images: [
-          '/assets/argentique-2.webp',
-          '/assets/argentique-5.webp',
-          '/assets/argentique-3.webp'
-        ],
-        videos: []
-      },
-      {
-        type: 'text',
-        title: 'La problématique',
-        content: 'Texte à remplir...'
-      },
-      {
-        type: 'text',
-        title: "L'action",
-        content: 'Texte à remplir...'
-      },
-      {
-        type: 'media',
-        images: [
-          '/assets/argentique-4.webp',
-          '/assets/argentique-1.webp',
-          '/assets/argentique-6.webp'
-        ],
-        videos: []
-      },
-      {
-        type: 'text',
-        title: 'Les résultats',
-        content: 'Texte à remplir...'
-      }
-    ]
-  },
-  auto: {
-    category: 'Photographie',
-    title: 'Portraits',
-    tags: ['Photographie'],
-    sections: [
-      {
-        type: 'media',
-        images: [
-          '/assets/auto-1.webp',
-          '/assets/auto-2.webp',
-          '/assets/auto-3.webp'
-        ],
-        videos: []
-      },
-      {
-        type: 'text',
-        title: 'La problématique',
-        content: 'Texte à remplir...'
-      },
-      {
-        type: 'text',
-        title: "L'action",
-        content: 'Texte à remplir...'
-      },
-      {
-        type: 'media',
-        images: ['/assets/auto-4.webp', '/assets/auto-5.webp'],
-        videos: []
-      },
-      {
-        type: 'text',
-        title: 'Les résultats',
-        content: 'Texte à remplir...'
-      }
-    ]
-  },
-  faune: {
-    category: 'Photographie',
-    title: 'Faune et flore',
-    tags: ['Photographie'],
-    sections: [
-      {
-        type: 'media',
-        images: [
-          '/assets/fauneflore-5.webp',
-          '/assets/fauneflore-4.webp',
-          '/assets/fauneflore-1.webp',
-          '/assets/fauneflore-2.webp'
-        ],
-        videos: []
-      },
-      {
-        type: 'text',
-        title: 'La problématique',
-        content: 'Texte à remplir...'
-      },
-      {
-        type: 'text',
-        title: "L'action",
-        content: 'Texte à remplir...'
-      },
-      {
-        type: 'media',
-        images: [
-          '/assets/fauneflore-3.webp',
-          '/assets/fauneflore-6.webp',
-          '/assets/fauneflore-7.webp'
-        ],
-        videos: []
-      },
-      {
-        type: 'text',
-        title: 'Les résultats',
-        content: 'Texte à remplir...'
-      }
-    ]
-  },
-  bordeaux: {
-    category: 'Photographie',
-    title: 'Urbain',
-    tags: ['Photographie urbaine'],
-    sections: [
-      {
-        type: 'media',
-        images: [
-          '/assets/bordeaux-1.webp',
-          '/assets/bordeaux-2.webp',
-          '/assets/bordeaux-3.webp',
-          '/assets/bordeaux-4.webp',
-          '/assets/bordeaux-5.webp'
-        ],
-        videos: []
-      },
-      {
-        type: 'text',
-        title: 'La problématique',
-        content: 'Texte à remplir...'
-      },
-      {
-        type: 'text',
-        title: "L'action",
-        content: 'Texte à remplir...'
-      },
-      {
-        type: 'media',
-        images: [
-          '/assets/bordeaux-6.webp',
-          '/assets/bordeaux-7.webp',
-          '/assets/bordeaux-8.webp',
-          '/assets/bordeaux-9.webp'
-        ],
-        videos: []
-      },
-      {
-        type: 'text',
-        title: 'Les résultats',
-        content: 'Texte à remplir...'
-      }
-    ]
-  },
-  macro: {
-    category: 'Photographie',
-    title: 'Macrophoto',
-    tags: ['Macrophoto'],
-    sections: [
-      {
-        type: 'media',
-        images: ['/assets/macro-1.webp', '/assets/macro-2.webp'],
-        videos: []
-      },
-      {
-        type: 'text',
-        title: 'La problématique',
-        content: 'Texte à remplir...'
-      },
-      {
-        type: 'text',
-        title: "L'action",
-        content: 'Texte à remplir...'
-      },
-      {
-        type: 'media',
-        images: ['/assets/macro-4.webp', '/assets/macro-6.webp'],
-        videos: []
-      },
-      {
-        type: 'text',
-        title: 'Les résultats',
-        content: 'Texte à remplir...'
-      }
-    ]
   },
   gfy: {
     category: 'DA',
@@ -675,7 +218,7 @@ const projectDetails = {
       {
         type: 'text',
         title: 'La situation',
-        content: <>Pour ce projet de M1, le sujet était clair : imaginer en 18 heures la campagne 360° d'une marque de haute montagne. Tout le reste, c'était à moi de le trouver. J'ai choisi <strong>Black Diamond</strong>, une marque d'escalade et d'alpinisme pour qui la fiabilité du matériel est tout.</>
+        content: <>Dans le cadre de ce projet de M1, le sujet consistait à imaginer en 18 heures la campagne 360° d'une marque de haute montagne. Le choix de la marque et de la problématique m'appartenait. J'ai retenu <strong>Black Diamond</strong>, marque d'escalade et d'alpinisme pour laquelle la fiabilité du matériel est essentielle.</>
       },
       {
         type: 'media',
@@ -689,12 +232,12 @@ const projectDetails = {
       {
         type: 'text',
         title: 'La tâche',
-        content: <>Lutter contre la surconsommation en changeant le regard sur l'usure : <strong>un mousqueton rayé n'est pas un mousqueton mort</strong>. On jette des outils qui marchent encore, simplement parce qu'ils ne brillent plus.</>
+        content: <>Lutter contre la surconsommation en changeant le regard porté sur l'usure : <strong>un mousqueton rayé n'est pas un mousqueton hors d'usage</strong>. Des équipements encore fiables sont remplacés simplement parce qu'ils ont perdu leur éclat.</>
       },
       {
         type: 'text',
         title: "L'action",
-        content: <>J'ai tout imaginé, du constat au concept : pousser les gens à échouer pour qu'ils voient par eux-mêmes que le matériel encaisse. « <strong>Go Fail Yourself</strong> » : si ça tient après 50 chutes, pourquoi en racheter un neuf ? J'ai décliné l'idée en 9 livrables : 3 affiches, 3 posts Instagram qui provoquent la concurrence (« So mad, it broke »), <strong>une appli en réalité augmentée, Ghost Beta, où l'on archive ses chutes</strong>, un packaging et le <strong>Golden Carabiner, un mousqueton plaqué or à trouver qui récompense ceux qui testent leur matériel</strong>. La DA est brute : noir et jaune, une typo qui claque (Druk Wide) contre une typo technique (Roboto Mono). Mes références vont de Dark Souls à la chronophotographie de Marey pour décomposer une chute, en passant par l'Atelier Populaire de Mai 68 pour la provocation.</>
+        content: <>J'ai conçu l'ensemble du projet, du constat au concept : inciter les grimpeurs à échouer pour constater par eux-mêmes que le matériel résiste. « <strong>Go Fail Yourself</strong> » : si un équipement tient après 50 chutes, pourquoi le remplacer ? J'ai décliné l'idée en 9 livrables : 3 affiches, 3 posts Instagram provoquant la concurrence (« So mad, it broke »), <strong>une application en réalité augmentée, Ghost Beta, permettant d'archiver ses chutes</strong>, un packaging et le <strong>Golden Carabiner, un mousqueton plaqué or à retrouver qui récompense ceux qui testent leur matériel</strong>. La direction artistique est brute : noir et jaune, associant une typographie d'impact (Druk Wide) à une typographie technique (Roboto Mono). Mes références vont de Dark Souls à la chronophotographie de Marey, pour décomposer une chute, jusqu'à l'Atelier Populaire de Mai 68 pour la provocation.</>
       },
       {
         type: 'media',
@@ -708,63 +251,9 @@ const projectDetails = {
       {
         type: 'text',
         title: 'Les résultats',
-        content: <>J'ai eu la deuxième meilleure note de la classe. Et le jour de mon oral, Black Diamond a lancé de son côté un événement très proche de mon Golden Carabiner à trouver. Ce que j'en retiens : <strong>une idée forte tient quand on la décline du poster jusqu'à l'appli</strong>.</>
+        content: <>Ce projet m'a valu la deuxième meilleure note de la classe. Le jour de ma soutenance, Black Diamond a lancé un événement très proche de mon Golden Carabiner à retrouver. J'en retiens qu'<strong>une idée forte tient lorsqu'on la décline de l'affiche jusqu'à l'application</strong>.</>
       }
     ]
-  },
-  penmarch: {
-    category: 'DA',
-    title: "Pointe de Penmarc'h",
-    tags: ['Rebranding'],
-    sections: [
-      {
-        type: 'text',
-        title: 'Mise en contexte',
-        content: "Projet de redesign global pour une marque de conserves de poisson fondée en 1920 au Guilvinec en Bretagne. L'objectif est de moderniser l'identité visuelle tout en renforçant un positionnement premium et un ancrage français fort, lié au terroir et à la pêche artisanale.\n" +
-          '\n' +
-          "La direction artistique s'appuie sur l'authenticité, l'univers maritime et le savoir-faire local afin de repositionner la marque dans un registre plus contemporain sans perdre son héritage.\n" +
-          '\n' +
-          "Le projet comprend la création d'un nouveau logo, la refonte d'un packaging (boîte de sardines ou de thon), des déclinaisons produits (nature, tomate basilic, citron huile d'olive) ainsi que trois affiches de campagne présentant les différentes saveurs.\n" +
-          '\n' +
-          "Une identité qui valorise l'héritage breton tout en affirmant une image plus moderne et premium."
-      },
-      {
-        type: 'media',
-        images: [
-          '/assets/penmarch-1.webp',
-          '/assets/penmarch-2.webp',
-          '/assets/penmarch-3.webp',
-          '/assets/penmarch-4.webp'
-        ],
-        videos: []
-      },
-      {
-        type: 'text',
-        title: 'La problématique',
-        content: 'Texte à remplir...'
-      },
-      {
-        type: 'text',
-        title: "L'action",
-        content: 'Texte à remplir...'
-      },
-      {
-        type: 'media',
-        images: [
-          '/assets/penmarch-5.webp',
-          '/assets/penmarch-6.webp',
-          '/assets/penmarch-7.webp',
-          '/assets/penmarch-8.webp'
-        ],
-        videos: []
-      },
-      {
-        type: 'text',
-        title: 'Les résultats',
-        content: 'Texte à remplir...'
-      }
-    ],
-    linkBehance: 'https://www.behance.net/gallery/247470423/Pointe-de-Penmarch'
   },
   wordbroker: {
     category: 'DA',
@@ -774,18 +263,16 @@ const projectDetails = {
       {
         type: 'text',
         title: 'La situation',
-        content: <>Pour le digital event de l'ESD, nos profs nous ont confié un concept : <strong>une installation où la parole devient une marchandise</strong>. On était deux étudiants pour le mettre en place, en 2 semaines, pour 3 jours d'exposition.</>
+        content: <>Pour le digital event de l'ESD, nos enseignants nous ont confié un concept : <strong>une installation où la parole devient une marchandise</strong>. Nous étions deux étudiants chargés de sa mise en œuvre, en 2 semaines, pour 3 jours d'exposition.</>
       },
       {
         type: 'media',
         images: [
-
           '/assets/wordbroker-8.webp',
           '/assets/wordbroker-4.webp',
           '/assets/wordbroker-5.webp'
         ],
         videos: [
-
           {
             src: 'https://framerusercontent.com/assets/1AqDt7IyOyPCbj4edidzqHCX4U.mp4',
             type: 'video/mp4'
@@ -795,12 +282,12 @@ const projectDetails = {
       {
         type: 'text',
         title: 'La tâche',
-        content: <><strong>Faire réfléchir le public à la valeur de ses mots</strong> : ce que vaut une personne aux yeux d'une société capitaliste, et <strong>ce que ça coûte de confier sa parole à une IA</strong>.</>
+        content: <><strong>Amener le public à s'interroger sur la valeur de ses mots</strong> : ce que vaut une personne aux yeux d'une société capitaliste, et <strong>ce que représente le fait de confier sa parole à une IA</strong>.</>
       },
       {
         type: 'text',
         title: "L'action",
-        content: <>Je me suis occupée de la DA, de la <strong>programmation de l'IA (Gemini, sur Raspberry Pi)</strong> et de l'<strong>intégration web du ticket</strong> pour pouvoir l'imprimer. Côté scénographie, j'ai voulu quelque chose d'austère : un stand, un spot, une salle noire. Le visiteur parle dans un <strong>interphone des années 70, chiné et réactivé</strong>, et l'IA l'écoute puis le réduit à une valeur sur un ticket au ton cynique. J'ai construit le stand moi-même et <strong>imprimé en 3D les embouchures</strong> de sortie des tickets. Pendant que l'IA « réfléchit », une musique d'attente joyeuse (« veuillez patienter, votre prix arrive ») est cassée net par le ticket. Le plus pénible, c'était le Raspberry Pi et ses contraintes physiques.</>
+        content: <>J'ai assuré la direction artistique, la <strong>programmation de l'IA (Gemini, sur Raspberry Pi)</strong> et l'<strong>intégration web du ticket</strong> pour son impression. La scénographie est volontairement austère : un stand, un spot, une salle noire. Le visiteur s'exprime dans un <strong>interphone des années 70, chiné puis réactivé</strong>. L'IA analyse sa parole et la réduit à une valeur, imprimée sur un ticket au ton cynique. J'ai construit le stand et <strong>imprimé en 3D les embouchures</strong> de sortie des tickets. Pendant le temps d'analyse, une musique d'attente enjouée (« veuillez patienter, votre prix arrive ») est brutalement contredite par le ticket. Les contraintes physiques du Raspberry Pi ont représenté la principale difficulté technique.</>
       },
       {
         type: 'media',
@@ -813,7 +300,7 @@ const projectDetails = {
       {
         type: 'text',
         title: 'Les résultats',
-        content: <><strong>Environ une centaine de personnes l'ont testé.</strong> Les réactions étaient souvent inquiètes ou réticentes à l'idée de parler à une IA, mais ça faisait réagir, et c'était le but. Certains repartaient avec leur ticket, d'autres le laissaient par terre devant le stand. Nos profs étaient contents et veulent <strong>proposer l'installation à des musées à l'international</strong>. Pour moi, c'était ma <strong>première création exposée : j'ai appris à me plonger à 100 % dans le processus physique</strong>, de la scénographie jusqu'au socle.</>
+        content: <><strong>Environ une centaine de personnes ont testé l'installation.</strong> Les réactions, souvent inquiètes ou réticentes à l'idée de parler à une IA, ont atteint l'objectif : susciter la réflexion. Certains visiteurs repartaient avec leur ticket, d'autres l'abandonnaient devant le stand. Nos enseignants ont été satisfaits et envisagent de <strong>proposer l'installation à des musées à l'international</strong>. Il s'agit de ma <strong>première création exposée : j'ai appris à m'investir pleinement dans le processus physique</strong>, de la scénographie jusqu'au socle.</>
       }
     ]
   }
