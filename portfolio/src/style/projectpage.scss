@@ -109,7 +109,7 @@ body.project-page-active {
             position: relative;
             z-index: auto;
             padding: 2rem;
-            margin: -2rem;
+            margin: 4rem -2rem -2rem -2rem;
             .section-subtitle {
                 font-family: 'Swiss721 Bold';
                 font-size: 36px;
@@ -275,6 +275,7 @@ body.project-page-active {
             justify-content: center;
             cursor: auto;
             padding: 2rem;
+            margin-top: 6rem;
             position: relative;
             z-index: auto !important;
 
