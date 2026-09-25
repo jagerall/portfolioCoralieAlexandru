@@ -5,3 +5,16 @@
     border-radius: 100%;
     background-color: #101010;
 }
+
+.global-red-line {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 15%;
+    width: 2px;
+    background-color: #FA0026;
+    z-index: 2;
+    pointer-events: none;
+    transform: translateX(-50%);
+}

@@ -53,6 +53,7 @@ body {
     color: #101010;
     background-color: #FFFFFF;
     overflow-x: hidden;
+    overflow-y: scroll; /* Force the scrollbar to avoid layout shift */
     cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="%23FA0026"/></svg>') 12 12, auto;
 }
 
