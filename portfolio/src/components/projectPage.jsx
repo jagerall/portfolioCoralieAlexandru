@@ -61,59 +61,7 @@ const ParallaxMedia = ({ item, idx, mIdx, projectTitle, onClick, aspectRatios })
   );
 };
 
-const projectDetails = {
- 
-  liko: {
-    category: 'DA',
-    title: 'Liko',
-    tags: ['produit fictif pour AIGLE'],
-    sections: [
-      {
-        type: 'text',
-        title: 'La situation',
-        content: <>Dans le cadre d'un projet de M1, AIGLE nous a confié la création d'un produit allant dans le sens de la planète. Travaillant en binôme, sans durée imposée, j'ai ancré la marque dans ses territoires : <strong>la montagne, l'outdoor et l'éco-responsabilité</strong>.</>
-      },
-      {
-        type: 'media',
-        images: [
-          '/assets/liko-1.png',
-          '/assets/liko-2.png',
-          '/assets/liko-3.png',
-          '/assets/liko-4.png'
-        ],
-        videos: [
-          { src: '/assets/liko-vid-2.mp4', type: 'video/mp4' },
-          { src: '/assets/liko-vid-1.mp4', type: 'video/mp4' }
-        ]
-      },
-      {
-        type: 'text',
-        title: 'La tâche',
-        content: <>Concevoir un produit et sa promotion. J'ai choisi de <strong>penser Liko de bout en bout : l'objet, l'expérience et la communication</strong>.</>
-      },
-      {
-        type: 'text',
-        title: "L'action",
-        content: <><strong>Liko est une gourde qui infuse pendant l'effort et transforme, lors de la descente, les fleurs et plantes cueillies sur la montagne gravie en boisson alcoolisée</strong> : plus l'effort est long, plus la boisson est riche. L'objet offre un réconfort immédiat, obtenu par soi-même. Il se décline en trois versions colorées (fruits, plantes, fleurs). La direction artistique s'inspire des <strong>hyōtan</strong>, gourdes traditionnelles japonaises utilisées pour transporter le saké ; la gourde est chromée et gravée de reliefs topographiques. <strong>La forme a été générée par IA</strong>, et j'ai piloté la direction artistique autour. Pour rester fidèle à l'esprit d'AIGLE, j'ai adopté un style éditorial sur l'ensemble des <strong>8 livrables : 2 vidéos pour les réseaux, des affiches et un shooting photo</strong> à l'angle mode, afin de préserver l'allure premium de l'objet.</>
-      },
-      {
-        type: 'media',
-        images: [
-          '/assets/liko-5.png',
-          '/assets/liko-6.png',
-          '/assets/liko-7.png',
-          '/assets/liko-8.png'
-        ],
-        videos: []
-      },
-      {
-        type: 'text',
-        title: 'Les résultats',
-        content: <>Les retours de nos enseignants ont fait émerger l'idée d'une <strong>version infusée sans alcool</strong>, qui élargit la cible du produit. J'en retiens une <strong>direction artistique cohérente de l'objet jusqu'aux visuels</strong>, centrée sur l'expérience sensorielle et le storytelling.</>
-      }
-    ]
-  },
-  sliced: {
+const projectDetails = {sliced: {
     category: 'DA',
     title: 'Sliced',
     tags: ["exposition temporaire pour le Natural History Museum"],
@@ -168,6 +116,57 @@ const projectDetails = {
     ],
     linkBehance: 'https://www.behance.net/gallery/250749467/Sliced-Exposition-Conceptuelle'
   },
+ 
+  liko: {
+    category: 'DA',
+    title: 'Liko',
+    tags: ['produit fictif pour AIGLE'],
+    sections: [
+      {
+        type: 'text',
+        title: 'La situation',
+        content: <>Dans le cadre d'un projet de M1, AIGLE nous a confié la création d'un produit allant dans le sens de la planète. Travaillant en binôme, sans durée imposée, j'ai ancré la marque dans ses territoires : <strong>la montagne, l'outdoor et l'éco-responsabilité</strong>.</>
+      },
+      {
+        type: 'media',
+        images: [
+          '/assets/liko-1.png',
+          '/assets/liko-2.png',
+          '/assets/liko-3.png',
+          '/assets/liko-4.png'
+        ],
+        videos: [
+          { src: '/assets/liko-vid-2.mp4', type: 'video/mp4' },
+          { src: '/assets/liko-vid-1.mp4', type: 'video/mp4' }
+        ]
+      },
+      {
+        type: 'text',
+        title: 'La tâche',
+        content: <>Concevoir un produit et sa promotion. J'ai choisi de <strong>penser Liko de bout en bout : l'objet, l'expérience et la communication</strong>.</>
+      },
+      {
+        type: 'text',
+        title: "L'action",
+        content: <><strong>Liko est une gourde qui infuse pendant l'effort et transforme, lors de la descente, les fleurs et plantes cueillies sur la montagne gravie en boisson alcoolisée</strong> : plus l'effort est long, plus la boisson est riche. L'objet offre un réconfort immédiat, obtenu par soi-même. Il se décline en trois versions colorées (fruits, plantes, fleurs). La direction artistique s'inspire des <strong>hyōtan</strong>, gourdes traditionnelles japonaises utilisées pour transporter le saké ; la gourde est chromée et gravée de reliefs topographiques. <strong>La forme a été générée par IA</strong>, et j'ai piloté la direction artistique autour. Pour rester fidèle à l'esprit d'AIGLE, j'ai adopté un style éditorial sur l'ensemble des <strong>8 livrables : 2 vidéos pour les réseaux, des affiches et un shooting photo</strong> à l'angle mode, afin de préserver l'allure premium de l'objet.</>
+      },
+      {
+        type: 'media',
+        images: [
+          '/assets/liko-5.png',
+          '/assets/liko-6.png',
+          '/assets/liko-7.png',
+          '/assets/liko-8.png'
+        ],
+        videos: []
+      },
+      {
+        type: 'text',
+        title: 'Les résultats',
+        content: <>Les retours de nos enseignants ont fait émerger l'idée d'une <strong>version infusée sans alcool</strong>, qui élargit la cible du produit. J'en retiens une <strong>direction artistique cohérente de l'objet jusqu'aux visuels</strong>, centrée sur l'expérience sensorielle et le storytelling.</>
+      }
+    ]
+  },
   reserve: {
     category: 'UI/UX',
     title: 'La Réserve',
@@ -183,7 +182,7 @@ const projectDetails = {
         images: [
           '/assets/reserve-1.webp',
           '/assets/reserve-2.webp',
-          '/assets/reserve-3.webp'
+          '/assets/reserve-4.webp'
         ],
         videos: []
       },
@@ -199,13 +198,13 @@ const projectDetails = {
       },
       {
         type: 'media',
-        images: ['/assets/reserve-4.webp', '/assets/reserve-5.webp'],
+        images: ['/assets/reserve-3.webp', '/assets/reserve-5.webp'],
         videos: []
       },
       {
         type: 'text',
         title: 'Les résultats',
-        content: <>Le jeu a été <strong>proposé au public sur la tablette du musée pendant un an</strong> et a été bien accueilli. Le tactile vieillissant de la tablette nous a conduits à <strong>supprimer le glisser-déposer au profit de simples clics</strong>.</>
+        content: <>Le jeu a été <strong>proposé au public sur la tablette du musée pendant un an</strong> pour 135 650 visiteurs en 2024. Le tactile vieillissant de la tablette nous a conduits à <strong>supprimer le glisser-déposer au profit de simples clics</strong>.</>
       }
     ],
     linkWebsite: 'https://nuit-du-musba-2025.netlify.app/experiences/1-hub/index.html'
@@ -218,7 +217,7 @@ const projectDetails = {
       {
         type: 'text',
         title: 'La situation',
-        content: <>Dans le cadre de ce projet de M1, le sujet consistait à imaginer en 18 heures la campagne 360° d'une marque de haute montagne. Le choix de la marque et de la problématique m'appartenait. J'ai retenu <strong>Black Diamond</strong>, marque d'escalade et d'alpinisme pour laquelle la fiabilité du matériel est essentielle.</>
+        content: <>Dans le cadre de ce projet de M1, le sujet consistait à imaginer la campagne 360° d'une marque de haute montagne. Le choix de la marque et de la problématique m'appartenait. J'ai retenu <strong>Black Diamond</strong>, marque d'escalade et d'alpinisme pour laquelle la fiabilité du matériel est essentielle.</>
       },
       {
         type: 'media',
